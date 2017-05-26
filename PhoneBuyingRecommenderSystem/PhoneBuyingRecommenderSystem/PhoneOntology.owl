@@ -1,0 +1,1795 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:ont="http://www.co-ode.org/ontologies/ont.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasAge -->
+
+    <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasAge">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasInformation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Customer"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Age"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasCPU -->
+
+    <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasCPU">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasDemand -->
+
+    <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasDemand">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Customer"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Demand"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasGender -->
+
+    <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasGender">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasInformation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Customer"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Gender"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasHobby -->
+
+    <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasHobby">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasInformation"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Customer"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasInformation -->
+
+    <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasInformation">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Customer"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Information"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasMajor -->
+
+    <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasMajor">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasInformation"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Customer"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasManufacturer -->
+
+    <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasManufacturer">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Demand"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasModel -->
+
+    <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasModel">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasOS -->
+
+    <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasOS">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Demand"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#OperatingSystem"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasBatteryCapacity -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasBatteryCapacity">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Demand"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasBitArchitecture -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasBitArchitecture">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasColor -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasColor">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasCores -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasCores">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasExternalStorage -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasExternalStorage">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasStorage"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasFrontMegapixel -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasFrontMegapixel">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Demand"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasFunction -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasFunction">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Demand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasHeightOfRes -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasHeightOfRes">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasResolution"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasIMEI -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasIMEI">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasInternalStorage -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasInternalStorage">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasStorage"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasInternalStorageCapacity -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasInternalStorageCapacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasInternalStorage"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Demand"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasLink -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasLink">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasMaterial -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasMaterial">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Demand"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasMaxPrice -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasMaxPrice">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPriceRange"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Demand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasMinPrice -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasMinPrice">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPriceRange"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Demand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasName -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasName">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#OperatingSystem"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasPrice -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasPrice">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasPriceRange -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasPriceRange">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Demand"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasRAMCapacity -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasRAMCapacity">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Demand"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasRearMegapixel -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasRearMegapixel">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Demand"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasResolution -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasResolution"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasScreenSize -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasScreenSize">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasSpecialFeature -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasSpecialFeature">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Demand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasStorage -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasStorage"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasVersion -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasVersion">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#OperatingSystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasWidthOfRes -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasWidthOfRes">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasResolution"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#inCountry -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#inCountry">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#supportDualCamera -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#supportDualCamera">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#supportSDCard -->
+
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#supportSDCard">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasExternalStorage"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Age -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Age">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Information"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#CPU -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#CPU">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneDomain"/>
+        <rdfs:comment>chipset of the phone</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Customer -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Customer">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CustomerDomain"/>
+        <rdfs:comment>who need to buy a phone</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#CustomerDomain -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#CustomerDomain"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Demand -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Demand">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CustomerDomain"/>
+        <rdfs:comment>the element, function or specification on the phone that a customer wants to have</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Gender -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Gender">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Information"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Hobby -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Hobby">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Information"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Information -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Information">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CustomerDomain"/>
+        <rdfs:comment>the information of a customer</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Major -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Major">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Information"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Manufacturer -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Manufacturer">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneDomain"/>
+        <rdfs:comment>the manufacturer that produces the phones</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#OperatingSystem -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#OperatingSystem">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneDomain"/>
+        <rdfs:comment>OS of the phone</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Phone -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Phone">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneDomain"/>
+        <rdfs:comment>A specific phone</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PhoneDomain -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PhoneDomain"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PhoneModel -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PhoneModel">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneDomain"/>
+        <rdfs:comment>Model/name of the phone</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#A10 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#A10">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+        <ont:hasBitArchitecture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</ont:hasBitArchitecture>
+        <ont:hasCores rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasCores>
+        <ont:hasName>Apple A10 Fusion</ont:hasName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#A7 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#A7">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+        <ont:hasBitArchitecture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</ont:hasBitArchitecture>
+        <ont:hasCores rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasCores>
+        <ont:hasName>Apple A7</ont:hasName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#A8 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#A8">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+        <ont:hasBitArchitecture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</ont:hasBitArchitecture>
+        <ont:hasCores rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasCores>
+        <ont:hasName>Apple A8</ont:hasName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#A9 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#A9">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+        <ont:hasBitArchitecture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</ont:hasBitArchitecture>
+        <ont:hasCores rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasCores>
+        <ont:hasName>Apple A9</ont:hasName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Adult -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Adult">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Age"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Agriculture -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Agriculture">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Android5.1 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Android5.1">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#OperatingSystem"/>
+        <ont:hasName>Android</ont:hasName>
+        <ont:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.1</ont:hasVersion>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Android6.0 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Android6.0">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#OperatingSystem"/>
+        <ont:hasName>Android</ont:hasName>
+        <ont:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.0</ont:hasVersion>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Android7.0 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Android7.0">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#OperatingSystem"/>
+        <ont:hasName>Android</ont:hasName>
+        <ont:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7.0</ont:hasVersion>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Apple -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Apple">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>US</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Art -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Art">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Asus -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Asus">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>Taiwan</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Biology -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Biology">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Commerce -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Commerce">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Economic -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Economic">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Exynos7420 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Exynos7420">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+        <ont:hasBitArchitecture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</ont:hasBitArchitecture>
+        <ont:hasCores rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</ont:hasCores>
+        <ont:hasName>Exynos 7420</ont:hasName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Exynos7570 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Exynos7570">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+        <ont:hasBitArchitecture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</ont:hasBitArchitecture>
+        <ont:hasCores rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasCores>
+        <ont:hasName>Exynos 7570</ont:hasName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Exynos7580 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Exynos7580">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+        <ont:hasBitArchitecture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</ont:hasBitArchitecture>
+        <ont:hasCores rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</ont:hasCores>
+        <ont:hasName>Exynos 7580</ont:hasName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Exynos7870 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Exynos7870">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+        <ont:hasBitArchitecture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</ont:hasBitArchitecture>
+        <ont:hasCores rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</ont:hasCores>
+        <ont:hasName>Exynos 7870</ont:hasName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Exynos7880 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Exynos7880">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+        <ont:hasBitArchitecture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</ont:hasBitArchitecture>
+        <ont:hasCores rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</ont:hasCores>
+        <ont:hasName>Exynos 7880</ont:hasName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Exynos8890 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Exynos8890">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+        <ont:hasBitArchitecture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</ont:hasBitArchitecture>
+        <ont:hasCores rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</ont:hasCores>
+        <ont:hasName>Exynos 8890</ont:hasName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Female -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Female">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Gender"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Finance -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Finance">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Freetel -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Freetel">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>Japan</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GalaxyA3 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#GalaxyA3">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasCPU rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Exynos7580"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Samsung"/>
+        <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Android6.0"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2350</ont:hasBatteryCapacity>
+        <ont:hasColor>Vàng đồng, Đen</ont:hasColor>
+        <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasFrontMegapixel>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1280</ont:hasHeightOfRes>
+        <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</ont:hasInternalStorageCapacity>
+        <ont:hasLink>https://www.thegioididong.com/dtdd/samsung-galaxy-a3-2017</ont:hasLink>
+        <ont:hasMaterial>Kim loại và kính cường lực</ont:hasMaterial>
+        <ont:hasName>Galaxy A3</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6490000</ont:hasPrice>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
+        <ont:supportDualCamera rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportDualCamera>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GalaxyA5 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#GalaxyA5">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasCPU rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Exynos7880"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Samsung"/>
+        <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Android6.0"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</ont:hasBatteryCapacity>
+        <ont:hasColor>Hồng, Đen, Vàng đồng</ont:hasColor>
+        <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</ont:hasFrontMegapixel>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1920</ont:hasHeightOfRes>
+        <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ont:hasInternalStorageCapacity>
+        <ont:hasLink>https://www.thegioididong.com/dtdd/galaxy-a5-2017</ont:hasLink>
+        <ont:hasMaterial>Kim loại và kính cường lực</ont:hasMaterial>
+        <ont:hasName>Galaxy A5</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8990000</ont:hasPrice>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.2</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
+        <ont:supportDualCamera rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportDualCamera>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GalaxyA7 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#GalaxyA7">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasCPU rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Exynos7880"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Samsung"/>
+        <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Android6.0"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3600</ont:hasBatteryCapacity>
+        <ont:hasColor>Hồng, Đen, Vàng đồng</ont:hasColor>
+        <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</ont:hasFrontMegapixel>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1920</ont:hasHeightOfRes>
+        <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ont:hasInternalStorageCapacity>
+        <ont:hasLink>https://www.thegioididong.com/dtdd/samsung-galaxy-a7-2017</ont:hasLink>
+        <ont:hasMaterial>Kim loại và kính cường lực</ont:hasMaterial>
+        <ont:hasName>Galaxy A7</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10990000</ont:hasPrice>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.7</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
+        <ont:supportDualCamera rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportDualCamera>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GalaxyJ2Prime -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#GalaxyJ2Prime">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasCPU rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MT6737"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Samsung"/>
+        <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Android6.0"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2600</ont:hasBatteryCapacity>
+        <ont:hasColor>Vàng đồng, Vàng hồng</ont:hasColor>
+        <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasFrontMegapixel>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">960</ont:hasHeightOfRes>
+        <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</ont:hasInternalStorageCapacity>
+        <ont:hasLink>https://www.thegioididong.com/dtdd/samsung-galaxy-j2-prime</ont:hasLink>
+        <ont:hasMaterial>Nhựa và kim loại</ont:hasMaterial>
+        <ont:hasName>Galaxy J2 Prime</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2690000</ont:hasPrice>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</ont:hasRAMCapacity>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">540</ont:hasWidthOfRes>
+        <ont:supportDualCamera rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportDualCamera>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GalaxyJ5Prime -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#GalaxyJ5Prime">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasCPU rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Exynos7570"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Samsung"/>
+        <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Android6.0"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2400</ont:hasBatteryCapacity>
+        <ont:hasColor>Đen, Vàng đồng, Vàng hồng</ont:hasColor>
+        <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasFrontMegapixel>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1280</ont:hasHeightOfRes>
+        <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</ont:hasInternalStorageCapacity>
+        <ont:hasLink>https://www.thegioididong.com/dtdd/samsung-galaxy-j5-prime</ont:hasLink>
+        <ont:hasMaterial>Kim loại nguyên khối</ont:hasMaterial>
+        <ont:hasName>Galaxy J5 Prime</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4690000</ont:hasPrice>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
+        <ont:supportDualCamera rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportDualCamera>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GalaxyS7Edge -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#GalaxyS7Edge">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasCPU rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Exynos8890"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Samsung"/>
+        <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Android6.0"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3600</ont:hasBatteryCapacity>
+        <ont:hasColor>Vàng đồng, Bạc, Vàng hồng, Đen, Xanh dương</ont:hasColor>
+        <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasFrontMegapixel>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2560</ont:hasHeightOfRes>
+        <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ont:hasInternalStorageCapacity>
+        <ont:hasLink>https://www.thegioididong.com/dtdd/samsung-galaxy-s7-edge</ont:hasLink>
+        <ont:hasMaterial>Kim loại và kính cường lực</ont:hasMaterial>
+        <ont:hasName>Galaxy S7 Edge</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15490000</ont:hasPrice>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1440</ont:hasWidthOfRes>
+        <ont:supportDualCamera rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportDualCamera>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#HTC -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#HTC">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>Taiwan</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Huawei -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Huawei">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>China</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#InformationTechnology -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#InformationTechnology">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Journalism -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Journalism">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#LG -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#LG">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>Korea</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Law -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Law">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Lenovo -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Lenovo">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>China</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ListeningToMusic -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#ListeningToMusic">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Literary -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Literary">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Lumia640 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Lumia640">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasCPU rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Snapdragon400"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicrosoftLumia"/>
+        <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#WindowsPhone8"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500</ont:hasBatteryCapacity>
+        <ont:hasColor>Đen, Trắng, Cam, Xanh lam</ont:hasColor>
+        <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9</ont:hasFrontMegapixel>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1280</ont:hasHeightOfRes>
+        <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</ont:hasInternalStorageCapacity>
+        <ont:hasLink>http://fptshop.com.vn/dien-thoai/microsoft-lumia-640</ont:hasLink>
+        <ont:hasMaterial>Nhựa</ont:hasMaterial>
+        <ont:hasName>Lumia 640</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990000</ont:hasPrice>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
+        <ont:supportDualCamera rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportDualCamera>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Lumia950 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Lumia950">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasCPU rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Snapdragon808"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicrosoftLumia"/>
+        <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Windows10Mobile"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2900</ont:hasBatteryCapacity>
+        <ont:hasColor>Đen, Trắng</ont:hasColor>
+        <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasFrontMegapixel>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2560</ont:hasHeightOfRes>
+        <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ont:hasInternalStorageCapacity>
+        <ont:hasLink>http://fptshop.com.vn/dien-thoai/microsoft-lumia-950</ont:hasLink>
+        <ont:hasMaterial>Nhựa</ont:hasMaterial>
+        <ont:hasName>Lumia 950</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3090000</ont:hasPrice>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.2</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1440</ont:hasWidthOfRes>
+        <ont:supportDualCamera rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportDualCamera>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#MT6737 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#MT6737">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+        <ont:hasBitArchitecture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</ont:hasBitArchitecture>
+        <ont:hasCores rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasCores>
+        <ont:hasName>MediaTek MT6737</ont:hasName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Male -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Male">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Gender"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Marketing -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Marketing">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Meizu -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Meizu">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>China</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#MicrosoftLumia -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#MicrosoftLumia">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>US</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Nokia -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Nokia">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>Finland</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Nokia130 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Nokia130">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Nokia"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1020</ont:hasBatteryCapacity>
+        <ont:hasColor>Đỏ, Đen</ont:hasColor>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">160</ont:hasHeightOfRes>
+        <ont:hasLink>https://www.thegioididong.com/dtdd/nokia-130</ont:hasLink>
+        <ont:hasMaterial>Nhựa</ont:hasMaterial>
+        <ont:hasName>Nokia 130</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">630000</ont:hasPrice>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.8</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</ont:hasWidthOfRes>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Nokia150 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Nokia150">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Nokia"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1020</ont:hasBatteryCapacity>
+        <ont:hasColor>Đen, Xanh ngọc</ont:hasColor>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">320</ont:hasHeightOfRes>
+        <ont:hasLink>https://www.thegioididong.com/dtdd/nokia-150</ont:hasLink>
+        <ont:hasMaterial>Nhựa</ont:hasMaterial>
+        <ont:hasName>Nokia 150</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720000</ont:hasPrice>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.4</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">240</ont:hasWidthOfRes>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Nokia230 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Nokia230">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Nokia"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</ont:hasBatteryCapacity>
+        <ont:hasColor>Xám</ont:hasColor>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">320</ont:hasHeightOfRes>
+        <ont:hasLink>https://www.thegioididong.com/dtdd/nokia-230</ont:hasLink>
+        <ont:hasMaterial>Nhựa</ont:hasMaterial>
+        <ont:hasName>Nokia 230</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1390000</ont:hasPrice>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.8</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">240</ont:hasWidthOfRes>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ObiWorldphone -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#ObiWorldphone">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>US</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Oppo -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Oppo">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>China</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PaintingOrSculpting -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#PaintingOrSculpting">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Pedagogy -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Pedagogy">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Philips -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Philips">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>China</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PhotographingOrSelfie -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#PhotographingOrSelfie">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Physiology -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Physiology">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PlayingGames -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#PlayingGames">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PlayingSports -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#PlayingSports">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Psychology -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Psychology">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ReadingBooks -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReadingBooks">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ReadingComics -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReadingComics">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ReadingOrWatchingNews -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReadingOrWatchingNews">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ResearchingAstronomy -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#ResearchingAstronomy">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Samsung -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Samsung">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>Korea</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Senior -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Senior">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Age"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Shopping -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Shopping">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SingingOrDancing -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#SingingOrDancing">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Snapdragon400 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Snapdragon400">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+        <ont:hasBitArchitecture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ont:hasBitArchitecture>
+        <ont:hasCores rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasCores>
+        <ont:hasName>Snapdragon 400</ont:hasName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Snapdragon808 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Snapdragon808">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CPU"/>
+        <ont:hasBitArchitecture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</ont:hasBitArchitecture>
+        <ont:hasCores rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ont:hasCores>
+        <ont:hasName>Snapdragon 808</ont:hasName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Sociology -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Sociology">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Sony -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Sony">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>Japan</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Sport -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Sport">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Student -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Student">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Traveling -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Traveling">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#WatchingTV -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#WatchingTV">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Wiko -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Wiko">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>China</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Windows10Mobile -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Windows10Mobile">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#OperatingSystem"/>
+        <ont:hasName>Windows Phone</ont:hasName>
+        <ont:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</ont:hasVersion>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#WindowsPhone8 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#WindowsPhone8">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#OperatingSystem"/>
+        <ont:hasName>Windows Phone</ont:hasName>
+        <ont:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</ont:hasVersion>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Xiaomi -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Xiaomi">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Manufacturer"/>
+        <ont:inCountry>China</ont:inCountry>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Young -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Young">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Age"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#YoungAdult -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#YoungAdult">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Age"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#iOS10 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#iOS10">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#OperatingSystem"/>
+        <ont:hasName>iOS</ont:hasName>
+        <ont:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</ont:hasVersion>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#iOS9 -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#iOS9">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#OperatingSystem"/>
+        <ont:hasName>iOS</ont:hasName>
+        <ont:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9</ont:hasVersion>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#iPhone5s-16GB -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#iPhone5s-16GB">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasCPU rdf:resource="http://www.co-ode.org/ontologies/ont.owl#A7"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Apple"/>
+        <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#iOS10"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1560</ont:hasBatteryCapacity>
+        <ont:hasColor>Đen, Bạc</ont:hasColor>
+        <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.2</ont:hasFrontMegapixel>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1136</ont:hasHeightOfRes>
+        <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</ont:hasInternalStorageCapacity>
+        <ont:hasLink>https://www.thegioididong.com/dtdd/iphone-5s-16gb</ont:hasLink>
+        <ont:hasMaterial>Kim loại nguyên khối</ont:hasMaterial>
+        <ont:hasName>iPhone 5s 16GB</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5990000</ont:hasPrice>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">640</ont:hasWidthOfRes>
+        <ont:supportDualCamera rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportDualCamera>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#iPhone6-32GB -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#iPhone6-32GB">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasCPU rdf:resource="http://www.co-ode.org/ontologies/ont.owl#A8"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Apple"/>
+        <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#iOS10"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1810</ont:hasBatteryCapacity>
+        <ont:hasColor>Vàng đồng</ont:hasColor>
+        <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.2</ont:hasFrontMegapixel>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1334</ont:hasHeightOfRes>
+        <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ont:hasInternalStorageCapacity>
+        <ont:hasLink>http://fptshop.com.vn/dien-thoai/iphone-6-32gb</ont:hasLink>
+        <ont:hasMaterial>Kim loại nguyên khối</ont:hasMaterial>
+        <ont:hasName>iPhone 6 32GB</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8999000</ont:hasPrice>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">750</ont:hasWidthOfRes>
+        <ont:supportDualCamera rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportDualCamera>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#iPhone6s-16GB -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#iPhone6s-16GB">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasCPU rdf:resource="http://www.co-ode.org/ontologies/ont.owl#A9"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Apple"/>
+        <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#iOS10"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1715</ont:hasBatteryCapacity>
+        <ont:hasColor>Vàng đồng, Vàng hồng, Bạc, Xám</ont:hasColor>
+        <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasFrontMegapixel>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1334</ont:hasHeightOfRes>
+        <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</ont:hasInternalStorageCapacity>
+        <ont:hasLink>http://fptshop.com.vn/dien-thoai/iphone-6s</ont:hasLink>
+        <ont:hasMaterial>Kim loại nguyên khối</ont:hasMaterial>
+        <ont:hasName>iPhone 6s 16GB</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12999000</ont:hasPrice>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">750</ont:hasWidthOfRes>
+        <ont:supportDualCamera rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportDualCamera>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#iPhone7-32GB -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#iPhone7-32GB">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasCPU rdf:resource="http://www.co-ode.org/ontologies/ont.owl#A10"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Apple"/>
+        <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#iOS10"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1960</ont:hasBatteryCapacity>
+        <ont:hasColor>Bạc, Vàng hồng, Vàng đồng, Đỏ, Đen</ont:hasColor>
+        <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</ont:hasFrontMegapixel>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1334</ont:hasHeightOfRes>
+        <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ont:hasInternalStorageCapacity>
+        <ont:hasLink>https://www.thegioididong.com/dtdd/iphone-7</ont:hasLink>
+        <ont:hasMaterial>Kim loại nguyên khối</ont:hasMaterial>
+        <ont:hasName>iPhone 7 32GB</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17990000</ont:hasPrice>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">750</ont:hasWidthOfRes>
+        <ont:supportDualCamera rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportDualCamera>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#iPhone7Plus-128GB -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#iPhone7Plus-128GB">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasCPU rdf:resource="http://www.co-ode.org/ontologies/ont.owl#A10"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Apple"/>
+        <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#iOS10"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2900</ont:hasBatteryCapacity>
+        <ont:hasColor>Bạc, Vàng hồng, Vàng đồng, Đỏ, Đen, Jet Black</ont:hasColor>
+        <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</ont:hasFrontMegapixel>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1920</ont:hasHeightOfRes>
+        <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</ont:hasInternalStorageCapacity>
+        <ont:hasLink>https://www.thegioididong.com/dtdd/iphone-7-plus-128gb</ont:hasLink>
+        <ont:hasMaterial>Kim loại nguyên khối</ont:hasMaterial>
+        <ont:hasName>iPhone 7 Plus 128GB</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23990000</ont:hasPrice>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
+        <ont:supportDualCamera rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportDualCamera>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#iPhone7Plus-256GB -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#iPhone7Plus-256GB">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasCPU rdf:resource="http://www.co-ode.org/ontologies/ont.owl#A10"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Apple"/>
+        <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#iOS10"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2900</ont:hasBatteryCapacity>
+        <ont:hasColor>Bạc, Vàng hồng, Vàng đồng, Đỏ, Đen, Jet Black</ont:hasColor>
+        <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</ont:hasFrontMegapixel>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1920</ont:hasHeightOfRes>
+        <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</ont:hasInternalStorageCapacity>
+        <ont:hasLink>https://www.thegioididong.com/dtdd/iphone-7-plus-256gb</ont:hasLink>
+        <ont:hasMaterial>Kim loại nguyên khối</ont:hasMaterial>
+        <ont:hasName>iPhone 7 Plus 256GB</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25990000</ont:hasPrice>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
+        <ont:supportDualCamera rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportDualCamera>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#iPhone7Plus-32GB -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#iPhone7Plus-32GB">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
+        <ont:hasCPU rdf:resource="http://www.co-ode.org/ontologies/ont.owl#A10"/>
+        <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Apple"/>
+        <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#iOS10"/>
+        <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2900</ont:hasBatteryCapacity>
+        <ont:hasColor>Bạc, Vàng hồng, Vàng đồng, Đỏ, Đen</ont:hasColor>
+        <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</ont:hasFrontMegapixel>
+        <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1920</ont:hasHeightOfRes>
+        <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ont:hasInternalStorageCapacity>
+        <ont:hasLink>https://www.thegioididong.com/dtdd/iphone-7-plus</ont:hasLink>
+        <ont:hasMaterial>Kim loại nguyên khối</ont:hasMaterial>
+        <ont:hasName>iPhone 7 Plus 32GB</ont:hasName>
+        <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21990000</ont:hasPrice>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
+        <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</ont:hasRearMegapixel>
+        <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
+        <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
+        <ont:supportDualCamera rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportDualCamera>
+        <ont:supportSDCard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:supportSDCard>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasGender"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                        <swrl:argument2 rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Male"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasDemand"/>
+                                <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                                <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasManufacturer"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#y"/>
+                        <swrl:argument2 rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Apple"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasHobby"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                        <swrl:argument2 rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PlayingGames"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasDemand"/>
+                                <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                                <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasRAMCapacity"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#y"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
