@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using VDS.RDF.Query;
 
 namespace PhoneBuyingRecommenderSystem
 {
@@ -13,14 +15,20 @@ namespace PhoneBuyingRecommenderSystem
     {
         static HashSet<Fact> Known = new HashSet<Fact>();
         static List<Rule> Rules = new List<Rule>();
-        static HashSet<string> PhoneProperties = new HashSet<string>(new string[] { "RAM", /*...*/ });
+        static HashSet<string> PhoneProperties = new HashSet<string>(new string[] { "Manufacturer", /*...*/ });
 
         /// <summary>
         /// Loads rules from file
         /// </summary>
         public static void LoadRules()
         {
-
+            StreamReader reader = new StreamReader("Rules.txt");
+            while (!reader.EndOfStream)
+            {
+                string ruleString = reader.ReadLine();
+                Rule rule = new Rule(ruleString);
+                Rules.Add(rule);
+            }
         }
 
         /// <summary>
@@ -31,23 +39,84 @@ namespace PhoneBuyingRecommenderSystem
         /// <returns> List with key is model, and value is count of suitable properties on model</returns>
         public static List<KeyValuePair<string, int>> DoConsult(ConsultOptions consultOptions, Dictionary<string, string> models)
         {
-            List<KeyValuePair<string, int>> L = new List<KeyValuePair<string, int>>();
-
+            Dictionary<string, int> DModels = new Dictionary<string, int>();
             foreach (var model in models)
-                L.Add(new KeyValuePair<string, int>(model.Key, 0));
+                DModels[model.Key] = 0;
+
+            InitKnown(consultOptions);
 
             ForwardChaining();
 
-            SortModels(L);
+            CountMatchingFacts(DModels);
 
-            FilterKnown();
+            List<KeyValuePair<string, int>> LModels = new List<KeyValuePair<string, int>>();
+            foreach (var model in DModels)
+                LModels.Add(model);
 
-            return L;
+            SortModels(LModels);
+
+            return LModels;
+        }
+
+        static void InitKnown(ConsultOptions consultOptions)
+        {
+            if (consultOptions.GenderIndex != 0)
+            {
+                Fact fact = new Fact();
+                fact.Name = "Gender";
+                fact.Operator = "=";
+                fact.Value = ConsultOptions.Gender[consultOptions.GenderIndex];
+                Known.Add(fact);
+            }
+
+            // so on...
         }
 
         static void ForwardChaining()
         {
+            HashSet<Fact> Hold;
+            do
+            {
+                Hold = new HashSet<Fact>(Known);
+                foreach (Rule r in Rules)
+                {
+                    if (Known.IsSupersetOf(r.Premises))
+                        Known = new HashSet<Fact>(Known.Union(r.Conclusions));
+                }
+            } while (!Hold.SetEquals(Known));
 
+            FilterKnown();
+        }
+
+        static void FilterKnown()
+        {
+            HashSet<Fact> temp = new HashSet<Fact>(Known);
+            foreach (Fact f in Known)
+                if (!PhoneProperties.Contains(f.Name))
+                    temp.Remove(f);
+            Known = temp;
+        }
+
+        static void CountMatchingFacts(Dictionary<string, int> models)
+        {
+            foreach (Fact f in Known)
+            {
+                SparqlResultSet results = SPARQL.DoQuery(@"
+                PREFIX ont: <http://www.co-ode.org/ontologies/ont.owl#>
+                SELECT ?model WHERE 
+                { 
+                    ?s a ont:PhoneModel. BIND (STRAFTER(STR(?s), STR(ont:)) AS ?model).
+                    ?s ont:has" + f.Name + @" ?prop.
+                    FILTER (?prop " + f.Operator + " ont:" + f.Value + @").
+                }"); // need to fix
+
+                foreach (var result in results)
+                {
+                    string modelKey = result.Value("model").ToString();
+                    if (models.ContainsKey(modelKey))
+                        models[modelKey]++;
+                }
+            }
         }
 
         static void SortModels(List<KeyValuePair<string, int>> models)
@@ -60,13 +129,6 @@ namespace PhoneBuyingRecommenderSystem
                     return 1;
                 return -1;
             });
-        }
-
-        static void FilterKnown()
-        {
-            foreach (Fact k in Known)
-                if (!PhoneProperties.Contains(k.Name))
-                    Known.Remove(k);
         }
     }
 }

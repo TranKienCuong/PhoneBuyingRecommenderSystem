@@ -11,20 +11,43 @@ namespace PhoneBuyingRecommenderSystem
     /// </summary>
     class Rule
     {
-        public List<Fact> Premises;
-        public List<Fact> Conclusions;
+        public List<Fact> Premises { get; set; }
+        public List<Fact> Conclusions { get; set; }
 
-        public Rule() { }
-        
-        public Rule(List<Fact> premises, List<Fact> conclusions)
+        /// <summary>
+        /// Creates a new rule
+        /// </summary>
+        public Rule()
         {
-            Premises = premises;
-            Conclusions = conclusions;
+            Premises = new List<Fact>();
+            Conclusions = new List<Fact>();
         }
 
+        /// <summary>
+        /// Creates a new rule from string
+        /// </summary>
+        /// <param name="ruleString">rule as string</param>
         public Rule(string ruleString)
         {
+            Premises = new List<Fact>();
+            Conclusions = new List<Fact>();
 
+            ruleString = ruleString.Replace(" ", ""); // need to fix
+            string[] factSets = ruleString.Split(new string[] { "->" }, StringSplitOptions.RemoveEmptyEntries);
+            string[] premises = factSets[0].Split(',');
+            string[] conclusions = factSets[1].Split(',');
+
+            foreach (string factString in premises)
+            {
+                Fact fact = new Fact(factString);
+                Premises.Add(fact);
+            }
+
+            foreach (string factString in conclusions)
+            {
+                Fact fact = new Fact(factString);
+                Conclusions.Add(fact);
+            }
         }
     }
 }

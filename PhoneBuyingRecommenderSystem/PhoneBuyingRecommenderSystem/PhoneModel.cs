@@ -58,7 +58,7 @@ namespace PhoneBuyingRecommenderSystem
         public PhoneModel() { }
 
         /// <summary>
-        /// Constructs a phone model with all properties gotten by querying the model key
+        /// Creates a phone model with all properties gotten by querying the model key
         /// </summary>
         public PhoneModel(string modelKey)
         {

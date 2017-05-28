@@ -16,13 +16,14 @@ namespace PhoneBuyingRecommenderSystem
     {
         PhoneModel phone;
         FilterOptions filterOptions = new FilterOptions();
+        ConsultOptions consultOptions = new ConsultOptions();
 
         public MainForm()
         {
             InitializeComponent();
         }
 
-        void ShowPhones(Dictionary<string, string> models)
+        void ShowPhones(IEnumerable<KeyValuePair<string, string>> models)
         {
             phoneListView.Clear();
             foreach (var model in models)
@@ -34,7 +35,7 @@ namespace PhoneBuyingRecommenderSystem
                 else
                     item.ImageKey = model.Key + ".jpg";
             }
-            if (models.Count != 0)
+            if (models.Count() != 0)
             {
                 noPhoneLabel.Visible = false;
                 phonePanel.Visible = true;
@@ -45,6 +46,22 @@ namespace PhoneBuyingRecommenderSystem
                 noPhoneLabel.Visible = true;
                 phonePanel.Visible = false;
             }
+        }
+
+        void UpdatePhones()
+        {
+            Dictionary<string, string> filterModels = SearchEngine.SearchProperties(filterOptions);
+            List<KeyValuePair<string, int>> consultModels = InferenceEngine.DoConsult(consultOptions, filterModels);
+
+            List<KeyValuePair<string, string>> finalModels = new List<KeyValuePair<string, string>>();
+            foreach (var model in consultModels)
+            {
+                string modelKey = model.Key;
+                string modelName = filterModels[modelKey];
+                KeyValuePair<string, string> finalModel = new KeyValuePair<string, string>(modelKey, modelName);
+                finalModels.Add(finalModel);
+            }
+            ShowPhones(finalModels);
         }
 
         void ResetAllPhones()
@@ -89,6 +106,7 @@ namespace PhoneBuyingRecommenderSystem
         private void MainForm_Load(object sender, EventArgs e)
         {
             SPARQL.Start();
+            InferenceEngine.LoadRules();
             manufacComboBox.Items.AddRange(FilterOptions.Manufacturers);
             priceComboBox.Items.AddRange(FilterOptions.Prices);
             // so on...
@@ -97,10 +115,8 @@ namespace PhoneBuyingRecommenderSystem
             ////test
             //SparqlResultSet results = SPARQL.DoQuery(@"
             //    PREFIX ont: <http://www.co-ode.org/ontologies/ont.owl#>
-            //    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             //    PREFIX swrl: <http://www.w3.org/2003/11/swrl#>
             //    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-            //    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
             //    SELECT * WHERE 
             //    { 
             //        ?rule a swrl:Imp.
@@ -110,44 +126,6 @@ namespace PhoneBuyingRecommenderSystem
             //        ?bfirst1 swrl:propertyPredicate ?bprop1.
             //        ?bfirst1 swrl:argument1 ?barg11.
             //        ?bfirst1 swrl:argument2 ?barg12.
-
-            //        ?body rdf:rest ?brest1.
-            //        OPTIONAL {
-            //            ?brest1 rdf:first ?bfirst2.
-            //            ?bfirst2 swrl:propertyPredicate ?bprop2.
-            //            ?bfirst2 swrl:argument1 ?barg21.
-            //            ?bfirst2 swrl:argument2 ?barg22.
-
-            //            ?brest1 rdf:rest ?brest2.
-            //            OPTIONAL {
-            //                ?brest2 rdf:first ?bfirst3.
-            //                ?bfirst3 swrl:propertyPredicate ?bprop3.
-            //                ?bfirst3 swrl:argument1 ?barg31.
-            //                ?bfirst3 swrl:argument2 ?barg32.
-
-            //                ?brest2 rdf:rest ?brest3.
-            //                OPTIONAL {
-            //                    ?brest3 rdf:first ?bfirst4.
-            //                    ?bfirst4 swrl:propertyPredicate ?bprop4.
-            //                    ?bfirst4 swrl:argument1 ?barg41.
-            //                    ?bfirst4 swrl:argument2 ?barg42.
-            //                }
-            //            }
-            //        }
-
-            //        ?rule swrl:head ?head.
-            //        ?head rdf:first ?hfirst1.
-            //        ?hfirst1 swrl:propertyPredicate ?hprop1.
-            //        ?hfirst1 swrl:argument1 ?harg11.
-            //        ?hfirst1 swrl:argument2 ?harg12.
-
-            //        ?head rdf:rest ?hrest1.
-            //        OPTIONAL {
-            //            ?hrest1 rdf:first ?hfirst2.
-            //            ?hfirst2 swrl:propertyPredicate ?hprop2.
-            //            ?hfirst2 swrl:argument1 ?harg21.
-            //            ?hfirst2 swrl:argument2 ?harg22.
-            //        }
             //    }");
             //foreach (SparqlResult result in results)
             //    foreach (string s in result.Variables)
@@ -187,13 +165,19 @@ namespace PhoneBuyingRecommenderSystem
         private void manufacComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             filterOptions.ManufacturerIndex = manufacComboBox.SelectedIndex;
-            ShowPhones(SearchEngine.SearchProperties(filterOptions));
+            UpdatePhones();
         }
 
         private void priceComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             filterOptions.PriceIndex = priceComboBox.SelectedIndex;
-            ShowPhones(SearchEngine.SearchProperties(filterOptions));
+            UpdatePhones();
+        }
+
+        private void genderComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            consultOptions.GenderIndex = genderComboBox.SelectedIndex;
+            UpdatePhones();
         }
     }
 }
