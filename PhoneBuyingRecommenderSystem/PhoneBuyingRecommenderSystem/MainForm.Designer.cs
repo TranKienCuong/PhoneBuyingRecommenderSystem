@@ -143,22 +143,6 @@
             // 
             this.majorCheckedListBox.CheckOnClick = true;
             this.majorCheckedListBox.FormattingEnabled = true;
-            this.majorCheckedListBox.Items.AddRange(new object[] {
-            "Báo chí",
-            "Công nghệ thông tin",
-            "Học sinh/Sinh viên",
-            "Kinh tế/Tài chính",
-            "Marketing",
-            "Nghệ thuật",
-            "Nông nghiệp",
-            "Pháp luật",
-            "Sinh học/Y học",
-            "Sư phạm",
-            "Tâm lý học",
-            "Thể thao",
-            "Thương mại",
-            "Văn học",
-            "Xã hội học"});
             this.majorCheckedListBox.Location = new System.Drawing.Point(314, 48);
             this.majorCheckedListBox.Name = "majorCheckedListBox";
             this.majorCheckedListBox.Size = new System.Drawing.Size(216, 224);
@@ -169,10 +153,6 @@
             this.genderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.genderComboBox.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genderComboBox.FormattingEnabled = true;
-            this.genderComboBox.Items.AddRange(new object[] {
-            "",
-            "Nam",
-            "Nữ"});
             this.genderComboBox.Location = new System.Drawing.Point(14, 57);
             this.genderComboBox.Name = "genderComboBox";
             this.genderComboBox.Size = new System.Drawing.Size(121, 27);
@@ -219,18 +199,6 @@
             // 
             this.hobbyCheckedListBox.CheckOnClick = true;
             this.hobbyCheckedListBox.FormattingEnabled = true;
-            this.hobbyCheckedListBox.Items.AddRange(new object[] {
-            "Ca hát/Nhảy múa",
-            "Chơi game",
-            "Chơi thể thao",
-            "Chụp hình/quay phim",
-            "Đọc sách/truyện",
-            "Du lịch",
-            "Mua sắm",
-            "Nghe nhạc",
-            "Xem phim",
-            "Xem tin tức/thời sự",
-            "Xem TV"});
             this.hobbyCheckedListBox.Location = new System.Drawing.Point(18, 117);
             this.hobbyCheckedListBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.hobbyCheckedListBox.Name = "hobbyCheckedListBox";
@@ -604,69 +572,6 @@
             this.ageComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ageComboBox.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ageComboBox.FormattingEnabled = true;
-            this.ageComboBox.Items.AddRange(new object[] {
-            "",
-            "< 12",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31",
-            "32",
-            "33",
-            "34",
-            "35",
-            "36",
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42",
-            "43",
-            "44",
-            "45",
-            "46",
-            "47",
-            "48",
-            "49",
-            "50",
-            "51",
-            "52",
-            "53",
-            "54",
-            "55",
-            "56",
-            "57",
-            "58",
-            "59",
-            "60",
-            "61",
-            "62",
-            "63",
-            "64",
-            "65",
-            "66",
-            "67",
-            "68",
-            "69",
-            "70",
-            "> 70"});
             this.ageComboBox.Location = new System.Drawing.Point(160, 57);
             this.ageComboBox.Name = "ageComboBox";
             this.ageComboBox.Size = new System.Drawing.Size(121, 27);

@@ -708,9 +708,9 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#Economic -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#EconomicOrFinance -->
 
-    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Economic">
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#EconomicOrFinance">
         <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
     </NamedIndividual>
     
@@ -786,14 +786,6 @@
 
     <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Female">
         <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Gender"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#Finance -->
-
-    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Finance">
-        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Major"/>
     </NamedIndividual>
     
 
@@ -1222,14 +1214,6 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#PaintingOrSculpting -->
-
-    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#PaintingOrSculpting">
-        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
-    </NamedIndividual>
-    
-
-
     <!-- http://www.co-ode.org/ontologies/ont.owl#Pedagogy -->
 
     <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Pedagogy">
@@ -1287,17 +1271,9 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#ReadingBooks -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ReadingBooksOrComics -->
 
-    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReadingBooks">
-        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#ReadingComics -->
-
-    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReadingComics">
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReadingBooksOrComics">
         <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
     </NamedIndividual>
     
@@ -1306,14 +1282,6 @@
     <!-- http://www.co-ode.org/ontologies/ont.owl#ReadingOrWatchingNews -->
 
     <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReadingOrWatchingNews">
-        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#ResearchingAstronomy -->
-
-    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#ResearchingAstronomy">
         <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
     </NamedIndividual>
     
@@ -1410,6 +1378,14 @@
     <!-- http://www.co-ode.org/ontologies/ont.owl#Traveling -->
 
     <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Traveling">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#WatchingFilms -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#WatchingFilms">
         <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Hobby"/>
     </NamedIndividual>
     

@@ -13,6 +13,8 @@ namespace PhoneBuyingRecommenderSystem
     /// </summary>
     static class InferenceEngine
     {
+        public static int KnownCount { get { return Known.Count; } }
+
         static HashSet<Fact> Known = new HashSet<Fact>();
         static List<Rule> Rules = new List<Rule>();
         static HashSet<string> PhoneProperties = new HashSet<string>(new string[] { "Manufacturer", /*...*/ });
@@ -60,12 +62,14 @@ namespace PhoneBuyingRecommenderSystem
 
         static void InitKnown(ConsultOptions consultOptions)
         {
+            Known = new HashSet<Fact>();
+
             if (consultOptions.GenderIndex != 0)
             {
                 Fact fact = new Fact();
                 fact.Name = "Gender";
                 fact.Operator = "=";
-                fact.Value = ConsultOptions.Gender[consultOptions.GenderIndex];
+                fact.Value = ConsultOptions.GenderKeys[consultOptions.GenderIndex];
                 Known.Add(fact);
             }
 
@@ -101,14 +105,18 @@ namespace PhoneBuyingRecommenderSystem
         {
             foreach (Fact f in Known)
             {
+                string prefix = "";
+                if (f.Name == "Manufacturer" || f.Name == "OS" || f.Name == "CPU")
+                    prefix = "ont:";
+
                 SparqlResultSet results = SPARQL.DoQuery(@"
                 PREFIX ont: <http://www.co-ode.org/ontologies/ont.owl#>
                 SELECT ?model WHERE 
                 { 
                     ?s a ont:PhoneModel. BIND (STRAFTER(STR(?s), STR(ont:)) AS ?model).
                     ?s ont:has" + f.Name + @" ?prop.
-                    FILTER (?prop " + f.Operator + " ont:" + f.Value + @").
-                }"); // need to fix
+                    FILTER (?prop " + f.Operator + " " + prefix + f.Value + @").
+                }");
 
                 foreach (var result in results)
                 {

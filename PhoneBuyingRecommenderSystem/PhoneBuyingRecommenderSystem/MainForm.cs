@@ -48,25 +48,37 @@ namespace PhoneBuyingRecommenderSystem
             }
         }
 
+        void HighlightPhones(int from, int to, Color color)
+        {
+            for (int i = from; i <= to; i++)
+                phoneListView.Items[i].BackColor = color;
+        }
+
         void UpdatePhones()
         {
             Dictionary<string, string> filterModels = SearchEngine.SearchProperties(filterOptions);
             List<KeyValuePair<string, int>> consultModels = InferenceEngine.DoConsult(consultOptions, filterModels);
 
             List<KeyValuePair<string, string>> finalModels = new List<KeyValuePair<string, string>>();
+            int highlightCount = 0;
             foreach (var model in consultModels)
             {
                 string modelKey = model.Key;
                 string modelName = filterModels[modelKey];
                 KeyValuePair<string, string> finalModel = new KeyValuePair<string, string>(modelKey, modelName);
                 finalModels.Add(finalModel);
+
+                if (model.Value != 0 && model.Value == InferenceEngine.KnownCount)
+                    highlightCount++;
             }
             ShowPhones(finalModels);
+            HighlightPhones(0, highlightCount - 1, Color.GreenYellow);
         }
 
         void ResetAllPhones()
         {
             ShowPhones(PhoneModel.GetAllModels());
+
             manufacComboBox.SelectedIndex = 0;
             priceComboBox.SelectedIndex = 0;
             materialComboBox.SelectedIndex = 0;
@@ -79,6 +91,13 @@ namespace PhoneBuyingRecommenderSystem
             storageComboBox.SelectedIndex = 0;
             RAMComboBox.SelectedIndex = 0;
             otherFeaturesComboBox.SelectedIndex = 0;
+
+            genderComboBox.SelectedIndex = 0;
+            ageComboBox.SelectedIndex = 0;
+            foreach (int i in hobbyCheckedListBox.CheckedIndices)
+                hobbyCheckedListBox.SetItemChecked(i, false);
+            foreach (int i in majorCheckedListBox.CheckedIndices)
+                majorCheckedListBox.SetItemChecked(i, false);
         }
 
         void ChoosePhone(string modelKey)
@@ -107,29 +126,26 @@ namespace PhoneBuyingRecommenderSystem
         {
             SPARQL.Start();
             InferenceEngine.LoadRules();
+
             manufacComboBox.Items.AddRange(FilterOptions.Manufacturers);
             priceComboBox.Items.AddRange(FilterOptions.Prices);
             // so on...
+            genderComboBox.Items.AddRange(ConsultOptions.GenderValues);
+            ageComboBox.Items.AddRange(ConsultOptions.AgeValues);
+            hobbyCheckedListBox.Items.AddRange(ConsultOptions.HobbyValues);
+            majorCheckedListBox.Items.AddRange(ConsultOptions.MajorValues);
+
             ResetAllPhones();
 
             ////test
-            //SparqlResultSet results = SPARQL.DoQuery(@"
-            //    PREFIX ont: <http://www.co-ode.org/ontologies/ont.owl#>
-            //    PREFIX swrl: <http://www.w3.org/2003/11/swrl#>
-            //    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-            //    SELECT * WHERE 
-            //    { 
-            //        ?rule a swrl:Imp.
-                    
-            //        ?rule swrl:body ?body.
-            //        ?body rdf:first ?bfirst1.
-            //        ?bfirst1 swrl:propertyPredicate ?bprop1.
-            //        ?bfirst1 swrl:argument1 ?barg11.
-            //        ?bfirst1 swrl:argument2 ?barg12.
-            //    }");
-            //foreach (SparqlResult result in results)
-            //    foreach (string s in result.Variables)
-            //        Console.WriteLine(s + ": " + result.Value(s));
+            //Console.WriteLine(ConsultOptions.GenderKeys.Count());
+            //Console.WriteLine(ConsultOptions.GenderValues.Count());
+            //Console.WriteLine(ConsultOptions.HobbyKeys.Count());
+            //Console.WriteLine(ConsultOptions.HobbyValues.Count());
+            //Console.WriteLine(ConsultOptions.MajorKeys.Count());
+            //Console.WriteLine(ConsultOptions.MajorValues.Count());
+            //for (int i = 12; i <= 70; i++)
+            //    Console.Write("\"" + i + "\"" + ", ");
         }
 
         private void searchTextBox_KeyDown(object sender, KeyEventArgs e)
