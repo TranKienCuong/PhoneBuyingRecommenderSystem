@@ -100,6 +100,9 @@ namespace PhoneBuyingRecommenderSystem
                 hobbyCheckedListBox.SetItemChecked(i, false);
             foreach (int i in majorCheckedListBox.CheckedIndices)
                 majorCheckedListBox.SetItemChecked(i, false);
+
+            filterOptions = new FilterOptions();
+            consultOptions = new ConsultOptions();
         }
 
         void ChoosePhone(ListViewItem item)
