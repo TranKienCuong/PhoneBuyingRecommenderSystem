@@ -17,7 +17,7 @@ namespace PhoneBuyingRecommenderSystem
 
         static HashSet<Fact> Known = new HashSet<Fact>();
         static List<Rule> Rules = new List<Rule>();
-        static HashSet<string> PhoneProperties = new HashSet<string>(new string[] { "Manufacturer", /*...*/ });
+        static HashSet<string> PhoneProperties = new HashSet<string>(new string[] { "Manufacturer", "Price", "Material", "Color", "OS", "OSName", "ScreenSize", "HeightOfRes", "WidthOfRes", "FrontMegapixel", "RearMegapixel", "BatteryCapacity", "InternalStorageCapacity", "RAMCapacity", "SpecialFeature" });
 
         /// <summary>
         /// Loads rules from file
@@ -63,17 +63,59 @@ namespace PhoneBuyingRecommenderSystem
         static void InitKnown(ConsultOptions consultOptions)
         {
             Known = new HashSet<Fact>();
+            Fact fact;
+            int i;
 
-            if (consultOptions.GenderIndex != 0)
+            i = consultOptions.GenderIndex;
+            if (i != 0)
             {
-                Fact fact = new Fact();
+                fact = new Fact();
                 fact.Name = "Gender";
                 fact.Operator = "=";
-                fact.Value = ConsultOptions.GenderKeys[consultOptions.GenderIndex];
+                fact.Value = ConsultOptions.GenderKeys[i];
                 Known.Add(fact);
             }
 
-            // so on...
+            i = consultOptions.AgeIndex;
+            if (i != 0)
+            {
+                fact = new Fact();
+                fact.Name = "Age";
+                if (i == 1)
+                {
+                    fact.Operator = "<";
+                    fact.Value = "12";
+                }
+                else if (i == 61)
+                {
+                    fact.Operator = ">";
+                    fact.Value = "70";
+                }
+                else
+                {
+                    fact.Operator = "=";
+                    fact.Value = ConsultOptions.AgeValues[i];
+                }
+                Known.Add(fact);
+            }
+
+            foreach (int j in consultOptions.HobbyIndices)
+            {
+                fact = new Fact();
+                fact.Name = "Hobby";
+                fact.Operator = "=";
+                fact.Value = ConsultOptions.HobbyKeys[j];
+                Known.Add(fact);
+            }
+
+            foreach (int j in consultOptions.MajorIndices)
+            {
+                fact = new Fact();
+                fact.Name = "Major";
+                fact.Operator = "=";
+                fact.Value = ConsultOptions.MajorKeys[j];
+                Known.Add(fact);
+            }
         }
 
         static void ForwardChaining()
@@ -109,13 +151,32 @@ namespace PhoneBuyingRecommenderSystem
                 if (f.Name == "Manufacturer" || f.Name == "OS" || f.Name == "CPU")
                     prefix = "ont:";
 
+                string patterns = "";
+                if (f.Name == "CPUCores")
+                    patterns = @"
+                    ?s ont:hasCPU ?prop.
+                    ?prop ont:hasCores ?subprop.
+                    FILTER (?subprop " + f.Operator + " " + f.Value + ").";
+                else if (f.Name == "OSName")
+                    patterns = @"
+                    ?s ont:hasOS ?prop.
+                    ?prop ont:hasName ?subprop.
+                    FILTER (?subprop " + f.Operator + " " + f.Value + ").";
+                else if (f.Name == "Color")
+                    patterns = @"
+                    ?s ont:hasColor ?prop.
+                    FILTER regex(?prop, " + f.Value + ").";
+                else
+                    patterns = @"
+                    ?s ont:has" + f.Name + @" ?prop.
+                    FILTER (?prop " + f.Operator + " " + prefix + f.Value + ").";
+
                 SparqlResultSet results = SPARQL.DoQuery(@"
                 PREFIX ont: <http://www.co-ode.org/ontologies/ont.owl#>
                 SELECT ?model WHERE 
                 { 
                     ?s a ont:PhoneModel. BIND (STRAFTER(STR(?s), STR(ont:)) AS ?model).
-                    ?s ont:has" + f.Name + @" ?prop.
-                    FILTER (?prop " + f.Operator + " " + prefix + f.Value + @").
+                    " + patterns + @"
                 }");
 
                 foreach (var result in results)

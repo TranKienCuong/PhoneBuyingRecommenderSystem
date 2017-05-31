@@ -39,7 +39,7 @@ namespace PhoneBuyingRecommenderSystem
             {
                 noPhoneLabel.Visible = false;
                 phonePanel.Visible = true;
-                ChoosePhone(models.ElementAt(0).Key);
+                ChoosePhone(phoneListView.Items[0]);
             }
             else
             {
@@ -73,6 +73,8 @@ namespace PhoneBuyingRecommenderSystem
             }
             ShowPhones(finalModels);
             HighlightPhones(0, highlightCount - 1, Color.GreenYellow);
+            if (highlightCount != 0)
+                suggestedLabel.Visible = true;
         }
 
         void ResetAllPhones()
@@ -100,8 +102,9 @@ namespace PhoneBuyingRecommenderSystem
                 majorCheckedListBox.SetItemChecked(i, false);
         }
 
-        void ChoosePhone(string modelKey)
+        void ChoosePhone(ListViewItem item)
         {
+            string modelKey = item.Tag.ToString();
             string modelImage = modelKey;
             if (modelKey.StartsWith("iPhone"))
                 modelImage = modelKey.Split('-')[0];
@@ -119,7 +122,12 @@ namespace PhoneBuyingRecommenderSystem
             RAMLabel.Text = "RAM: " + phone.RAMCapacity;
             storageLabel.Text = "Bộ nhớ trong: " + phone.StorageCapacity;
             frontCamLabel.Text = "Camera trước: " + phone.FrontCamera;
-            rearCamLabel.Text = "Camera sau: " + phone.RearCamera;           
+            rearCamLabel.Text = "Camera sau: " + phone.RearCamera;
+
+            if (item.BackColor == Color.GreenYellow)
+                suggestedLabel.Visible = true;
+            else
+                suggestedLabel.Visible = false;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -138,14 +146,20 @@ namespace PhoneBuyingRecommenderSystem
             ResetAllPhones();
 
             ////test
-            //Console.WriteLine(ConsultOptions.GenderKeys.Count());
-            //Console.WriteLine(ConsultOptions.GenderValues.Count());
-            //Console.WriteLine(ConsultOptions.HobbyKeys.Count());
-            //Console.WriteLine(ConsultOptions.HobbyValues.Count());
-            //Console.WriteLine(ConsultOptions.MajorKeys.Count());
-            //Console.WriteLine(ConsultOptions.MajorValues.Count());
-            //for (int i = 12; i <= 70; i++)
-            //    Console.Write("\"" + i + "\"" + ", ");
+            //SparqlResultSet results = SPARQL.DoQuery(@"
+            //    PREFIX ont: <http://www.co-ode.org/ontologies/ont.owl#>
+            //    SELECT ?model WHERE 
+            //    { 
+            //        ?s a ont:PhoneModel. BIND (STRAFTER(STR(?s), STR(ont:)) AS ?model).
+            //        ?s ont:hasColor ?color.
+            //        FILTER regex(?color, 'Black|Gold|Pink').
+            //    }");
+
+            //foreach (var result in results)
+            //{
+            //    string modelKey = result.Value("model").ToString();
+            //    Console.WriteLine(modelKey);
+            //}
         }
 
         private void searchTextBox_KeyDown(object sender, KeyEventArgs e)
@@ -170,7 +184,7 @@ namespace PhoneBuyingRecommenderSystem
         private void phoneListView_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (phoneListView.SelectedItems.Count != 0)
-                ChoosePhone(phoneListView.SelectedItems[0].Tag.ToString());
+                ChoosePhone(phoneListView.SelectedItems[0]);
         }
 
         private void linkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -193,6 +207,18 @@ namespace PhoneBuyingRecommenderSystem
         private void genderComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             consultOptions.GenderIndex = genderComboBox.SelectedIndex;
+            UpdatePhones();
+        }
+
+        private void hobbyCheckedListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            consultOptions.HobbyIndices = hobbyCheckedListBox.CheckedIndices.Cast<int>().ToList();
+            UpdatePhones();
+        }
+
+        private void majorCheckedListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            consultOptions.MajorIndices = majorCheckedListBox.CheckedIndices.Cast<int>().ToList();
             UpdatePhones();
         }
     }

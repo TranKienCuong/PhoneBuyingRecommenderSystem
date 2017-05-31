@@ -29,18 +29,29 @@ namespace PhoneBuyingRecommenderSystem
             string[] strs = factString.Split(new string[] { ">=", "<=", ">", "<", "=" }, StringSplitOptions.RemoveEmptyEntries);
             Name = strs[0];
             Value = strs[1];
-            Operator = factString.Replace(Name, "").Replace(Value, "");
+            if (factString.Contains(">="))
+                Operator = ">=";
+            else if (factString.Contains("<="))
+                Operator = "<=";
+            else if (factString.Contains(">"))
+                Operator = ">";
+            else if (factString.Contains("<"))
+                Operator = "<";
+            else
+                Operator = "=";
         }
 
         public override bool Equals(object obj)
         {
             Fact f = (Fact)obj;
-            return (Name == f.Name) && (Operator == f.Operator) && (Value == f.Value);
+            List<string> L1 = new List<string>(Value.Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries));
+            List<string> L2 = new List<string>(f.Value.Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries));
+            return (Name == f.Name) && (Operator == f.Operator) && (L1.Intersect(L2).Count() != 0);
         }
 
         public override int GetHashCode()
         {
-            return (Name + Operator + Value).GetHashCode();
+            return Name.GetHashCode();
         }
     }
 }

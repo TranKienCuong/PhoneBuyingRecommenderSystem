@@ -73,6 +73,7 @@
             this.phoneListView = new System.Windows.Forms.ListView();
             this.phoneImageList = new System.Windows.Forms.ImageList(this.components);
             this.phonePanel = new System.Windows.Forms.Panel();
+            this.suggestedLabel = new System.Windows.Forms.Label();
             this.linkLabel = new System.Windows.Forms.LinkLabel();
             this.colorLabel = new System.Windows.Forms.Label();
             this.priceLabel = new System.Windows.Forms.Label();
@@ -143,10 +144,11 @@
             // 
             this.majorCheckedListBox.CheckOnClick = true;
             this.majorCheckedListBox.FormattingEnabled = true;
-            this.majorCheckedListBox.Location = new System.Drawing.Point(314, 48);
+            this.majorCheckedListBox.Location = new System.Drawing.Point(306, 49);
             this.majorCheckedListBox.Name = "majorCheckedListBox";
-            this.majorCheckedListBox.Size = new System.Drawing.Size(216, 224);
+            this.majorCheckedListBox.Size = new System.Drawing.Size(231, 224);
             this.majorCheckedListBox.TabIndex = 7;
+            this.majorCheckedListBox.SelectedIndexChanged += new System.EventHandler(this.majorCheckedListBox_SelectedIndexChanged);
             // 
             // genderComboBox
             // 
@@ -162,7 +164,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(310, 25);
+            this.label4.Location = new System.Drawing.Point(311, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(180, 21);
             this.label4.TabIndex = 4;
@@ -204,6 +206,7 @@
             this.hobbyCheckedListBox.Name = "hobbyCheckedListBox";
             this.hobbyCheckedListBox.Size = new System.Drawing.Size(263, 158);
             this.hobbyCheckedListBox.TabIndex = 0;
+            this.hobbyCheckedListBox.SelectedIndexChanged += new System.EventHandler(this.hobbyCheckedListBox_SelectedIndexChanged);
             // 
             // filterPanel
             // 
@@ -736,6 +739,7 @@
             // phonePanel
             // 
             this.phonePanel.BackColor = System.Drawing.Color.White;
+            this.phonePanel.Controls.Add(this.suggestedLabel);
             this.phonePanel.Controls.Add(this.linkLabel);
             this.phonePanel.Controls.Add(this.colorLabel);
             this.phonePanel.Controls.Add(this.priceLabel);
@@ -754,6 +758,19 @@
             this.phonePanel.Name = "phonePanel";
             this.phonePanel.Size = new System.Drawing.Size(493, 300);
             this.phonePanel.TabIndex = 1;
+            // 
+            // suggestedLabel
+            // 
+            this.suggestedLabel.BackColor = System.Drawing.Color.GreenYellow;
+            this.suggestedLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.suggestedLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.suggestedLabel.Location = new System.Drawing.Point(2, 2);
+            this.suggestedLabel.Name = "suggestedLabel";
+            this.suggestedLabel.Size = new System.Drawing.Size(192, 28);
+            this.suggestedLabel.TabIndex = 14;
+            this.suggestedLabel.Text = "Đề xuất";
+            this.suggestedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.suggestedLabel.Visible = false;
             // 
             // linkLabel
             // 
@@ -869,7 +886,8 @@
             // 
             // phoneNameLabel
             // 
-            this.phoneNameLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneNameLabel.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneNameLabel.ForeColor = System.Drawing.Color.SteelBlue;
             this.phoneNameLabel.Location = new System.Drawing.Point(3, 253);
             this.phoneNameLabel.Name = "phoneNameLabel";
             this.phoneNameLabel.Size = new System.Drawing.Size(191, 42);
@@ -1063,6 +1081,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label noPhoneLabel;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label suggestedLabel;
     }
 }
 
