@@ -66,6 +66,8 @@
             this.manufacComboBox = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.consultPanel = new System.Windows.Forms.Panel();
+            this.demandCheckedListBox = new System.Windows.Forms.CheckedListBox();
+            this.demandLabel = new System.Windows.Forms.Label();
             this.ageComboBox = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -73,6 +75,8 @@
             this.phoneListView = new System.Windows.Forms.ListView();
             this.phoneImageList = new System.Windows.Forms.ImageList(this.components);
             this.phonePanel = new System.Windows.Forms.Panel();
+            this.otherfeaturesLabel = new System.Windows.Forms.Label();
+            this.materialLabel = new System.Windows.Forms.Label();
             this.suggestedLabel = new System.Windows.Forms.Label();
             this.linkLabel = new System.Windows.Forms.LinkLabel();
             this.colorLabel = new System.Windows.Forms.Label();
@@ -144,9 +148,9 @@
             // 
             this.majorCheckedListBox.CheckOnClick = true;
             this.majorCheckedListBox.FormattingEnabled = true;
-            this.majorCheckedListBox.Location = new System.Drawing.Point(306, 49);
+            this.majorCheckedListBox.Location = new System.Drawing.Point(11, 74);
             this.majorCheckedListBox.Name = "majorCheckedListBox";
-            this.majorCheckedListBox.Size = new System.Drawing.Size(231, 224);
+            this.majorCheckedListBox.Size = new System.Drawing.Size(228, 180);
             this.majorCheckedListBox.TabIndex = 7;
             this.majorCheckedListBox.SelectedIndexChanged += new System.EventHandler(this.majorCheckedListBox_SelectedIndexChanged);
             // 
@@ -155,16 +159,16 @@
             this.genderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.genderComboBox.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genderComboBox.FormattingEnabled = true;
-            this.genderComboBox.Location = new System.Drawing.Point(14, 57);
+            this.genderComboBox.Location = new System.Drawing.Point(330, 8);
             this.genderComboBox.Name = "genderComboBox";
-            this.genderComboBox.Size = new System.Drawing.Size(121, 27);
+            this.genderComboBox.Size = new System.Drawing.Size(110, 27);
             this.genderComboBox.TabIndex = 5;
             this.genderComboBox.SelectedIndexChanged += new System.EventHandler(this.genderComboBox_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(311, 25);
+            this.label4.Location = new System.Drawing.Point(7, 50);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(180, 21);
             this.label4.TabIndex = 4;
@@ -173,7 +177,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(164, 33);
+            this.label3.Location = new System.Drawing.Point(481, 10);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 21);
             this.label3.TabIndex = 3;
@@ -182,7 +186,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 33);
+            this.label2.Location = new System.Drawing.Point(251, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 21);
             this.label2.TabIndex = 2;
@@ -191,7 +195,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 94);
+            this.label1.Location = new System.Drawing.Point(251, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 21);
             this.label1.TabIndex = 1;
@@ -201,10 +205,10 @@
             // 
             this.hobbyCheckedListBox.CheckOnClick = true;
             this.hobbyCheckedListBox.FormattingEnabled = true;
-            this.hobbyCheckedListBox.Location = new System.Drawing.Point(18, 117);
+            this.hobbyCheckedListBox.Location = new System.Drawing.Point(245, 74);
             this.hobbyCheckedListBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.hobbyCheckedListBox.Name = "hobbyCheckedListBox";
-            this.hobbyCheckedListBox.Size = new System.Drawing.Size(263, 158);
+            this.hobbyCheckedListBox.Size = new System.Drawing.Size(225, 180);
             this.hobbyCheckedListBox.TabIndex = 0;
             this.hobbyCheckedListBox.SelectedIndexChanged += new System.EventHandler(this.hobbyCheckedListBox_SelectedIndexChanged);
             // 
@@ -237,9 +241,9 @@
             this.filterPanel.Controls.Add(this.label6);
             this.filterPanel.Controls.Add(this.label5);
             this.filterPanel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.filterPanel.Location = new System.Drawing.Point(72, 56);
+            this.filterPanel.Location = new System.Drawing.Point(39, 56);
             this.filterPanel.Name = "filterPanel";
-            this.filterPanel.Size = new System.Drawing.Size(547, 287);
+            this.filterPanel.Size = new System.Drawing.Size(547, 267);
             this.filterPanel.TabIndex = 2;
             // 
             // colorComboBox
@@ -247,20 +251,7 @@
             this.colorComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorComboBox.Font = new System.Drawing.Font("Gadugi", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colorComboBox.FormattingEnabled = true;
-            this.colorComboBox.Items.AddRange(new object[] {
-            "",
-            "Đen",
-            "Bạc",
-            "Vàng đồng",
-            "Vàng hồng",
-            "Trắng",
-            "Đỏ",
-            "Hồng",
-            "Xanh dương",
-            "Xanh lá",
-            "Xám",
-            "Cam"});
-            this.colorComboBox.Location = new System.Drawing.Point(13, 117);
+            this.colorComboBox.Location = new System.Drawing.Point(12, 115);
             this.colorComboBox.Name = "colorComboBox";
             this.colorComboBox.Size = new System.Drawing.Size(133, 28);
             this.colorComboBox.TabIndex = 25;
@@ -268,7 +259,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(14, 94);
+            this.label19.Location = new System.Drawing.Point(13, 91);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(75, 21);
             this.label19.TabIndex = 24;
@@ -279,12 +270,6 @@
             this.materialComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.materialComboBox.Font = new System.Drawing.Font("Gadugi", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialComboBox.FormattingEnabled = true;
-            this.materialComboBox.Items.AddRange(new object[] {
-            "",
-            "Kim loại nguyên khối",
-            "Nhựa và kim loại",
-            "Kim loại và kính cường lực",
-            "Nhựa"});
             this.materialComboBox.Location = new System.Drawing.Point(350, 57);
             this.materialComboBox.Name = "materialComboBox";
             this.materialComboBox.Size = new System.Drawing.Size(182, 27);
@@ -304,15 +289,7 @@
             this.batteryComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.batteryComboBox.Font = new System.Drawing.Font("Gadugi", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.batteryComboBox.FormattingEnabled = true;
-            this.batteryComboBox.Items.AddRange(new object[] {
-            "",
-            "< 1000 mAh",
-            "1000 - 1500 mAh",
-            "1500 - 2000 mAh",
-            "2000 - 2500 mAh",
-            "2500 - 3000 mAh",
-            "> 3000 mAh"});
-            this.batteryComboBox.Location = new System.Drawing.Point(350, 182);
+            this.batteryComboBox.Location = new System.Drawing.Point(350, 173);
             this.batteryComboBox.Name = "batteryComboBox";
             this.batteryComboBox.Size = new System.Drawing.Size(164, 28);
             this.batteryComboBox.TabIndex = 21;
@@ -320,7 +297,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(355, 158);
+            this.label17.Location = new System.Drawing.Point(349, 149);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(127, 21);
             this.label17.TabIndex = 20;
@@ -331,14 +308,7 @@
             this.otherFeaturesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.otherFeaturesComboBox.Font = new System.Drawing.Font("Gadugi", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.otherFeaturesComboBox.FormattingEnabled = true;
-            this.otherFeaturesComboBox.Items.AddRange(new object[] {
-            "",
-            "Hỗ trợ thẻ SD",
-            "Camera kép",
-            "Chống nước",
-            "Bảo mật vân tay",
-            "3D Touch"});
-            this.otherFeaturesComboBox.Location = new System.Drawing.Point(350, 248);
+            this.otherFeaturesComboBox.Location = new System.Drawing.Point(347, 230);
             this.otherFeaturesComboBox.Name = "otherFeaturesComboBox";
             this.otherFeaturesComboBox.Size = new System.Drawing.Size(164, 28);
             this.otherFeaturesComboBox.TabIndex = 19;
@@ -346,7 +316,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(355, 224);
+            this.label16.Location = new System.Drawing.Point(346, 206);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(130, 21);
             this.label16.TabIndex = 18;
@@ -357,14 +327,7 @@
             this.screenSizeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.screenSizeComboBox.Font = new System.Drawing.Font("Gadugi", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.screenSizeComboBox.FormattingEnabled = true;
-            this.screenSizeComboBox.Items.AddRange(new object[] {
-            "",
-            "4.0 - 4.5 inch",
-            "4.6 - 5.0 inch",
-            "5.1 - 5.5 inch",
-            "5.6 - 6.0 inch",
-            "> 6.0 inch"});
-            this.screenSizeComboBox.Location = new System.Drawing.Point(350, 118);
+            this.screenSizeComboBox.Location = new System.Drawing.Point(350, 115);
             this.screenSizeComboBox.Name = "screenSizeComboBox";
             this.screenSizeComboBox.Size = new System.Drawing.Size(164, 28);
             this.screenSizeComboBox.TabIndex = 17;
@@ -372,7 +335,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(355, 94);
+            this.label15.Location = new System.Drawing.Point(349, 91);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(168, 21);
             this.label15.TabIndex = 16;
@@ -394,15 +357,7 @@
             this.storageComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.storageComboBox.Font = new System.Drawing.Font("Gadugi", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.storageComboBox.FormattingEnabled = true;
-            this.storageComboBox.Items.AddRange(new object[] {
-            "",
-            "< 8 GB",
-            "8 GB",
-            "16 GB",
-            "32 GB",
-            "64 GB",
-            "> 64 GB"});
-            this.storageComboBox.Location = new System.Drawing.Point(12, 248);
+            this.storageComboBox.Location = new System.Drawing.Point(13, 230);
             this.storageComboBox.Name = "storageComboBox";
             this.storageComboBox.Size = new System.Drawing.Size(133, 28);
             this.storageComboBox.TabIndex = 14;
@@ -410,7 +365,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(14, 224);
+            this.label14.Location = new System.Drawing.Point(17, 206);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(108, 21);
             this.label14.TabIndex = 13;
@@ -421,16 +376,7 @@
             this.RAMComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.RAMComboBox.Font = new System.Drawing.Font("Gadugi", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RAMComboBox.FormattingEnabled = true;
-            this.RAMComboBox.Items.AddRange(new object[] {
-            "",
-            "< 1 GB",
-            "1 GB",
-            "1.5 GB",
-            "2 GB",
-            "3 GB",
-            "4 GB",
-            "> 4 GB"});
-            this.RAMComboBox.Location = new System.Drawing.Point(183, 248);
+            this.RAMComboBox.Location = new System.Drawing.Point(183, 230);
             this.RAMComboBox.Name = "RAMComboBox";
             this.RAMComboBox.Size = new System.Drawing.Size(133, 28);
             this.RAMComboBox.TabIndex = 12;
@@ -438,7 +384,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(182, 224);
+            this.label13.Location = new System.Drawing.Point(182, 206);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(48, 21);
             this.label13.TabIndex = 11;
@@ -458,15 +404,7 @@
             this.frontCamComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.frontCamComboBox.Font = new System.Drawing.Font("Gadugi", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frontCamComboBox.FormattingEnabled = true;
-            this.frontCamComboBox.Items.AddRange(new object[] {
-            "",
-            "< 2 MP",
-            "2 - 4 MP",
-            "5  - 7 MP",
-            "8 - 11 MP",
-            "12 - 15 MP",
-            "> 15 MP"});
-            this.frontCamComboBox.Location = new System.Drawing.Point(12, 182);
+            this.frontCamComboBox.Location = new System.Drawing.Point(12, 173);
             this.frontCamComboBox.Name = "frontCamComboBox";
             this.frontCamComboBox.Size = new System.Drawing.Size(133, 28);
             this.frontCamComboBox.TabIndex = 9;
@@ -474,7 +412,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(13, 158);
+            this.label11.Location = new System.Drawing.Point(13, 149);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(119, 21);
             this.label11.TabIndex = 8;
@@ -485,15 +423,7 @@
             this.rearCamComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.rearCamComboBox.Font = new System.Drawing.Font("Gadugi", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rearCamComboBox.FormattingEnabled = true;
-            this.rearCamComboBox.Items.AddRange(new object[] {
-            "",
-            "< 2 MP",
-            "2 - 4 MP",
-            "5  - 7 MP",
-            "8 - 11 MP",
-            "12 - 15 MP",
-            "> 15 MP"});
-            this.rearCamComboBox.Location = new System.Drawing.Point(183, 182);
+            this.rearCamComboBox.Location = new System.Drawing.Point(183, 173);
             this.rearCamComboBox.Name = "rearCamComboBox";
             this.rearCamComboBox.Size = new System.Drawing.Size(133, 28);
             this.rearCamComboBox.TabIndex = 7;
@@ -501,7 +431,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(182, 158);
+            this.label10.Location = new System.Drawing.Point(182, 149);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(106, 21);
             this.label10.TabIndex = 6;
@@ -512,12 +442,7 @@
             this.OSComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.OSComboBox.Font = new System.Drawing.Font("Gadugi", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OSComboBox.FormattingEnabled = true;
-            this.OSComboBox.Items.AddRange(new object[] {
-            "",
-            "Android",
-            "iOS",
-            "Windows Phone"});
-            this.OSComboBox.Location = new System.Drawing.Point(183, 118);
+            this.OSComboBox.Location = new System.Drawing.Point(183, 115);
             this.OSComboBox.Name = "OSComboBox";
             this.OSComboBox.Size = new System.Drawing.Size(133, 28);
             this.OSComboBox.TabIndex = 5;
@@ -525,7 +450,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(182, 95);
+            this.label9.Location = new System.Drawing.Point(182, 91);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(112, 21);
             this.label9.TabIndex = 4;
@@ -556,6 +481,8 @@
             // consultPanel
             // 
             this.consultPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(240)))), ((int)(((byte)(230)))), ((int)(((byte)(140)))));
+            this.consultPanel.Controls.Add(this.demandCheckedListBox);
+            this.consultPanel.Controls.Add(this.demandLabel);
             this.consultPanel.Controls.Add(this.ageComboBox);
             this.consultPanel.Controls.Add(this.label7);
             this.consultPanel.Controls.Add(this.majorCheckedListBox);
@@ -565,19 +492,36 @@
             this.consultPanel.Controls.Add(this.label1);
             this.consultPanel.Controls.Add(this.label4);
             this.consultPanel.Controls.Add(this.label3);
-            this.consultPanel.Location = new System.Drawing.Point(645, 56);
+            this.consultPanel.Location = new System.Drawing.Point(621, 56);
             this.consultPanel.Name = "consultPanel";
-            this.consultPanel.Size = new System.Drawing.Size(552, 287);
+            this.consultPanel.Size = new System.Drawing.Size(702, 267);
             this.consultPanel.TabIndex = 3;
+            // 
+            // demandCheckedListBox
+            // 
+            this.demandCheckedListBox.FormattingEnabled = true;
+            this.demandCheckedListBox.Location = new System.Drawing.Point(476, 74);
+            this.demandCheckedListBox.Name = "demandCheckedListBox";
+            this.demandCheckedListBox.Size = new System.Drawing.Size(215, 180);
+            this.demandCheckedListBox.TabIndex = 11;
+            // 
+            // demandLabel
+            // 
+            this.demandLabel.AutoSize = true;
+            this.demandLabel.Location = new System.Drawing.Point(481, 50);
+            this.demandLabel.Name = "demandLabel";
+            this.demandLabel.Size = new System.Drawing.Size(79, 21);
+            this.demandLabel.TabIndex = 10;
+            this.demandLabel.Text = "Nhu cầu:";
             // 
             // ageComboBox
             // 
             this.ageComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ageComboBox.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ageComboBox.FormattingEnabled = true;
-            this.ageComboBox.Location = new System.Drawing.Point(160, 57);
+            this.ageComboBox.Location = new System.Drawing.Point(527, 8);
             this.ageComboBox.Name = "ageComboBox";
-            this.ageComboBox.Size = new System.Drawing.Size(121, 27);
+            this.ageComboBox.Size = new System.Drawing.Size(100, 27);
             this.ageComboBox.TabIndex = 9;
             // 
             // label7
@@ -599,9 +543,9 @@
             this.panel1.Controls.Add(this.phonePanel);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(65, 365);
+            this.panel1.Location = new System.Drawing.Point(39, 345);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1141, 345);
+            this.panel1.Size = new System.Drawing.Size(1284, 366);
             this.panel1.TabIndex = 4;
             // 
             // noPhoneLabel
@@ -609,7 +553,7 @@
             this.noPhoneLabel.AutoSize = true;
             this.noPhoneLabel.BackColor = System.Drawing.SystemColors.Window;
             this.noPhoneLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noPhoneLabel.Location = new System.Drawing.Point(675, 153);
+            this.noPhoneLabel.Location = new System.Drawing.Point(814, 163);
             this.noPhoneLabel.Name = "noPhoneLabel";
             this.noPhoneLabel.Size = new System.Drawing.Size(313, 21);
             this.noPhoneLabel.TabIndex = 3;
@@ -620,10 +564,10 @@
             // 
             this.phoneListView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.phoneListView.LargeImageList = this.phoneImageList;
-            this.phoneListView.Location = new System.Drawing.Point(530, 18);
+            this.phoneListView.Location = new System.Drawing.Point(671, 18);
             this.phoneListView.MultiSelect = false;
             this.phoneListView.Name = "phoneListView";
-            this.phoneListView.Size = new System.Drawing.Size(592, 310);
+            this.phoneListView.Size = new System.Drawing.Size(599, 335);
             this.phoneListView.TabIndex = 2;
             this.phoneListView.UseCompatibleStateImageBehavior = false;
             this.phoneListView.SelectedIndexChanged += new System.EventHandler(this.phoneListView_SelectedIndexChanged);
@@ -739,6 +683,8 @@
             // phonePanel
             // 
             this.phonePanel.BackColor = System.Drawing.Color.White;
+            this.phonePanel.Controls.Add(this.otherfeaturesLabel);
+            this.phonePanel.Controls.Add(this.materialLabel);
             this.phonePanel.Controls.Add(this.suggestedLabel);
             this.phonePanel.Controls.Add(this.linkLabel);
             this.phonePanel.Controls.Add(this.colorLabel);
@@ -754,10 +700,28 @@
             this.phonePanel.Controls.Add(this.OSLabel);
             this.phonePanel.Controls.Add(this.phoneNameLabel);
             this.phonePanel.Controls.Add(this.phonePictureBox);
-            this.phonePanel.Location = new System.Drawing.Point(18, 28);
+            this.phonePanel.Location = new System.Drawing.Point(17, 28);
             this.phonePanel.Name = "phonePanel";
-            this.phonePanel.Size = new System.Drawing.Size(493, 300);
+            this.phonePanel.Size = new System.Drawing.Size(642, 325);
             this.phonePanel.TabIndex = 1;
+            // 
+            // otherfeaturesLabel
+            // 
+            this.otherfeaturesLabel.AutoSize = true;
+            this.otherfeaturesLabel.Location = new System.Drawing.Point(200, 264);
+            this.otherfeaturesLabel.Name = "otherfeaturesLabel";
+            this.otherfeaturesLabel.Size = new System.Drawing.Size(171, 21);
+            this.otherfeaturesLabel.TabIndex = 16;
+            this.otherfeaturesLabel.Text = "Các tính năng khác:";
+            // 
+            // materialLabel
+            // 
+            this.materialLabel.AutoSize = true;
+            this.materialLabel.Location = new System.Drawing.Point(200, 220);
+            this.materialLabel.Name = "materialLabel";
+            this.materialLabel.Size = new System.Drawing.Size(82, 21);
+            this.materialLabel.TabIndex = 15;
+            this.materialLabel.Text = "Chất liệu:";
             // 
             // suggestedLabel
             // 
@@ -776,7 +740,7 @@
             // 
             this.linkLabel.AutoSize = true;
             this.linkLabel.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel.Location = new System.Drawing.Point(290, 275);
+            this.linkLabel.Location = new System.Drawing.Point(442, 303);
             this.linkLabel.Name = "linkLabel";
             this.linkLabel.Size = new System.Drawing.Size(186, 20);
             this.linkLabel.TabIndex = 13;
@@ -786,9 +750,10 @@
             // 
             // colorLabel
             // 
-            this.colorLabel.Location = new System.Drawing.Point(200, 231);
+            this.colorLabel.AutoSize = true;
+            this.colorLabel.Location = new System.Drawing.Point(200, 241);
             this.colorLabel.Name = "colorLabel";
-            this.colorLabel.Size = new System.Drawing.Size(290, 42);
+            this.colorLabel.Size = new System.Drawing.Size(79, 21);
             this.colorLabel.TabIndex = 12;
             this.colorLabel.Text = "Màu sắc:";
             // 
@@ -797,7 +762,7 @@
             this.priceLabel.AutoSize = true;
             this.priceLabel.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceLabel.ForeColor = System.Drawing.Color.Green;
-            this.priceLabel.Location = new System.Drawing.Point(200, 18);
+            this.priceLabel.Location = new System.Drawing.Point(200, 7);
             this.priceLabel.Name = "priceLabel";
             this.priceLabel.Size = new System.Drawing.Size(49, 23);
             this.priceLabel.TabIndex = 11;
@@ -806,7 +771,7 @@
             // screenSizeLabel
             // 
             this.screenSizeLabel.AutoSize = true;
-            this.screenSizeLabel.Location = new System.Drawing.Point(200, 210);
+            this.screenSizeLabel.Location = new System.Drawing.Point(200, 199);
             this.screenSizeLabel.Name = "screenSizeLabel";
             this.screenSizeLabel.Size = new System.Drawing.Size(172, 21);
             this.screenSizeLabel.TabIndex = 10;
@@ -815,7 +780,7 @@
             // resolutionLabel
             // 
             this.resolutionLabel.AutoSize = true;
-            this.resolutionLabel.Location = new System.Drawing.Point(200, 188);
+            this.resolutionLabel.Location = new System.Drawing.Point(200, 177);
             this.resolutionLabel.Name = "resolutionLabel";
             this.resolutionLabel.Size = new System.Drawing.Size(112, 21);
             this.resolutionLabel.TabIndex = 9;
@@ -824,7 +789,7 @@
             // batteryLabel
             // 
             this.batteryLabel.AutoSize = true;
-            this.batteryLabel.Location = new System.Drawing.Point(200, 167);
+            this.batteryLabel.Location = new System.Drawing.Point(200, 156);
             this.batteryLabel.Name = "batteryLabel";
             this.batteryLabel.Size = new System.Drawing.Size(131, 21);
             this.batteryLabel.TabIndex = 8;
@@ -833,7 +798,7 @@
             // rearCamLabel
             // 
             this.rearCamLabel.AutoSize = true;
-            this.rearCamLabel.Location = new System.Drawing.Point(200, 146);
+            this.rearCamLabel.Location = new System.Drawing.Point(200, 93);
             this.rearCamLabel.Name = "rearCamLabel";
             this.rearCamLabel.Size = new System.Drawing.Size(110, 21);
             this.rearCamLabel.TabIndex = 7;
@@ -842,7 +807,7 @@
             // frontCamLabel
             // 
             this.frontCamLabel.AutoSize = true;
-            this.frontCamLabel.Location = new System.Drawing.Point(200, 125);
+            this.frontCamLabel.Location = new System.Drawing.Point(200, 72);
             this.frontCamLabel.Name = "frontCamLabel";
             this.frontCamLabel.Size = new System.Drawing.Size(123, 21);
             this.frontCamLabel.TabIndex = 6;
@@ -851,7 +816,7 @@
             // storageLabel
             // 
             this.storageLabel.AutoSize = true;
-            this.storageLabel.Location = new System.Drawing.Point(200, 104);
+            this.storageLabel.Location = new System.Drawing.Point(200, 51);
             this.storageLabel.Name = "storageLabel";
             this.storageLabel.Size = new System.Drawing.Size(112, 21);
             this.storageLabel.TabIndex = 5;
@@ -860,7 +825,7 @@
             // RAMLabel
             // 
             this.RAMLabel.AutoSize = true;
-            this.RAMLabel.Location = new System.Drawing.Point(200, 83);
+            this.RAMLabel.Location = new System.Drawing.Point(200, 114);
             this.RAMLabel.Name = "RAMLabel";
             this.RAMLabel.Size = new System.Drawing.Size(52, 21);
             this.RAMLabel.TabIndex = 4;
@@ -869,7 +834,7 @@
             // CPULabel
             // 
             this.CPULabel.AutoSize = true;
-            this.CPULabel.Location = new System.Drawing.Point(200, 62);
+            this.CPULabel.Location = new System.Drawing.Point(200, 135);
             this.CPULabel.Name = "CPULabel";
             this.CPULabel.Size = new System.Drawing.Size(47, 21);
             this.CPULabel.TabIndex = 3;
@@ -878,7 +843,7 @@
             // OSLabel
             // 
             this.OSLabel.AutoSize = true;
-            this.OSLabel.Location = new System.Drawing.Point(200, 41);
+            this.OSLabel.Location = new System.Drawing.Point(200, 30);
             this.OSLabel.Name = "OSLabel";
             this.OSLabel.Size = new System.Drawing.Size(49, 21);
             this.OSLabel.TabIndex = 2;
@@ -987,7 +952,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::PhoneBuyingRecommenderSystem.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1270, 731);
+            this.ClientSize = new System.Drawing.Size(1366, 740);
             this.Controls.Add(this.settingsButton);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.label18);
@@ -1082,6 +1047,10 @@
         private System.Windows.Forms.Label noPhoneLabel;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label suggestedLabel;
+        private System.Windows.Forms.CheckedListBox demandCheckedListBox;
+        private System.Windows.Forms.Label demandLabel;
+        private System.Windows.Forms.Label otherfeaturesLabel;
+        private System.Windows.Forms.Label materialLabel;
     }
 }
 

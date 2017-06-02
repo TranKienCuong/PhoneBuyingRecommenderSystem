@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
-using VDS.RDF.Query;
 
 namespace PhoneBuyingRecommenderSystem
 {
@@ -17,6 +16,7 @@ namespace PhoneBuyingRecommenderSystem
         PhoneModel phone;
         FilterOptions filterOptions = new FilterOptions();
         ConsultOptions consultOptions = new ConsultOptions();
+        bool ignoreUpdate = false;
 
         public MainForm()
         {
@@ -56,6 +56,9 @@ namespace PhoneBuyingRecommenderSystem
 
         void UpdatePhones()
         {
+            if (ignoreUpdate)
+                return;
+
             Dictionary<string, string> filterModels = SearchEngine.SearchProperties(filterOptions);
             List<KeyValuePair<string, int>> consultModels = InferenceEngine.DoConsult(consultOptions, filterModels);
 
@@ -81,6 +84,8 @@ namespace PhoneBuyingRecommenderSystem
         {
             ShowPhones(PhoneModel.GetAllModels());
 
+            ignoreUpdate = true;
+
             manufacComboBox.SelectedIndex = 0;
             priceComboBox.SelectedIndex = 0;
             materialComboBox.SelectedIndex = 0;
@@ -101,8 +106,7 @@ namespace PhoneBuyingRecommenderSystem
             foreach (int i in majorCheckedListBox.CheckedIndices)
                 majorCheckedListBox.SetItemChecked(i, false);
 
-            filterOptions = new FilterOptions();
-            consultOptions = new ConsultOptions();
+            ignoreUpdate = false;
         }
 
         void ChoosePhone(ListViewItem item)
@@ -126,6 +130,8 @@ namespace PhoneBuyingRecommenderSystem
             storageLabel.Text = "Bộ nhớ trong: " + phone.StorageCapacity;
             frontCamLabel.Text = "Camera trước: " + phone.FrontCamera;
             rearCamLabel.Text = "Camera sau: " + phone.RearCamera;
+            materialLabel.Text = "Chất liệu: " + phone.Material;
+            otherfeaturesLabel.Text = "Các tính năng khác: " + phone.OtherFeatures;
 
             if (item.BackColor == Color.GreenYellow)
                 suggestedLabel.Visible = true;
@@ -140,11 +146,22 @@ namespace PhoneBuyingRecommenderSystem
 
             manufacComboBox.Items.AddRange(FilterOptions.Manufacturers);
             priceComboBox.Items.AddRange(FilterOptions.Prices);
-            // so on...
+            materialComboBox.Items.AddRange(FilterOptions.Materials);
+            colorComboBox.Items.AddRange(FilterOptions.Colors);
+            OSComboBox.Items.AddRange(FilterOptions.OSes);
+            screenSizeComboBox.Items.AddRange(FilterOptions.ScreenSizes);
+            frontCamComboBox.Items.AddRange(FilterOptions.FrontCams);
+            rearCamComboBox.Items.AddRange(FilterOptions.RearCams);
+            batteryComboBox.Items.AddRange(FilterOptions.BatteryCapacities);
+            storageComboBox.Items.AddRange(FilterOptions.Storages);
+            RAMComboBox.Items.AddRange(FilterOptions.RAMCapacities);
+            otherFeaturesComboBox.Items.AddRange(FilterOptions.OtherFeatures);
+
             genderComboBox.Items.AddRange(ConsultOptions.GenderValues);
             ageComboBox.Items.AddRange(ConsultOptions.AgeValues);
             hobbyCheckedListBox.Items.AddRange(ConsultOptions.HobbyValues);
             majorCheckedListBox.Items.AddRange(ConsultOptions.MajorValues);
+            demandCheckedListBox.Items.AddRange(ConsultOptions.DemandValues);
 
             ResetAllPhones();
 

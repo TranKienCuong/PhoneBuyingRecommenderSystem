@@ -20,6 +20,7 @@ namespace PhoneBuyingRecommenderSystem
         public string ScreenSize { get { return Get("screensize") + "\""; } }
         public string Resolution { get { return Get("hres") + " x " + Get("wres"); } }
         public string Color { get { return Get("color"); } }
+        public string Material { get { return Get("material"); } }
         public string OSName { get { return Get("osName"); } }
         public string OSVersion { get { return Get("osVersion"); } }
         public string OS { get { return GetOS(); } }
@@ -32,6 +33,7 @@ namespace PhoneBuyingRecommenderSystem
         public string FrontCamera { get { return Get("fcam"); } }
         public string RearCamera { get { return Get("rcam"); } }
         public string Link { get { return Get("link"); } }
+        public string OtherFeatures { get { return Get("other"); } }
 
         private SparqlResult info;
 
@@ -55,6 +57,9 @@ namespace PhoneBuyingRecommenderSystem
             return D;
         }
 
+        /// <summary>
+        /// Creates a phone model
+        /// </summary>
         public PhoneModel() { }
 
         /// <summary>
@@ -74,6 +79,7 @@ namespace PhoneBuyingRecommenderSystem
                     ?s ont:hasHeightOfRes ?t4. BIND (STR(?t4) AS ?hres).
                     ?s ont:hasWidthOfRes ?t5. BIND (STR(?t5) AS ?wres).
                     ?s ont:hasColor ?color.
+                    ?s ont:hasMaterial ?material.
                     ?s ont:hasLink ?link.
                     OPTIONAL { 
                         ?s ont:hasOS ?os.
@@ -92,6 +98,8 @@ namespace PhoneBuyingRecommenderSystem
                         ?s ont:hasFrontMegapixel ?t11. BIND (STR(?t11) AS ?fcam). }
                     OPTIONAL {
                         ?s ont:hasRearMegapixel ?t12. BIND (STR(?t12) AS ?rcam). }
+                    OPTIONAL {
+                        ?s ont:hasOtherFeatures ?other. }
                     FILTER (?model = '" + modelKey + @"').
                 }
                 LIMIT 1");
@@ -108,6 +116,15 @@ namespace PhoneBuyingRecommenderSystem
                     return info.Value(property).ToString() + " GB";
                 if (property == "fcam" || property == "rcam")
                     return info.Value(property).ToString() + " MP";
+                if (property == "material" || property == "color" || property == "other")
+                {
+                    string[] strs = info.Value(property).ToString().Split(new string[] { ", " }, StringSplitOptions.RemoveEmptyEntries);
+                    string res = "";
+                    foreach (string str in strs)
+                        res += (VIETNAMESE[str] + ", ");
+                    res = res.Remove(res.Length - 2);
+                    return res;
+                }
                 return info.Value(property).ToString();
             }
             return "Không";
@@ -126,5 +143,34 @@ namespace PhoneBuyingRecommenderSystem
                 return OSName + ' ' + OSVersion;
             return "Không";
         }
+
+        /// <summary>
+        /// Dictionary for searching phone properties' values in Vietnamese
+        /// </summary>
+        public static Dictionary<string, string> VIETNAMESE = new Dictionary<string, string>()
+        {
+            { "FullMetal", "Kim loại nguyên khối" },
+            { "PlasticAndMetal", "Nhựa và kim loại" },
+            { "MetalAndGorillaGlass", "Kim loại và kính cường lực" },
+            { "Plastic", "Nhựa" },
+            { "SupportSDCard", "Hỗ trợ thẻ SD" },
+            { "DualLens", "Camera kép" },
+            { "Waterproof", "Chống nước" },
+            { "FingerprintSecurity", "Bảo mật vân tay" },
+            { "3DTouch", "3D Touch" },
+            { "Black", "Đen" },
+            { "Silver", "Bạc" },
+            { "Gold", "Vàng đồng" },
+            { "RoseGold", "Vàng hồng" },
+            { "White", "Trắng" },
+            { "Red", "Đỏ" },
+            { "Pink", "Hồng" },
+            { "Blue", "Xanh dương" },
+            { "Green", "Xanh lá" },
+            { "Grey", "Xám" },
+            { "Orange", "Cam" },
+            { "JetBlack", "Jet Black" },
+            { "Turquoise", "Xanh ngọc" }
+        };
     }
 }

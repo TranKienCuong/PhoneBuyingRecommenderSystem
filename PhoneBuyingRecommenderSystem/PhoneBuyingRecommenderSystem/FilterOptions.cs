@@ -13,15 +13,16 @@ namespace PhoneBuyingRecommenderSystem
     {
         public static string[] Manufacturers = new string[] { "", "Apple", "Samsung", "Sony", "LG", "Nokia", "Microsoft", "Freetel", "Obi Worldphone", "Asus", "HTC", "Lenovo", "Xiaomi", "Philips", "Wiko", "Meizu" };
         public static string[] Prices = new string[] { "", "< 1 triệu", "1 - 3 triệu", "3 - 7 triệu", "7 - 10 triệu", "10 - 15 triệu", "> 15 triệu" };
-        public static string[] Materials = new string[] { };
-        public static string[] Colors = new string[] { };
-        public static string[] OSes = new string[] { };
-        public static string[] ScreenSizes = new string[] { };
-        public static string[] FrontCams = new string[] { };
-        public static string[] RearCams = new string[] { };
-        public static string[] BatteryCapacities = new string[] { };
-        public static string[] Storages = new string[] { };
-        public static string[] RAMCapacities = new string[] { };
+        public static string[] Materials = new string[] { "", "Kim loại nguyên khối", "Nhựa và kim loại", "Kim loại và kính cường lực", "Nhựa" };
+        public static string[] Colors = new string[] { "", "Đen", "Bạc", "Vàng đồng", "Vàng hồng", "Trắng", "Đỏ", "Hồng", "Xanh dương", "Xanh lá", "Xám", "Cam" };
+        public static string[] OSes = new string[] { "", "Android", "iOS", "Windows Phone" };
+        public static string[] ScreenSizes = new string[] { "", "4.0 - 4.5 inch", "4.6 - 5.0 inch", "5.1 - 5.5 inch", "5.6 - 6.0 inch", "> 6.0 inch" };
+        public static string[] FrontCams = new string[] { "", "< 2 MP", "2 - 4 MP", "5  - 7 MP", "8 - 11 MP", "12 - 15 MP", "> 15 MP" };
+        public static string[] RearCams = new string[] { "", "< 2 MP", "2 - 4 MP", "5  - 7 MP", "8 - 11 MP", "12 - 15 MP", "> 15 MP" };
+        public static string[] BatteryCapacities = new string[] { "", "< 1000 mAh", "1000 - 1500 mAh", "1500 - 2000 mAh", "2000 - 2500 mAh", "2500 - 3000 mAh", "> 3000 mAh" };
+        public static string[] Storages = new string[] { "", "< 8 GB", "8 GB", "16 GB", "32 GB", "64 GB", "> 64 GB" };
+        public static string[] RAMCapacities = new string[] { "", "< 1 GB", "1 GB", "1.5 GB", "2 GB", "3 GB", "4 GB", "> 4 GB" };
+        public static string[] OtherFeatures = new string[] { "", "Hỗ trợ thẻ SD", "Camera kép", "Chống nước", "Bảo mật vân tay", "3D Touch" };
 
         public int ManufacturerIndex = 0;
         public int PriceIndex = 0;

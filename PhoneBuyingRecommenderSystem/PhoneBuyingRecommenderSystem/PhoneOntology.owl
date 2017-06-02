@@ -326,9 +326,9 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#hasSpecialFeature -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasOtherFeatures -->
 
-    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasSpecialFeature">
+    <DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasOtherFeatures">
         <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phone"/>
         <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -766,7 +766,7 @@
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1280</ont:hasHeightOfRes>
         <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</ont:hasInternalStorageCapacity>
         <ont:hasLink>https://www.thegioididong.com/dtdd/samsung-galaxy-a3-2017</ont:hasLink>
-        <ont:hasMaterial>Kim loại và kính cường lực</ont:hasMaterial>
+        <ont:hasMaterial>MetalAndGorillaGlass</ont:hasMaterial>
         <ont:hasName>Galaxy A3</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6490000</ont:hasPrice>
         <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
@@ -792,7 +792,7 @@
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1920</ont:hasHeightOfRes>
         <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ont:hasInternalStorageCapacity>
         <ont:hasLink>https://www.thegioididong.com/dtdd/galaxy-a5-2017</ont:hasLink>
-        <ont:hasMaterial>Kim loại và kính cường lực</ont:hasMaterial>
+        <ont:hasMaterial>MetalAndGorillaGlass</ont:hasMaterial>
         <ont:hasName>Galaxy A5</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8990000</ont:hasPrice>
         <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
@@ -818,7 +818,7 @@
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1920</ont:hasHeightOfRes>
         <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ont:hasInternalStorageCapacity>
         <ont:hasLink>https://www.thegioididong.com/dtdd/samsung-galaxy-a7-2017</ont:hasLink>
-        <ont:hasMaterial>Kim loại và kính cường lực</ont:hasMaterial>
+        <ont:hasMaterial>MetalAndGorillaGlass</ont:hasMaterial>
         <ont:hasName>Galaxy A7</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10990000</ont:hasPrice>
         <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
@@ -844,7 +844,7 @@
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">960</ont:hasHeightOfRes>
         <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</ont:hasInternalStorageCapacity>
         <ont:hasLink>https://www.thegioididong.com/dtdd/samsung-galaxy-j2-prime</ont:hasLink>
-        <ont:hasMaterial>Nhựa và kim loại</ont:hasMaterial>
+        <ont:hasMaterial>PlasticAndMetal</ont:hasMaterial>
         <ont:hasName>Galaxy J2 Prime</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2690000</ont:hasPrice>
         <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</ont:hasRAMCapacity>
@@ -870,7 +870,7 @@
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1280</ont:hasHeightOfRes>
         <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</ont:hasInternalStorageCapacity>
         <ont:hasLink>https://www.thegioididong.com/dtdd/samsung-galaxy-j5-prime</ont:hasLink>
-        <ont:hasMaterial>Kim loại nguyên khối</ont:hasMaterial>
+        <ont:hasMaterial>FullMetal</ont:hasMaterial>
         <ont:hasName>Galaxy J5 Prime</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4690000</ont:hasPrice>
         <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
@@ -896,7 +896,7 @@
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2560</ont:hasHeightOfRes>
         <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ont:hasInternalStorageCapacity>
         <ont:hasLink>https://www.thegioididong.com/dtdd/samsung-galaxy-s7-edge</ont:hasLink>
-        <ont:hasMaterial>Kim loại và kính cường lực</ont:hasMaterial>
+        <ont:hasMaterial>MetalAndGorillaGlass</ont:hasMaterial>
         <ont:hasName>Galaxy S7 Edge</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15490000</ont:hasPrice>
         <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
@@ -993,12 +993,12 @@
         <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicrosoftLumia"/>
         <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#WindowsPhone8"/>
         <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500</ont:hasBatteryCapacity>
-        <ont:hasColor>Black, Trắng, Cam, Xanh lam</ont:hasColor>
+        <ont:hasColor>Black, White, Orange, Blue</ont:hasColor>
         <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9</ont:hasFrontMegapixel>
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1280</ont:hasHeightOfRes>
         <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</ont:hasInternalStorageCapacity>
         <ont:hasLink>http://fptshop.com.vn/dien-thoai/microsoft-lumia-640</ont:hasLink>
-        <ont:hasMaterial>Nhựa</ont:hasMaterial>
+        <ont:hasMaterial>Plastic</ont:hasMaterial>
         <ont:hasName>Lumia 640</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990000</ont:hasPrice>
         <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
@@ -1019,12 +1019,12 @@
         <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicrosoftLumia"/>
         <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Windows10Mobile"/>
         <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2900</ont:hasBatteryCapacity>
-        <ont:hasColor>Black, Trắng</ont:hasColor>
+        <ont:hasColor>Black, White</ont:hasColor>
         <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasFrontMegapixel>
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2560</ont:hasHeightOfRes>
         <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ont:hasInternalStorageCapacity>
         <ont:hasLink>http://fptshop.com.vn/dien-thoai/microsoft-lumia-950</ont:hasLink>
-        <ont:hasMaterial>Nhựa</ont:hasMaterial>
+        <ont:hasMaterial>Plastic</ont:hasMaterial>
         <ont:hasName>Lumia 950</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3090000</ont:hasPrice>
         <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
@@ -1100,7 +1100,7 @@
         <ont:hasColor>Red, Black</ont:hasColor>
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">160</ont:hasHeightOfRes>
         <ont:hasLink>https://www.thegioididong.com/dtdd/nokia-130</ont:hasLink>
-        <ont:hasMaterial>Nhựa</ont:hasMaterial>
+        <ont:hasMaterial>Plastic</ont:hasMaterial>
         <ont:hasName>Nokia 130</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">630000</ont:hasPrice>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.8</ont:hasScreenSize>
@@ -1116,10 +1116,10 @@
         <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhoneModel"/>
         <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Nokia"/>
         <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1020</ont:hasBatteryCapacity>
-        <ont:hasColor>Black, Xanh ngọc</ont:hasColor>
+        <ont:hasColor>Black, Turquoise</ont:hasColor>
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">320</ont:hasHeightOfRes>
         <ont:hasLink>https://www.thegioididong.com/dtdd/nokia-150</ont:hasLink>
-        <ont:hasMaterial>Nhựa</ont:hasMaterial>
+        <ont:hasMaterial>Plastic</ont:hasMaterial>
         <ont:hasName>Nokia 150</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720000</ont:hasPrice>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3</ont:hasRearMegapixel>
@@ -1139,7 +1139,7 @@
         <ont:hasColor>Grey</ont:hasColor>
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">320</ont:hasHeightOfRes>
         <ont:hasLink>https://www.thegioididong.com/dtdd/nokia-230</ont:hasLink>
-        <ont:hasMaterial>Nhựa</ont:hasMaterial>
+        <ont:hasMaterial>Plastic</ont:hasMaterial>
         <ont:hasName>Nokia 230</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1390000</ont:hasPrice>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRearMegapixel>
@@ -1440,7 +1440,7 @@
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1136</ont:hasHeightOfRes>
         <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</ont:hasInternalStorageCapacity>
         <ont:hasLink>https://www.thegioididong.com/dtdd/iphone-5s-16gb</ont:hasLink>
-        <ont:hasMaterial>Kim loại nguyên khối</ont:hasMaterial>
+        <ont:hasMaterial>FullMetal</ont:hasMaterial>
         <ont:hasName>iPhone 5s 16GB</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5990000</ont:hasPrice>
         <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
@@ -1466,7 +1466,7 @@
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1334</ont:hasHeightOfRes>
         <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ont:hasInternalStorageCapacity>
         <ont:hasLink>http://fptshop.com.vn/dien-thoai/iphone-6-32gb</ont:hasLink>
-        <ont:hasMaterial>Kim loại nguyên khối</ont:hasMaterial>
+        <ont:hasMaterial>FullMetal</ont:hasMaterial>
         <ont:hasName>iPhone 6 32GB</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8999000</ont:hasPrice>
         <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
@@ -1492,7 +1492,7 @@
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1334</ont:hasHeightOfRes>
         <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</ont:hasInternalStorageCapacity>
         <ont:hasLink>http://fptshop.com.vn/dien-thoai/iphone-6s</ont:hasLink>
-        <ont:hasMaterial>Kim loại nguyên khối</ont:hasMaterial>
+        <ont:hasMaterial>FullMetal</ont:hasMaterial>
         <ont:hasName>iPhone 6s 16GB</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12999000</ont:hasPrice>
         <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
@@ -1518,7 +1518,7 @@
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1334</ont:hasHeightOfRes>
         <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ont:hasInternalStorageCapacity>
         <ont:hasLink>https://www.thegioididong.com/dtdd/iphone-7</ont:hasLink>
-        <ont:hasMaterial>Kim loại nguyên khối</ont:hasMaterial>
+        <ont:hasMaterial>FullMetal</ont:hasMaterial>
         <ont:hasName>iPhone 7 32GB</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17990000</ont:hasPrice>
         <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
@@ -1539,12 +1539,12 @@
         <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Apple"/>
         <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#iOS10"/>
         <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2900</ont:hasBatteryCapacity>
-        <ont:hasColor>Silver, RoseGold, Gold, Red, Black, Jet Black</ont:hasColor>
+        <ont:hasColor>Silver, RoseGold, Gold, Red, Black, JetBlack</ont:hasColor>
         <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</ont:hasFrontMegapixel>
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1920</ont:hasHeightOfRes>
         <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</ont:hasInternalStorageCapacity>
         <ont:hasLink>https://www.thegioididong.com/dtdd/iphone-7-plus-128gb</ont:hasLink>
-        <ont:hasMaterial>Kim loại nguyên khối</ont:hasMaterial>
+        <ont:hasMaterial>FullMetal</ont:hasMaterial>
         <ont:hasName>iPhone 7 Plus 128GB</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23990000</ont:hasPrice>
         <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
@@ -1565,12 +1565,12 @@
         <ont:hasManufacturer rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Apple"/>
         <ont:hasOS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#iOS10"/>
         <ont:hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2900</ont:hasBatteryCapacity>
-        <ont:hasColor>Silver, RoseGold, Gold, Red, Black, Jet Black</ont:hasColor>
+        <ont:hasColor>Silver, RoseGold, Gold, Red, Black, JetBlack</ont:hasColor>
         <ont:hasFrontMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</ont:hasFrontMegapixel>
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1920</ont:hasHeightOfRes>
         <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</ont:hasInternalStorageCapacity>
         <ont:hasLink>https://www.thegioididong.com/dtdd/iphone-7-plus-256gb</ont:hasLink>
-        <ont:hasMaterial>Kim loại nguyên khối</ont:hasMaterial>
+        <ont:hasMaterial>FullMetal</ont:hasMaterial>
         <ont:hasName>iPhone 7 Plus 256GB</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25990000</ont:hasPrice>
         <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
@@ -1596,7 +1596,7 @@
         <ont:hasHeightOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1920</ont:hasHeightOfRes>
         <ont:hasInternalStorageCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ont:hasInternalStorageCapacity>
         <ont:hasLink>https://www.thegioididong.com/dtdd/iphone-7-plus</ont:hasLink>
-        <ont:hasMaterial>Kim loại nguyên khối</ont:hasMaterial>
+        <ont:hasMaterial>FullMetal</ont:hasMaterial>
         <ont:hasName>iPhone 7 Plus 32GB</ont:hasName>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21990000</ont:hasPrice>
         <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
