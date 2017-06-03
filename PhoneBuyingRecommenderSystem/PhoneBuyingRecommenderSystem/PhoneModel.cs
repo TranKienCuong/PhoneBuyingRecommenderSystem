@@ -149,15 +149,20 @@ namespace PhoneBuyingRecommenderSystem
         /// </summary>
         public static Dictionary<string, string> VIETNAMESE = new Dictionary<string, string>()
         {
+            { "Metal", "Kim loại" },
             { "FullMetal", "Kim loại nguyên khối" },
+            { "AluminumAlloy", "Hợp kim nhôm nguyên khối" },
             { "PlasticAndMetal", "Nhựa và kim loại" },
             { "MetalAndGorillaGlass", "Kim loại và kính cường lực" },
+            { "Aluminum", "Nhôm" },
             { "Plastic", "Nhựa" },
+            { "Ceramic", "Gốm sứ" },
             { "SupportSDCard", "Hỗ trợ thẻ SD" },
             { "DualLens", "Camera kép" },
             { "Waterproof", "Chống nước" },
             { "FingerprintSecurity", "Bảo mật vân tay" },
             { "3DTouch", "3D Touch" },
+            { "DVBT2", "Tích hợp truyền hình kỹ thuật số" },
             { "Black", "Đen" },
             { "Silver", "Bạc" },
             { "Gold", "Vàng đồng" },

@@ -75,10 +75,10 @@
             this.phoneListView = new System.Windows.Forms.ListView();
             this.phoneImageList = new System.Windows.Forms.ImageList(this.components);
             this.phonePanel = new System.Windows.Forms.Panel();
+            this.linkLabel = new System.Windows.Forms.LinkLabel();
             this.otherfeaturesLabel = new System.Windows.Forms.Label();
             this.materialLabel = new System.Windows.Forms.Label();
             this.suggestedLabel = new System.Windows.Forms.Label();
-            this.linkLabel = new System.Windows.Forms.LinkLabel();
             this.colorLabel = new System.Windows.Forms.Label();
             this.priceLabel = new System.Windows.Forms.Label();
             this.screenSizeLabel = new System.Windows.Forms.Label();
@@ -499,11 +499,13 @@
             // 
             // demandCheckedListBox
             // 
+            this.demandCheckedListBox.CheckOnClick = true;
             this.demandCheckedListBox.FormattingEnabled = true;
             this.demandCheckedListBox.Location = new System.Drawing.Point(476, 74);
             this.demandCheckedListBox.Name = "demandCheckedListBox";
             this.demandCheckedListBox.Size = new System.Drawing.Size(215, 180);
             this.demandCheckedListBox.TabIndex = 11;
+            this.demandCheckedListBox.SelectedIndexChanged += new System.EventHandler(this.demandCheckedListBox_SelectedIndexChanged);
             // 
             // demandLabel
             // 
@@ -683,10 +685,10 @@
             // phonePanel
             // 
             this.phonePanel.BackColor = System.Drawing.Color.White;
+            this.phonePanel.Controls.Add(this.linkLabel);
             this.phonePanel.Controls.Add(this.otherfeaturesLabel);
             this.phonePanel.Controls.Add(this.materialLabel);
             this.phonePanel.Controls.Add(this.suggestedLabel);
-            this.phonePanel.Controls.Add(this.linkLabel);
             this.phonePanel.Controls.Add(this.colorLabel);
             this.phonePanel.Controls.Add(this.priceLabel);
             this.phonePanel.Controls.Add(this.screenSizeLabel);
@@ -705,12 +707,23 @@
             this.phonePanel.Size = new System.Drawing.Size(642, 325);
             this.phonePanel.TabIndex = 1;
             // 
+            // linkLabel
+            // 
+            this.linkLabel.AutoSize = true;
+            this.linkLabel.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel.Location = new System.Drawing.Point(442, 303);
+            this.linkLabel.Name = "linkLabel";
+            this.linkLabel.Size = new System.Drawing.Size(186, 20);
+            this.linkLabel.TabIndex = 13;
+            this.linkLabel.TabStop = true;
+            this.linkLabel.Text = "Truy cập trang bán hàng";
+            this.linkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
             // otherfeaturesLabel
             // 
-            this.otherfeaturesLabel.AutoSize = true;
             this.otherfeaturesLabel.Location = new System.Drawing.Point(200, 264);
             this.otherfeaturesLabel.Name = "otherfeaturesLabel";
-            this.otherfeaturesLabel.Size = new System.Drawing.Size(171, 21);
+            this.otherfeaturesLabel.Size = new System.Drawing.Size(439, 45);
             this.otherfeaturesLabel.TabIndex = 16;
             this.otherfeaturesLabel.Text = "Các tính năng khác:";
             // 
@@ -735,18 +748,6 @@
             this.suggestedLabel.Text = "Đề xuất";
             this.suggestedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.suggestedLabel.Visible = false;
-            // 
-            // linkLabel
-            // 
-            this.linkLabel.AutoSize = true;
-            this.linkLabel.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel.Location = new System.Drawing.Point(442, 303);
-            this.linkLabel.Name = "linkLabel";
-            this.linkLabel.Size = new System.Drawing.Size(186, 20);
-            this.linkLabel.TabIndex = 13;
-            this.linkLabel.TabStop = true;
-            this.linkLabel.Text = "Truy cập trang bán hàng";
-            this.linkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
             // 
             // colorLabel
             // 
@@ -855,7 +856,7 @@
             this.phoneNameLabel.ForeColor = System.Drawing.Color.SteelBlue;
             this.phoneNameLabel.Location = new System.Drawing.Point(3, 253);
             this.phoneNameLabel.Name = "phoneNameLabel";
-            this.phoneNameLabel.Size = new System.Drawing.Size(191, 42);
+            this.phoneNameLabel.Size = new System.Drawing.Size(191, 56);
             this.phoneNameLabel.TabIndex = 1;
             this.phoneNameLabel.Text = "Tên điện thoại";
             this.phoneNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

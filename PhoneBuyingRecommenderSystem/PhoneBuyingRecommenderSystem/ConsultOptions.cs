@@ -27,5 +27,6 @@ namespace PhoneBuyingRecommenderSystem
         public int AgeIndex = 0;
         public List<int> HobbyIndices = new List<int>();
         public List<int> MajorIndices = new List<int>();
+        public List<int> DemandIndices = new List<int>();
     }
 }

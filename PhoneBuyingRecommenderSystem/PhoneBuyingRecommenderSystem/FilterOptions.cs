@@ -11,7 +11,7 @@ namespace PhoneBuyingRecommenderSystem
     /// </summary>
     class FilterOptions
     {
-        public static string[] Manufacturers = new string[] { "", "Apple", "Samsung", "Sony", "LG", "Nokia", "Microsoft", "Freetel", "Obi Worldphone", "Asus", "HTC", "Lenovo", "Xiaomi", "Philips", "Wiko", "Meizu" };
+        public static string[] Manufacturers = new string[] { "", "Apple", "Samsung", "Sony", "LG", "Nokia", "Microsoft", "Freetel", "Obi Worldphone", "Oppo", "Asus", "HTC", "Lenovo", "Xiaomi", "Philips", "Wiko", "Meizu" };
         public static string[] Prices = new string[] { "", "< 1 triệu", "1 - 3 triệu", "3 - 7 triệu", "7 - 10 triệu", "10 - 15 triệu", "> 15 triệu" };
         public static string[] Materials = new string[] { "", "Kim loại nguyên khối", "Nhựa và kim loại", "Kim loại và kính cường lực", "Nhựa" };
         public static string[] Colors = new string[] { "", "Đen", "Bạc", "Vàng đồng", "Vàng hồng", "Trắng", "Đỏ", "Hồng", "Xanh dương", "Xanh lá", "Xám", "Cam" };

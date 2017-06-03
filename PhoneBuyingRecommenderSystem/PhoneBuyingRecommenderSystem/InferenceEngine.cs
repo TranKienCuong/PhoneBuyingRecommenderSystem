@@ -116,6 +116,15 @@ namespace PhoneBuyingRecommenderSystem
                 fact.Value = ConsultOptions.MajorKeys[j];
                 Known.Add(fact);
             }
+
+            foreach (int j in consultOptions.DemandIndices)
+            {
+                fact = new Fact();
+                fact.Name = "Demand";
+                fact.Operator = "=";
+                fact.Value = ConsultOptions.DemandKeys[j];
+                Known.Add(fact);
+            }
         }
 
         static void ForwardChaining()

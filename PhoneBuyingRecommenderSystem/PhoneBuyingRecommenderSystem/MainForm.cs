@@ -105,6 +105,8 @@ namespace PhoneBuyingRecommenderSystem
                 hobbyCheckedListBox.SetItemChecked(i, false);
             foreach (int i in majorCheckedListBox.CheckedIndices)
                 majorCheckedListBox.SetItemChecked(i, false);
+            foreach (int i in demandCheckedListBox.CheckedIndices)
+                demandCheckedListBox.SetItemChecked(i, false);
 
             ignoreUpdate = false;
         }
@@ -239,6 +241,12 @@ namespace PhoneBuyingRecommenderSystem
         private void majorCheckedListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             consultOptions.MajorIndices = majorCheckedListBox.CheckedIndices.Cast<int>().ToList();
+            UpdatePhones();
+        }
+
+        private void demandCheckedListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            consultOptions.DemandIndices = demandCheckedListBox.CheckedIndices.Cast<int>().ToList();
             UpdatePhones();
         }
     }
