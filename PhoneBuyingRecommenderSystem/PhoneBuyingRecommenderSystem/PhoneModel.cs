@@ -177,5 +177,11 @@ namespace PhoneBuyingRecommenderSystem
             { "JetBlack", "Jet Black" },
             { "Turquoise", "Xanh ngọc" }
         };
+
+        /// <summary>
+        /// Dictionary for searching phone properties' values in English
+        /// </summary>
+        public static Dictionary<string, string> English = VIETNAMESE.ToDictionary(kp => kp.Value, kp => kp.Key);
+        
     }
 }

@@ -794,7 +794,7 @@
         <ont:hasName>Freetel ICE 2</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</ont:hasWidthOfRes>
@@ -819,7 +819,7 @@
         <ont:hasName>Freetel ICE 2 PLus</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1790000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -844,7 +844,7 @@
         <ont:hasName>Freetel Musashi</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3190000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</ont:hasWidthOfRes>
@@ -869,7 +869,7 @@
         <ont:hasName>Freetel Priori 3s</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2690000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -969,7 +969,7 @@
         <ont:hasName>Galaxy A9 Pro</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9490000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -994,7 +994,7 @@
         <ont:hasName>Galaxy C9 Pro</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11490000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -1019,7 +1019,7 @@
         <ont:hasName>Galaxy J1 mini</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1690000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">768</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">768.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</ont:hasWidthOfRes>
@@ -1119,7 +1119,7 @@
         <ont:hasName>Galaxy J7 Prime</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -1144,7 +1144,7 @@
         <ont:hasName>Galaxy Note 5</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12490000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.7</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1440</ont:hasWidthOfRes>
@@ -1194,7 +1194,7 @@
         <ont:hasName>Galaxy S8</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity, Waterproof</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18490000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.8</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1440</ont:hasWidthOfRes>
@@ -1219,7 +1219,7 @@
         <ont:hasName>Galaxy S8 Plus</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity, Waterproof</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20490000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.2</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1440</ont:hasWidthOfRes>
@@ -1253,7 +1253,7 @@
         <ont:hasName>HTC 10 evo</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity, Waterproof</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59900</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1440</ont:hasWidthOfRes>
@@ -1278,7 +1278,7 @@
         <ont:hasName>HTC DESIRE 626G</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2790000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -1303,7 +1303,7 @@
         <ont:hasName>HTC Desire 10 Pro</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7590000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -1328,7 +1328,7 @@
         <ont:hasName>HTC Desire 628</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3890000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -1378,7 +1378,7 @@
         <ont:hasName>HTC Desire 728G LTE</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3690000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -1403,7 +1403,7 @@
         <ont:hasName>HTC One A9s</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5490000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -1428,7 +1428,7 @@
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4690000</ont:hasPrice>
         <ont:hasName>HTC One E9 Dual</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -1453,7 +1453,7 @@
         <ont:hasName>HTC One ME</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5690000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.2</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1440</ont:hasWidthOfRes>
@@ -1478,7 +1478,7 @@
         <ont:hasName>HTC U Play</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.2</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -1503,7 +1503,7 @@
         <ont:hasName>HTC U Ultra</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.7</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1440</ont:hasWidthOfRes>
@@ -1528,7 +1528,7 @@
         <ont:hasName>HTC U Ultra Sapphire</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.7</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1440</ont:hasWidthOfRes>
@@ -1639,7 +1639,7 @@
         <ont:hasName>Huawei GR5</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4490000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -1664,7 +1664,7 @@
         <ont:hasName>Huawei GR5 Pro</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, DualLens, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -1689,7 +1689,7 @@
         <ont:hasName>Huawei GR5 mini</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.2</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -1714,7 +1714,7 @@
         <ont:hasName>Huawei Y5 II</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2190000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -1739,7 +1739,7 @@
         <ont:hasName>Huawei Y5 2017</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -1764,7 +1764,7 @@
         <ont:hasName>Huawei Y541</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1096500</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</ont:hasWidthOfRes>
@@ -1789,7 +1789,7 @@
         <ont:hasName>Huawei Y6</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -1897,7 +1897,7 @@
         <ont:hasName>LG X Power</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3490000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.3</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -1939,7 +1939,7 @@
         <ont:hasName>Lenovo A2010</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1590000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</ont:hasWidthOfRes>
@@ -1964,7 +1964,7 @@
         <ont:hasName>Lenovo A660</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2590000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -1989,7 +1989,7 @@
         <ont:hasName>Lenovo A7010</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -2014,7 +2014,7 @@
         <ont:hasName>Lenovo K6 Note</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -2039,7 +2039,7 @@
         <ont:hasName>Lenovo K6 Power</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -2064,7 +2064,7 @@
         <ont:hasName>Lenovo Vibe</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -2290,7 +2290,7 @@
         <ont:hasName>Wiko M3 Max</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4290000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -2315,7 +2315,7 @@
         <ont:hasName>Meizu M3 Note</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3590000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -2340,7 +2340,7 @@
         <ont:hasName>Meizu M3s</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2690000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -2364,7 +2364,7 @@
         <ont:hasName>Meizu MX6</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4890000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -2388,7 +2388,7 @@
         <ont:hasName>Meizu Pro6</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4890000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">21.16</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.2</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -2414,7 +2414,7 @@
         <ont:hasName>Meizu U20</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -2534,7 +2534,7 @@
         <ont:hasName>Oppo A37</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3290000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -2560,7 +2560,7 @@
         <ont:hasName>Oppo A39</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4290000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.2</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -2612,7 +2612,7 @@
         <ont:hasName>Oppo F3 plus</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, DualLens, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10690000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -2637,7 +2637,7 @@
         <ont:hasName>Oppo N1</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12690000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.9</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -2662,7 +2662,7 @@
         <ont:hasName>Oppo Neo 7</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">540</ont:hasWidthOfRes>
@@ -2895,7 +2895,7 @@
         <ont:hasName>Philips S307</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">512.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</ont:hasWidthOfRes>
@@ -2920,7 +2920,7 @@
         <ont:hasName>Philips S326</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -2945,7 +2945,7 @@
         <ont:hasName>Philips S337</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1590000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</ont:hasWidthOfRes>
@@ -2970,7 +2970,7 @@
         <ont:hasName>Philips V377</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2190000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -3313,7 +3313,7 @@
         <ont:hasName>Sony Xperia M5</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, Waterproof</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5391000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">21.5</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -3337,7 +3337,7 @@
         <ont:hasMaterial>AluminumAlloy</ont:hasMaterial>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">23.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -3362,7 +3362,7 @@
         <ont:hasName>Sony Xperia XA</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -3387,7 +3387,7 @@
         <ont:hasName>Sony Xperia XA1</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6490000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">23.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -3412,7 +3412,7 @@
         <ont:hasName>Sony Xperia XA Ultra</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7490000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">21.5</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -3437,7 +3437,7 @@
         <ont:hasName>Sony Xperia XZ</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity, Waterproof</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">23.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.2</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -3462,7 +3462,7 @@
         <ont:hasName>Sony Xperia XZs</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity, Waterproof</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">19.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.2</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -3536,7 +3536,7 @@
         <ont:hasName>Wiko Jerry</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1699000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</ont:hasWidthOfRes>
@@ -3561,7 +3561,7 @@
         <ont:hasName>Wiko Robby</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2399000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -3586,7 +3586,7 @@
         <ont:hasName>Wiko Sunny</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">999000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">512.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.2</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</ont:hasWidthOfRes>
@@ -3611,7 +3611,7 @@
         <ont:hasName>Wiko U Feel Prime</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5499000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -3636,7 +3636,7 @@
         <ont:hasName>Wiko U Feel Go</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3999000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -3690,7 +3690,7 @@
         <ont:hasName>Xiaomi Xi MIX</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12600000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.4</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -3715,7 +3715,7 @@
         <ont:hasName>Xiaomi Redmi 4X</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -3740,7 +3740,7 @@
         <ont:hasName>Xiaomi Redmi 4a</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -3765,7 +3765,7 @@
         <ont:hasName>Xiaomi Redmi Note 4</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4690000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -3815,7 +3815,7 @@
         <ont:hasName>Asus Zenfone 2 Go ZB500KG</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</ont:hasWidthOfRes>
@@ -3840,7 +3840,7 @@
         <ont:hasName>Asus Zenfone3 Max</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4490000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -3865,7 +3865,7 @@
         <ont:hasName>Asus Zenfone 3 ZE520KL</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.2</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -3890,7 +3890,7 @@
         <ont:hasName>Asus Zenfome 3 ZE552KL</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -3915,7 +3915,7 @@
         <ont:hasName>Asus Zenfone3 MAX ZC553KL</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</ont:hasWidthOfRes>
@@ -3940,7 +3940,7 @@
         <ont:hasName>Asus Zenfone Go TV ZB551KL</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard, DVBT2</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3490000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -3965,7 +3965,7 @@
         <ont:hasName>Asus Zenfone Go ZB452KG</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1590000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</ont:hasWidthOfRes>
@@ -3990,7 +3990,7 @@
         <ont:hasName>Asus Zenfone Go ZB452KG Plus</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1390000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</ont:hasWidthOfRes>
@@ -4015,7 +4015,7 @@
         <ont:hasName>Asus Zenfone Go ZC500TG</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -4040,7 +4040,7 @@
         <ont:hasName>Zenfone Live ZB501KL</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3690000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -4065,7 +4065,7 @@
         <ont:hasName>Asus Zenfone Max</ont:hasName>
         <ont:hasOtherFeatures>SupportSDCard</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.5</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</ont:hasWidthOfRes>
@@ -4110,7 +4110,7 @@
         <ont:hasName>iPhone 5s 16GB</ont:hasName>
         <ont:hasOtherFeatures>FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">640</ont:hasWidthOfRes>
@@ -4135,7 +4135,7 @@
         <ont:hasName>iPhone 6 32GB</ont:hasName>
         <ont:hasOtherFeatures>FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8999000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">750</ont:hasWidthOfRes>
@@ -4160,7 +4160,7 @@
         <ont:hasName>iPhone 6s 16GB</ont:hasName>
         <ont:hasOtherFeatures>FingerprintSecurity, 3DTouch</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12999000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">750</ont:hasWidthOfRes>
@@ -4285,7 +4285,7 @@
         <ont:hasName>iPhone SE 16GB</ont:hasName>
         <ont:hasOtherFeatures>FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">640</ont:hasWidthOfRes>
     </NamedIndividual>
@@ -4309,7 +4309,7 @@
         <ont:hasName>iPhone SE 64GB</ont:hasName>
         <ont:hasOtherFeatures>FingerprintSecurity</ont:hasOtherFeatures>
         <ont:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9990000</ont:hasPrice>
-        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ont:hasRAMCapacity>
+        <ont:hasRAMCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ont:hasRAMCapacity>
         <ont:hasRearMegapixel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</ont:hasRearMegapixel>
         <ont:hasScreenSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ont:hasScreenSize>
         <ont:hasWidthOfRes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">640</ont:hasWidthOfRes>

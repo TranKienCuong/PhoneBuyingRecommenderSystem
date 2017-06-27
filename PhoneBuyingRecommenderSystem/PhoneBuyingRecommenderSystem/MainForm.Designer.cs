@@ -255,6 +255,7 @@
             this.colorComboBox.Name = "colorComboBox";
             this.colorComboBox.Size = new System.Drawing.Size(133, 28);
             this.colorComboBox.TabIndex = 25;
+            this.colorComboBox.SelectedIndexChanged += new System.EventHandler(this.colorComboBox_SelectedIndexChanged);
             // 
             // label19
             // 
@@ -274,6 +275,7 @@
             this.materialComboBox.Name = "materialComboBox";
             this.materialComboBox.Size = new System.Drawing.Size(182, 27);
             this.materialComboBox.TabIndex = 23;
+            this.materialComboBox.SelectedIndexChanged += new System.EventHandler(this.materialComboBox_SelectedIndexChanged);
             // 
             // label24
             // 
@@ -293,6 +295,7 @@
             this.batteryComboBox.Name = "batteryComboBox";
             this.batteryComboBox.Size = new System.Drawing.Size(164, 28);
             this.batteryComboBox.TabIndex = 21;
+            this.batteryComboBox.SelectedIndexChanged += new System.EventHandler(this.batteryComboBox_SelectedIndexChanged);
             // 
             // label17
             // 
@@ -312,6 +315,7 @@
             this.otherFeaturesComboBox.Name = "otherFeaturesComboBox";
             this.otherFeaturesComboBox.Size = new System.Drawing.Size(164, 28);
             this.otherFeaturesComboBox.TabIndex = 19;
+            this.otherFeaturesComboBox.SelectedIndexChanged += new System.EventHandler(this.otherFeaturesComboBox_SelectedIndexChanged);
             // 
             // label16
             // 
@@ -331,6 +335,7 @@
             this.screenSizeComboBox.Name = "screenSizeComboBox";
             this.screenSizeComboBox.Size = new System.Drawing.Size(164, 28);
             this.screenSizeComboBox.TabIndex = 17;
+            this.screenSizeComboBox.SelectedIndexChanged += new System.EventHandler(this.screenSizeComboBox_SelectedIndexChanged);
             // 
             // label15
             // 
@@ -361,6 +366,7 @@
             this.storageComboBox.Name = "storageComboBox";
             this.storageComboBox.Size = new System.Drawing.Size(133, 28);
             this.storageComboBox.TabIndex = 14;
+            this.storageComboBox.SelectedIndexChanged += new System.EventHandler(this.storageComboBox_SelectedIndexChanged);
             // 
             // label14
             // 
@@ -380,6 +386,7 @@
             this.RAMComboBox.Name = "RAMComboBox";
             this.RAMComboBox.Size = new System.Drawing.Size(133, 28);
             this.RAMComboBox.TabIndex = 12;
+            this.RAMComboBox.SelectedIndexChanged += new System.EventHandler(this.RAMComboBox_SelectedIndexChanged);
             // 
             // label13
             // 
@@ -408,6 +415,7 @@
             this.frontCamComboBox.Name = "frontCamComboBox";
             this.frontCamComboBox.Size = new System.Drawing.Size(133, 28);
             this.frontCamComboBox.TabIndex = 9;
+            this.frontCamComboBox.SelectedIndexChanged += new System.EventHandler(this.frontCamComboBox_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -427,6 +435,7 @@
             this.rearCamComboBox.Name = "rearCamComboBox";
             this.rearCamComboBox.Size = new System.Drawing.Size(133, 28);
             this.rearCamComboBox.TabIndex = 7;
+            this.rearCamComboBox.SelectedIndexChanged += new System.EventHandler(this.rearCamComboBox_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -446,6 +455,7 @@
             this.OSComboBox.Name = "OSComboBox";
             this.OSComboBox.Size = new System.Drawing.Size(133, 28);
             this.OSComboBox.TabIndex = 5;
+            this.OSComboBox.SelectedIndexChanged += new System.EventHandler(this.OSComboBox_SelectedIndexChanged);
             // 
             // label9
             // 

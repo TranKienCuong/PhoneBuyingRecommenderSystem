@@ -214,18 +214,6 @@ namespace PhoneBuyingRecommenderSystem
             Process.Start(phone.Link);
         }
 
-        private void manufacComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            filterOptions.ManufacturerIndex = manufacComboBox.SelectedIndex;
-            UpdatePhones();
-        }
-
-        private void priceComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            filterOptions.PriceIndex = priceComboBox.SelectedIndex;
-            UpdatePhones();
-        }
-
         private void genderComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             consultOptions.GenderIndex = genderComboBox.SelectedIndex;
@@ -247,6 +235,78 @@ namespace PhoneBuyingRecommenderSystem
         private void demandCheckedListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             consultOptions.DemandIndices = demandCheckedListBox.CheckedIndices.Cast<int>().ToList();
+            UpdatePhones();
+        }
+
+        private void manufacComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            filterOptions.ManufacturerIndex = manufacComboBox.SelectedIndex;
+            UpdatePhones();
+        }
+
+        private void priceComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            filterOptions.PriceIndex = priceComboBox.SelectedIndex;
+            UpdatePhones();
+        }
+
+        private void screenSizeComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            filterOptions.ScreenSizeIndex = screenSizeComboBox.SelectedIndex;
+            UpdatePhones();
+        }
+
+        private void materialComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            filterOptions.MaterialIndex = materialComboBox.SelectedIndex;
+            UpdatePhones();
+        }
+
+        private void colorComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            filterOptions.ColorIndex = colorComboBox.SelectedIndex;
+            UpdatePhones();
+        }
+
+        private void OSComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            filterOptions.OSIndex = OSComboBox.SelectedIndex;
+            UpdatePhones();
+        }
+
+        private void frontCamComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            filterOptions.FrontCamIndex = frontCamComboBox.SelectedIndex;
+            UpdatePhones();
+        }
+
+        private void rearCamComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            filterOptions.RearCamIndex = rearCamComboBox.SelectedIndex;
+            UpdatePhones();
+        }
+
+        private void batteryComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            filterOptions.BatteryCapacityIndex = batteryComboBox.SelectedIndex;
+            UpdatePhones();
+        }
+
+        private void storageComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            filterOptions.StorageIndex = storageComboBox.SelectedIndex;
+            UpdatePhones();
+        }
+
+        private void RAMComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            filterOptions.RAMCapacityIndex = RAMComboBox.SelectedIndex;
+            UpdatePhones();
+        }
+
+        private void otherFeaturesComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            filterOptions.OtherFeatureIndex = otherFeaturesComboBox.SelectedIndex;
             UpdatePhones();
         }
     }
