@@ -71,6 +71,11 @@
     <Compile Include="ConsultOptions.cs" />
     <Compile Include="Fact.cs" />
     <Compile Include="FilterOptions.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SuitableFactsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,11 +83,6 @@
       <DependentUpon>SuitableFactsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PhoneModel.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Rule.cs" />
     <Compile Include="SearchEngine.cs" />
     <Compile Include="InferenceEngine.cs" />
@@ -231,9 +231,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PhonePictures\HuaweiGR5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\PhonePictures\HuaweiY5II.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PhonePictures\HuaweiY6II.jpg" />
@@ -428,25 +425,10 @@
     <None Include="Resources\PhonePictures\XperiaZ5Dual.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\PhonePictures\Zenfone2GoZB500KG.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\PhonePictures\Zenfone2Laser.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PhonePictures\Zenfone3MAX.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\PhonePictures\Zenfone3ZE520KL.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\PhonePictures\Zenfone3ZE552KL.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\PhonePictures\ZenfoneGoTVZB551KL.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\PhonePictures\ZenfoneGoZB452KG.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\background.png" />
@@ -464,6 +446,68 @@
     <EmbeddedResource Include="Rules.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PhonePictures\GalaxyC9Pro.jpg" />
+    <Content Include="Resources\PhonePictures\GalaxyJ1Mini.jpg" />
+    <Content Include="Resources\PhonePictures\GalaxyNote4.jpg" />
+    <Content Include="Resources\PhonePictures\GalaxyS5.jpg" />
+    <Content Include="Resources\PhonePictures\GalaxyS8.jpg" />
+    <Content Include="Resources\PhonePictures\GalaxyS8Plus.jpg" />
+    <Content Include="Resources\PhonePictures\Htc10Evo.jpg" />
+    <Content Include="Resources\PhonePictures\HTCDesire728G.jpg" />
+    <Content Include="Resources\PhonePictures\HTCDesire728GLTE.jpg" />
+    <Content Include="Resources\PhonePictures\HTCUUltraSapphire.jpg" />
+    <Content Include="Resources\PhonePictures\HuaweiGR5Mini.jpg" />
+    <Content Include="Resources\PhonePictures\HuaweiGR5Pro.jpg" />
+    <Content Include="Resources\PhonePictures\HuaweiY5.jpg" />
+    <Content Include="Resources\PhonePictures\HuaweiY52017.jpg" />
+    <Content Include="Resources\PhonePictures\HuaweiY6.jpg" />
+    <Content Include="Resources\PhonePictures\Iphone5.jpg" />
+    <Content Include="Resources\PhonePictures\iPhone7Plus128GB.jpg" />
+    <Content Include="Resources\PhonePictures\iPhone7Plus256GB.jpg" />
+    <Content Include="Resources\PhonePictures\iPhone7Plus32GB.jpg" />
+    <Content Include="Resources\PhonePictures\IphoneSE16GB.jpg" />
+    <Content Include="Resources\PhonePictures\IphoneSE64GB.jpg" />
+    <Content Include="Resources\PhonePictures\LenovoA660.jpg" />
+    <Content Include="Resources\PhonePictures\LenovoA7010.jpg" />
+    <Content Include="Resources\PhonePictures\LenovoS660.jpg" />
+    <Content Include="Resources\PhonePictures\LenovoVibe.jpg" />
+    <Content Include="Resources\PhonePictures\Lumia1020.jpg" />
+    <Content Include="Resources\PhonePictures\Lumia430.jpg" />
+    <Content Include="Resources\PhonePictures\Lumia520.jpg" />
+    <Content Include="Resources\PhonePictures\Lumia850.jpg" />
+    <Content Include="Resources\PhonePictures\Lumia920.jpg" />
+    <Content Include="Resources\PhonePictures\MeizuPro6Plus.jpg" />
+    <Content Include="Resources\PhonePictures\OppoN1.jpg" />
+    <Content Include="Resources\PhonePictures\OppoN1Mini.jpg" />
+    <Content Include="Resources\PhonePictures\OppoNeo7.jpg" />
+    <Content Include="Resources\PhonePictures\OppoNeo7s.jpg" />
+    <Content Include="Resources\PhonePictures\PhilipsE103.jpg" />
+    <Content Include="Resources\PhonePictures\PhilipsE105.jpg" />
+    <Content Include="Resources\PhonePictures\PhilipsE160.jpg" />
+    <Content Include="Resources\PhonePictures\PhilipsE170.jpg" />
+    <Content Include="Resources\PhonePictures\PhilipsE181.jpg" />
+    <Content Include="Resources\PhonePictures\PhilipsE220.jpg" />
+    <Content Include="Resources\PhonePictures\PhilipsE310.jpg" />
+    <Content Include="Resources\PhonePictures\PhilipsE311.jpg" />
+    <Content Include="Resources\PhonePictures\PhilipsE330.jpg" />
+    <Content Include="Resources\PhonePictures\PhilipsE570.jpg" />
+    <Content Include="Resources\PhonePictures\PhilipsS326.jpg" />
+    <Content Include="Resources\PhonePictures\WikoRobby.jpg" />
+    <Content Include="Resources\PhonePictures\WikoSunny.jpg" />
+    <Content Include="Resources\PhonePictures\WikoU.jpg" />
+    <Content Include="Resources\PhonePictures\XperiaXA1.jpg" />
+    <Content Include="Resources\PhonePictures\Zenfone2GoZB500.jpg" />
+    <Content Include="Resources\PhonePictures\Zenfone3ZE520.jpg" />
+    <Content Include="Resources\PhonePictures\Zenfone3ZE552.jpg" />
+    <Content Include="Resources\PhonePictures\Zenfone3ZE553.jpg" />
+    <Content Include="Resources\PhonePictures\ZenfoneGoTVZB551.jpg" />
+    <Content Include="Resources\PhonePictures\ZenfoneGoZB452.jpg" />
+    <Content Include="Resources\PhonePictures\ZenfoneGoZB452Plus.jpg" />
+    <Content Include="Resources\PhonePictures\ZenfoneGoZC500.jpg" />
+    <Content Include="Resources\PhonePictures\ZenfoneLiveZB501.jpg" />
+    <Content Include="Resources\PhonePictures\ZenfoneMax.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -373,9 +373,9 @@ namespace PhoneBuyingRecommenderSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HuaweiY541 {
+        internal static System.Drawing.Bitmap HuaweiY5 {
             get {
-                object obj = ResourceManager.GetObject("HuaweiY541", resourceCulture);
+                object obj = ResourceManager.GetObject("HuaweiY5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,9 +383,9 @@ namespace PhoneBuyingRecommenderSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HuaweiY5II {
+        internal static System.Drawing.Bitmap HuaweiY541 {
             get {
-                object obj = ResourceManager.GetObject("HuaweiY5II", resourceCulture);
+                object obj = ResourceManager.GetObject("HuaweiY541", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -921,8 +921,12 @@ namespace PhoneBuyingRecommenderSystem.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gender = Nam -&gt; Manufacturer = Apple
-        ///Hobby = Chơi game -&gt; RAM &gt;= 3.
+        ///   Looks up a localized string similar to Gender = Male -&gt; Color = &apos;Black|Silver|Gold|Red&apos;
+        ///Gender = Female -&gt; Color = &apos;Black|Pink|RoseGold|Red&apos;
+        ///Demand = Chat -&gt; ScreenSize &gt;= 5.0
+        ///Demand = PlayingGames -&gt; RAMCapacity &gt;= 3.0
+        ///Major = BusinessOrCommerce -&gt; Manufacturer = Apple, OS = iOS10, BatteryCapacity &gt; 2000
+        ///Major = Student -&gt; BatteryCapacity &gt; 2000, Price &lt; 4000000.
         /// </summary>
         internal static string Rules {
             get {
@@ -1093,9 +1097,9 @@ namespace PhoneBuyingRecommenderSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Zenfone2GoZB500KG {
+        internal static System.Drawing.Bitmap Zenfone2GoZB500 {
             get {
-                object obj = ResourceManager.GetObject("Zenfone2GoZB500KG", resourceCulture);
+                object obj = ResourceManager.GetObject("Zenfone2GoZB500", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1123,9 +1127,9 @@ namespace PhoneBuyingRecommenderSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Zenfone3ZE520KL {
+        internal static System.Drawing.Bitmap Zenfone3ZE520 {
             get {
-                object obj = ResourceManager.GetObject("Zenfone3ZE520KL", resourceCulture);
+                object obj = ResourceManager.GetObject("Zenfone3ZE520", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1133,9 +1137,9 @@ namespace PhoneBuyingRecommenderSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Zenfone3ZE552KL {
+        internal static System.Drawing.Bitmap Zenfone3ZE552 {
             get {
-                object obj = ResourceManager.GetObject("Zenfone3ZE552KL", resourceCulture);
+                object obj = ResourceManager.GetObject("Zenfone3ZE552", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1143,9 +1147,9 @@ namespace PhoneBuyingRecommenderSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ZenfoneGoTVZB551KL {
+        internal static System.Drawing.Bitmap ZenfoneGoTVZB551 {
             get {
-                object obj = ResourceManager.GetObject("ZenfoneGoTVZB551KL", resourceCulture);
+                object obj = ResourceManager.GetObject("ZenfoneGoTVZB551", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1153,9 +1157,9 @@ namespace PhoneBuyingRecommenderSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ZenfoneGoZB452KG {
+        internal static System.Drawing.Bitmap ZenfoneGoZB452 {
             get {
-                object obj = ResourceManager.GetObject("ZenfoneGoZB452KG", resourceCulture);
+                object obj = ResourceManager.GetObject("ZenfoneGoZB452", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
