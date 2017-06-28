@@ -21,6 +21,16 @@ namespace PhoneBuyingRecommenderSystem
         public Fact() { }
 
         /// <summary>
+        /// Creates a new fact with attributes
+        /// </summary>
+        public Fact(string Name, string Operator, string Value)
+        {
+            this.Name = Name;
+            this.Operator = Operator;
+            this.Value = Value;
+        }
+
+        /// <summary>
         /// Creates a new fact from string
         /// </summary>
         /// <param name="factString">fact as string</param>
@@ -52,6 +62,11 @@ namespace PhoneBuyingRecommenderSystem
         public override int GetHashCode()
         {
             return Name.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return PhoneModel.VIETNAMESE[Name] + " " + Operator + " " + Value;
         }
     }
 }

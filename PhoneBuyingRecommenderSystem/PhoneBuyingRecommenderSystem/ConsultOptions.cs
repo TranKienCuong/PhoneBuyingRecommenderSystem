@@ -9,7 +9,7 @@ namespace PhoneBuyingRecommenderSystem
     /// <summary>
     /// Supports customer's information values for UI. And one instance contains the selected information for consulting
     /// </summary>
-    class ConsultOptions
+    public class ConsultOptions
     {
         public static string[] GenderKeys = new string[] { "", "Male", "Female" };
         public static string[] HobbyKeys = new string[] { "SingingOrDancing", "PlayingSports", "ReadingBooksOrComics", "Traveling", "Shopping", "WatchingTV" };
@@ -28,5 +28,33 @@ namespace PhoneBuyingRecommenderSystem
         public List<int> HobbyIndices = new List<int>();
         public List<int> MajorIndices = new List<int>();
         public List<int> DemandIndices = new List<int>();
+
+        public int GenderScore = 1;
+        public int AgeScore = 1;
+        public Dictionary<int, int> HobbyScores = new Dictionary<int, int>();
+        public Dictionary<int, int> MajorScores = new Dictionary<int, int>();
+        public Dictionary<int, int> DemandScores = new Dictionary<int, int>();
+
+        public ConsultOptions() { }
+
+        public ConsultOptions(ConsultOptions options)
+        {
+            this.GenderIndex = options.GenderIndex;
+            this.AgeIndex = options.AgeIndex;
+            this.HobbyIndices = new List<int>(options.HobbyIndices);
+            this.MajorIndices = new List<int>(options.MajorIndices);
+            this.DemandIndices = new List<int>(options.DemandIndices);
+
+            this.GenderScore = options.GenderScore;
+            this.AgeScore = options.AgeScore;
+            this.HobbyScores = new Dictionary<int, int>(options.HobbyScores);
+            this.MajorScores = new Dictionary<int, int>(options.MajorScores);
+            this.DemandScores = new Dictionary<int, int>(options.DemandScores);
+        }
+
+        public bool IsConsulting()
+        {
+            return (GenderIndex != 0 || AgeIndex != 0 || HobbyIndices.Count != 0 || MajorIndices.Count != 0 || DemandIndices.Count != 0);
+        }
     }
 }

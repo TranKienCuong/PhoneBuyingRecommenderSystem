@@ -17,6 +17,8 @@ namespace PhoneBuyingRecommenderSystem
         FilterOptions filterOptions = new FilterOptions();
         ConsultOptions consultOptions = new ConsultOptions();
         bool ignoreUpdate = false;
+        bool ignoreCheckEvent = false;
+        Dictionary<string, float> ModelScorePercentage = new Dictionary<string, float>();
 
         public MainForm()
         {
@@ -48,10 +50,32 @@ namespace PhoneBuyingRecommenderSystem
             }
         }
 
-        void HighlightPhones(int from, int to, Color color)
+        Color GetHighlightColor(Color color, float percentage)
         {
-            for (int i = from; i <= to; i++)
-                phoneListView.Items[i].BackColor = color;
+            int R, G, B;
+            if (percentage == 0)
+                R = G = B = 255;
+            else
+            {
+                float scale = 1 / percentage;
+
+                R = (int)(color.R * scale);
+                if (R > 255) R = 255;
+                G = (int)(color.G * scale);
+                if (G > 255) G = 255;
+                B = (int)(color.B * scale);
+                if (B > 255) B = 255;
+            }
+            return Color.FromArgb(R, G, B);
+        }
+
+        void HighlightPhones(Color maxColor)
+        {
+            foreach (ListViewItem item in phoneListView.Items)
+            {
+                float scorePercentage = ModelScorePercentage[item.Tag.ToString()];
+                item.BackColor = GetHighlightColor(maxColor, scorePercentage);
+            }
         }
 
         void UpdatePhones()
@@ -63,7 +87,6 @@ namespace PhoneBuyingRecommenderSystem
             List<KeyValuePair<string, int>> consultModels = InferenceEngine.DoConsult(consultOptions, filterModels);
 
             List<KeyValuePair<string, string>> finalModels = new List<KeyValuePair<string, string>>();
-            int highlightCount = 0;
             foreach (var model in consultModels)
             {
                 string modelKey = model.Key;
@@ -71,13 +94,15 @@ namespace PhoneBuyingRecommenderSystem
                 KeyValuePair<string, string> finalModel = new KeyValuePair<string, string>(modelKey, modelName);
                 finalModels.Add(finalModel);
 
-                if (model.Value != 0 && model.Value == InferenceEngine.KnownCount)
-                    highlightCount++;
+                int score = model.Value;
+                int maxScore = InferenceEngine.MaxScore;
+                if (maxScore == 0)
+                    ModelScorePercentage[modelKey] = 0;
+                else
+                    ModelScorePercentage[modelKey] = (float)score / maxScore;
             }
             ShowPhones(finalModels);
-            HighlightPhones(0, highlightCount - 1, Color.GreenYellow);
-            if (highlightCount != 0)
-                suggestedLabel.Visible = true;
+            HighlightPhones(Color.GreenYellow);
         }
 
         void ResetAllPhones()
@@ -109,6 +134,9 @@ namespace PhoneBuyingRecommenderSystem
                 demandCheckedListBox.SetItemChecked(i, false);
 
             ignoreUpdate = false;
+
+            suggestedLabel.Visible = false;
+            suitableButton.Visible = false;
         }
 
         void ChoosePhone(ListViewItem item)
@@ -135,10 +163,27 @@ namespace PhoneBuyingRecommenderSystem
             materialLabel.Text = "Chất liệu: " + phone.Material;
             otherfeaturesLabel.Text = "Các tính năng khác: " + phone.OtherFeatures;
 
-            if (item.BackColor == Color.GreenYellow)
-                suggestedLabel.Visible = true;
+            if (consultOptions.IsConsulting() && ModelScorePercentage.ContainsKey(modelKey))
+            {
+                float scorePercentage = ModelScorePercentage[modelKey];
+                Color color = GetHighlightColor(Color.GreenYellow, scorePercentage);
+                if (scorePercentage >= 0.5)
+                {
+                    suggestedLabel.Visible = true;
+                    suggestedLabel.BackColor = color;
+                }
+                else
+                    suggestedLabel.Visible = false;
+
+                suitableButton.Visible = true;
+                suitableButton.BackColor = color;
+                suitableButton.Text = "Mức độ phù hợp:\r\n" + ((int)(scorePercentage * 100)).ToString() + " %";
+            }
             else
+            {
                 suggestedLabel.Visible = false;
+                suitableButton.Visible = false;
+            }
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -214,30 +259,6 @@ namespace PhoneBuyingRecommenderSystem
             Process.Start(phone.Link);
         }
 
-        private void genderComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            consultOptions.GenderIndex = genderComboBox.SelectedIndex;
-            UpdatePhones();
-        }
-
-        private void hobbyCheckedListBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            consultOptions.HobbyIndices = hobbyCheckedListBox.CheckedIndices.Cast<int>().ToList();
-            UpdatePhones();
-        }
-
-        private void majorCheckedListBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            consultOptions.MajorIndices = majorCheckedListBox.CheckedIndices.Cast<int>().ToList();
-            UpdatePhones();
-        }
-
-        private void demandCheckedListBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            consultOptions.DemandIndices = demandCheckedListBox.CheckedIndices.Cast<int>().ToList();
-            UpdatePhones();
-        }
-
         private void manufacComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             filterOptions.ManufacturerIndex = manufacComboBox.SelectedIndex;
@@ -308,6 +329,114 @@ namespace PhoneBuyingRecommenderSystem
         {
             filterOptions.OtherFeatureIndex = otherFeaturesComboBox.SelectedIndex;
             UpdatePhones();
+        }
+
+        private void settingsButton_Click(object sender, EventArgs e)
+        {
+            new SettingsForm().ShowDialog();
+        }
+
+        private void consultLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            AdvancedConsultForm form = new AdvancedConsultForm(consultOptions);
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                consultOptions = form.consultOptions;
+
+                ignoreCheckEvent = true;
+                foreach (int i in hobbyCheckedListBox.CheckedIndices)
+                    hobbyCheckedListBox.SetItemChecked(i, false);
+                foreach (int i in majorCheckedListBox.CheckedIndices)
+                    majorCheckedListBox.SetItemChecked(i, false);
+                foreach (int i in demandCheckedListBox.CheckedIndices)
+                    demandCheckedListBox.SetItemChecked(i, false);
+
+                genderComboBox.SelectedIndex = consultOptions.GenderIndex;
+                ageComboBox.SelectedIndex = consultOptions.AgeIndex;
+                foreach (int i in consultOptions.HobbyIndices)
+                    hobbyCheckedListBox.SetItemChecked(i, true);
+                foreach (int i in consultOptions.MajorIndices)
+                    majorCheckedListBox.SetItemChecked(i, true);
+                foreach (int i in consultOptions.DemandIndices)
+                    demandCheckedListBox.SetItemChecked(i, true);
+                ignoreCheckEvent = false;
+
+                UpdatePhones();
+            }
+        }
+
+        private void genderComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ignoreCheckEvent)
+                return;
+            consultOptions.GenderIndex = genderComboBox.SelectedIndex;
+            consultOptions.GenderScore = 1;
+            UpdatePhones();
+        }
+
+        private void ageComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ignoreCheckEvent)
+                return;
+            consultOptions.AgeIndex = ageComboBox.SelectedIndex;
+            consultOptions.AgeScore = 1;
+            UpdatePhones();
+        }
+
+        private void majorCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            if (ignoreCheckEvent)
+                return;
+            if (e.NewValue == CheckState.Checked)
+            {
+                consultOptions.MajorIndices.Add(e.Index);
+                consultOptions.MajorScores[e.Index] = 1;
+            }
+            else
+            {
+                consultOptions.MajorIndices.Remove(e.Index);
+                consultOptions.MajorScores.Remove(e.Index);
+            }
+            UpdatePhones();
+        }
+
+        private void hobbyCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            if (ignoreCheckEvent)
+                return;
+            if (e.NewValue == CheckState.Checked)
+            {
+                consultOptions.HobbyIndices.Add(e.Index);
+                consultOptions.HobbyScores[e.Index] = 1;
+            }
+            else
+            {
+                consultOptions.HobbyIndices.Remove(e.Index);
+                consultOptions.HobbyScores.Remove(e.Index);
+            }
+            UpdatePhones();
+        }
+
+        private void demandCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            if (ignoreCheckEvent)
+                return;
+            if (e.NewValue == CheckState.Checked)
+            {
+                consultOptions.DemandIndices.Add(e.Index);
+                consultOptions.DemandScores[e.Index] = 1;
+            }
+            else
+            {
+                consultOptions.DemandIndices.Remove(e.Index);
+                consultOptions.DemandScores.Remove(e.Index);
+            }
+            UpdatePhones();
+        }
+
+        private void suitableButton_Click(object sender, EventArgs e)
+        {
+            new SuitableFactsForm(phone.ModelKey).ShowDialog();
         }
     }
 }

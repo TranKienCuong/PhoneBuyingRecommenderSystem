@@ -13,12 +13,12 @@ namespace PhoneBuyingRecommenderSystem
     {
         public static string[] Manufacturers = new string[] { "", "Apple", "Samsung", "Sony", "LG", "Nokia", "Microsoft", "Freetel", "Obi Worldphone", "Oppo", "Asus", "HTC", "Lenovo", "Xiaomi", "Philips", "Wiko", "Meizu" };
         public static string[] Prices = new string[] { "", "< 1 triệu", "1 - 3 triệu", "3 - 7 triệu", "7 - 10 triệu", "10 - 15 triệu", "> 15 triệu" };
-        public static string[] Materials = new string[] { "", "Plastic", "Aluminum", "MetalAndGorillaGlass", "PlasticAndMetal", "FullMetal", "AluminumAlloy", "Metal" };
+        public static string[] Materials = new string[] { "", "Nhựa", "Nhôm", "Hợp kim nhôm nguyên khối", "Kim loại", "Kim loại nguyên khối", "Nhựa và kim loại", "Kim loại và kính cường lực" };
         public static string[] Colors = new string[] { "", "Đen", "Bạc", "Vàng đồng", "Vàng hồng", "Trắng", "Đỏ", "Hồng", "Xanh dương", "Xanh lá", "Xám", "Cam" };
         public static string[] OSes = new string[] { "", "Android", "iOS", "Windows Phone" };
-        public static string[] ScreenSizes = new string[] { "", "4.0 - 4.5 inch", "4.6 - 5.0 inch", "5.1 - 5.5 inch", "> 5.6 inch" };
-        public static string[] FrontCams = new string[] { "", "< 2 MP", "2 - 5 MP", "5  - 8 MP", "8 - 12 MP", "12 - 16 MP", "> 15 MP" };
-        public static string[] RearCams = new string[] { "", "< 2 MP", "2 - 5 MP", "5  - 8 MP", "8 - 12 MP", "12 - 16 MP", "> 15 MP" };
+        public static string[] ScreenSizes = new string[] { "", "4.0 - 4.5 inch", "4.6 - 5.0 inch", "5.1 - 5.5 inch", "5.6 - 6.0 inch", "> 6.0 inch" };
+        public static string[] FrontCams = new string[] { "", "< 2 MP", "2 - 5 MP", "5  - 8 MP", "8 - 12 MP", "12 - 16 MP", "> 16 MP" };
+        public static string[] RearCams = new string[] { "", "< 2 MP", "2 - 5 MP", "5  - 8 MP", "8 - 12 MP", "12 - 16 MP", "> 16 MP" };
         public static string[] BatteryCapacities = new string[] { "", "< 1000 mAh", "1000 - 1500 mAh", "1500 - 2000 mAh", "2000 - 2500 mAh", "2500 - 3000 mAh", "> 3000 mAh" };
         public static string[] Storages = new string[] { "", "< 8 GB", "8 GB", "16 GB", "32 GB", "64 GB", "> 64 GB" };
         public static string[] RAMCapacities = new string[] { "", "< 1 GB", "1.0 GB", "1.5 GB", "2.0 GB", "3.0 GB", "4.0 GB", "> 4 GB" };
@@ -68,32 +68,33 @@ namespace PhoneBuyingRecommenderSystem
                 pattern += ").";
             }
 
-            if (MaterialIndex!=0)
+            if (MaterialIndex != 0)
             {
-                string material = Materials[MaterialIndex];
+                string material = PhoneModel.ENGLISH[Materials[MaterialIndex]];
                 pattern += ("?s ont:hasMaterial ?material. FILTER regex (?material , '" + material + "').");
             }
 
-            if (ColorIndex!=0)
+            if (ColorIndex != 0)
             {
-                string color = PhoneModel.English[Colors[ColorIndex]];
+                string color = PhoneModel.ENGLISH[Colors[ColorIndex]];
                 pattern += ("?s ont:hasColor ?color. FILTER regex (?color , '" + color + "').");
             }
 
-            if(OSIndex!=0)
+            if (OSIndex != 0)
             {
                 string os = OSes[OSIndex];
                 switch (OSIndex)
                 {
                     case 1: pattern += ("?s ont:hasOS ?os. FILTER ( ?os > ont:" + os + " && ?os < ont:B"); break;
                     case 2: pattern += ("?s ont:hasOS ?os. FILTER ( ?os > ont:" + os + " && ?os < ont:j"); break;
-                    case 3: os = "Windows";
+                    case 3:
+                        os = "Windows";
                         pattern += ("?s ont:hasOS ?os. FILTER ( ?os > ont:" + os + " && ?os < ont:X"); break;
                 }
                 pattern += ").";
             }
 
-            if(ScreenSizeIndex!=0)
+            if (ScreenSizeIndex != 0)
             {
                 pattern += "?s ont:hasScreenSize ?screen. FILTER (?screen ";
                 switch (ScreenSizeIndex)
@@ -106,76 +107,78 @@ namespace PhoneBuyingRecommenderSystem
                 pattern += ").";
             }
 
-            if(FrontCamIndex!=0)
+            if (FrontCamIndex != 0)
             {
                 pattern += "?s ont:hasFrontMegapixel ?frontcam. FILTER (?frontcam";
                 switch (FrontCamIndex)
                 {
                     case 1: pattern += " < 2.0"; break;
                     case 2: pattern += ">= 2.0 && ?frontcam <= 5.0"; break;
-                    case 3: pattern += "> 5.0 && ?frontcam <= 8.0"; break;
-                    case 4: pattern += "> 8.0 && ?frontcam <= 12.0"; break;
-                    case 5: pattern += "> 12.0 && ?frontcam <= 16.0"; break;
+                    case 3: pattern += ">= 5.0 && ?frontcam <= 8.0"; break;
+                    case 4: pattern += ">= 8.0 && ?frontcam <= 12.0"; break;
+                    case 5: pattern += ">= 12.0 && ?frontcam <= 16.0"; break;
                     case 6: pattern += "> 16.0"; break;
                 }
                 pattern += ").";
             }
 
-            if (RearCamIndex!=0)
+            if (RearCamIndex != 0)
             {
                 pattern += "?s ont:hasRearMegapixel ?rearcam. FILTER (?rearcam";
                 switch (RearCamIndex)
                 {
                     case 1: pattern += " < 2.0"; break;
                     case 2: pattern += ">= 2.0 && ?rearcam <= 5.0"; break;
-                    case 3: pattern += "> 5.0 && ?rearcam <= 8.0"; break;
-                    case 4: pattern += "> 8.0 && ?rearcam <= 12.0"; break;
-                    case 5: pattern += "> 12.0 && ?rearcam <= 16.0"; break;
+                    case 3: pattern += ">= 5.0 && ?rearcam <= 8.0"; break;
+                    case 4: pattern += ">= 8.0 && ?rearcam <= 12.0"; break;
+                    case 5: pattern += ">= 12.0 && ?rearcam <= 16.0"; break;
                     case 6: pattern += "> 16.0"; break;
                 }
                 pattern += ").";
             }
 
-            if(BatteryCapacityIndex!=0)
+            if (BatteryCapacityIndex != 0)
             {
                 pattern += "?s ont:hasBatteryCapacity ?battery. FILTER (?battery";
                 switch (BatteryCapacityIndex)
                 {
                     case 1: pattern += " < 1000"; break;
                     case 2: pattern += ">= 1000 && ?battery <= 1500"; break;
-                    case 3: pattern += "> 1500 && ?battery <= 2000"; break;
-                    case 4: pattern += "> 2000 && ?battery <= 2500"; break;
-                    case 5: pattern += "> 2500 && ?battery <= 3000"; break;
+                    case 3: pattern += ">= 1500 && ?battery <= 2000"; break;
+                    case 4: pattern += ">= 2000 && ?battery <= 2500"; break;
+                    case 5: pattern += ">= 2500 && ?battery <= 3000"; break;
                     case 6: pattern += "> 3000"; break;
                 }
                 pattern += ").";
             }
 
-            if (StorageIndex!=0)
+            if (StorageIndex != 0)
             {
                 string storage = Storages[StorageIndex];
-                if (StorageIndex == 1 )
+                if (StorageIndex == 1)
                     pattern += "?s ont:hasInternalStorageCapacity ?storage. FILTER (?storage < 8).";
                 else if (StorageIndex == 6)
                     pattern += "?s ont:hasInternalStorageCapacity ?storage. FILTER (?storage > 64).";
                 else if (StorageIndex == 2)
                     pattern += "?s ont:hasInternalStorageCapacity ?storage. FILTER (?storage = 8).";
                 else
-                    pattern += "?s ont:hasInternalStorageCapacity ?storage. FILTER (?storage = " + storage.Substring(0,2) + ").";
-             }
+                    pattern += "?s ont:hasInternalStorageCapacity ?storage. FILTER (?storage = " + storage.Substring(0, 2) + ").";
+            }
 
-            if (RAMCapacityIndex!=0)
+            if (RAMCapacityIndex != 0)
             {
                 string ram = RAMCapacities[RAMCapacityIndex];
                 if (RAMCapacityIndex == 1)
-                    pattern += "?s ont:hasRAMCapacity ?ram. FILTER (?ram < 1.0 || ?ram > 500.0).";
+                    pattern += "?s ont:hasRAMCapacity ?ram. FILTER (?ram < 1.0).";
+                else if (RAMCapacityIndex == RAMCapacities.Count() - 1)
+                    pattern += "?s ont:hasRAMCapacity ?ram. FILTER (?ram > 4.0).";
                 else
-                    pattern += "?s ont:hasRAMCapacity ?ram. FILTER (?ram = " + ram.Substring(0,3) + ").";
+                    pattern += "?s ont:hasRAMCapacity ?ram. FILTER (?ram = " + ram.Substring(0, 3) + ").";
             }
 
             if (OtherFeatureIndex != 0)
             {
-                string other = PhoneModel.English[OtherFeatures[OtherFeatureIndex]];
+                string other = PhoneModel.ENGLISH[OtherFeatures[OtherFeatureIndex]];
                 pattern += ("?s ont:hasOtherFeatures ?other. FILTER regex (?other, '" + other + "').");
             }
 

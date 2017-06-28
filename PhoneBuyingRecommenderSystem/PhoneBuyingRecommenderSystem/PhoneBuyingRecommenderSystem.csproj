@@ -62,9 +62,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdvancedConsultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvancedConsultForm.Designer.cs">
+      <DependentUpon>AdvancedConsultForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultOptions.cs" />
     <Compile Include="Fact.cs" />
     <Compile Include="FilterOptions.cs" />
+    <Compile Include="SuitableFactsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuitableFactsForm.Designer.cs">
+      <DependentUpon>SuitableFactsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PhoneModel.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -82,10 +94,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Settings.cs" />
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SPARQL.cs" />
+    <EmbeddedResource Include="AdvancedConsultForm.resx">
+      <DependentUpon>AdvancedConsultForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuitableFactsForm.resx">
+      <DependentUpon>SuitableFactsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,6 +118,9 @@
     <EmbeddedResource Include="PhoneOntology.owl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

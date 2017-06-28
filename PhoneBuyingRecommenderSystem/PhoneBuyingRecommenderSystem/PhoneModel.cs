@@ -149,6 +149,18 @@ namespace PhoneBuyingRecommenderSystem
         /// </summary>
         public static Dictionary<string, string> VIETNAMESE = new Dictionary<string, string>()
         {
+            { "Manufacturer", "Thương hiệu"},
+            { "Price", "Giá" },
+            { "Material", "Chất liệu" },
+            { "Color", "Màu sắc" },
+            { "OS", "Hệ điều hành" },
+            { "ScreenSize", "Kích thước màn hình" },
+            { "FrontMegapixel", "Camera trước" },
+            { "RearMegapixel", "Camera sau" },
+            { "BatteryCapacity", "Dung lượng pin" },
+            { "InternalStorageCapacity", "Bộ nhớ trong" },
+            { "RAMCapacity", "Dung lượng RAM" },
+            { "OtherFeatures", "Các tính năng khác" },
             { "Metal", "Kim loại" },
             { "FullMetal", "Kim loại nguyên khối" },
             { "AluminumAlloy", "Hợp kim nhôm nguyên khối" },
@@ -181,7 +193,7 @@ namespace PhoneBuyingRecommenderSystem
         /// <summary>
         /// Dictionary for searching phone properties' values in English
         /// </summary>
-        public static Dictionary<string, string> English = VIETNAMESE.ToDictionary(kp => kp.Value, kp => kp.Key);
-        
+        public static Dictionary<string, string> ENGLISH = VIETNAMESE.ToDictionary(kp => kp.Value, kp => kp.Key);
+
     }
 }

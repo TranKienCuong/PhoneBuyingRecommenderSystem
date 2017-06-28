@@ -44,6 +44,7 @@ namespace PhoneBuyingRecommenderSystem
 
             SparqlResultSet models = SPARQL.DoQuery(@"
                 PREFIX ont: <http://www.co-ode.org/ontologies/ont.owl#>
+                PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
                 SELECT ?model ?name WHERE 
                 { 
                     ?s a ont:PhoneModel. BIND (STRAFTER(STR(?s), STR(ont:)) AS ?model).

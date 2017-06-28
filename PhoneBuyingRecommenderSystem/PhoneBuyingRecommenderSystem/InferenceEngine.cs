@@ -13,11 +13,13 @@ namespace PhoneBuyingRecommenderSystem
     /// </summary>
     static class InferenceEngine
     {
-        public static int KnownCount { get { return Known.Count; } }
+        public static int MaxScore { get; private set; }
+        public static Dictionary<string, List<Fact>> ModelFacts { get; private set; }
 
         static HashSet<Fact> Known = new HashSet<Fact>();
         static List<Rule> Rules = new List<Rule>();
         static HashSet<string> PhoneProperties = new HashSet<string>(new string[] { "Manufacturer", "Price", "Material", "Color", "OS", "OSName", "ScreenSize", "HeightOfRes", "WidthOfRes", "FrontMegapixel", "RearMegapixel", "BatteryCapacity", "InternalStorageCapacity", "RAMCapacity", "SpecialFeature" });
+        static Dictionary<Fact, int> FactScore = new Dictionary<Fact, int>();
 
         /// <summary>
         /// Loads rules from file
@@ -41,6 +43,8 @@ namespace PhoneBuyingRecommenderSystem
         /// <returns> List with key is model, and value is count of suitable properties on model</returns>
         public static List<KeyValuePair<string, int>> DoConsult(ConsultOptions consultOptions, Dictionary<string, string> models)
         {
+            ModelFacts = new Dictionary<string, List<Fact>>();
+
             Dictionary<string, int> DModels = new Dictionary<string, int>();
             foreach (var model in models)
                 DModels[model.Key] = 0;
@@ -69,10 +73,8 @@ namespace PhoneBuyingRecommenderSystem
             i = consultOptions.GenderIndex;
             if (i != 0)
             {
-                fact = new Fact();
-                fact.Name = "Gender";
-                fact.Operator = "=";
-                fact.Value = ConsultOptions.GenderKeys[i];
+                fact = new Fact("Gender", "=", ConsultOptions.GenderKeys[i]);
+                FactScore[fact] = consultOptions.GenderScore;
                 Known.Add(fact);
             }
 
@@ -96,33 +98,28 @@ namespace PhoneBuyingRecommenderSystem
                     fact.Operator = "=";
                     fact.Value = ConsultOptions.AgeValues[i];
                 }
+                FactScore[fact] = consultOptions.AgeScore;
                 Known.Add(fact);
             }
 
             foreach (int j in consultOptions.HobbyIndices)
             {
-                fact = new Fact();
-                fact.Name = "Hobby";
-                fact.Operator = "=";
-                fact.Value = ConsultOptions.HobbyKeys[j];
+                fact = new Fact("Hobby", "=", ConsultOptions.HobbyKeys[j]);
+                FactScore[fact] = consultOptions.HobbyScores[j];
                 Known.Add(fact);
             }
 
             foreach (int j in consultOptions.MajorIndices)
             {
-                fact = new Fact();
-                fact.Name = "Major";
-                fact.Operator = "=";
-                fact.Value = ConsultOptions.MajorKeys[j];
+                fact = new Fact("Major", "=", ConsultOptions.MajorKeys[j]);
+                FactScore[fact] = consultOptions.MajorScores[j];
                 Known.Add(fact);
             }
 
             foreach (int j in consultOptions.DemandIndices)
             {
-                fact = new Fact();
-                fact.Name = "Demand";
-                fact.Operator = "=";
-                fact.Value = ConsultOptions.DemandKeys[j];
+                fact = new Fact("Demand", "=", ConsultOptions.DemandKeys[j]);
+                FactScore[fact] = consultOptions.DemandScores[j];
                 Known.Add(fact);
             }
         }
@@ -136,7 +133,17 @@ namespace PhoneBuyingRecommenderSystem
                 foreach (Rule r in Rules)
                 {
                     if (Known.IsSupersetOf(r.Premises))
+                    {
+                        int score = 1;
+                        foreach (Fact f in r.Premises)
+                            if (score < FactScore[f])
+                                score = FactScore[f];
+
+                        foreach (Fact f in r.Conclusions)
+                            FactScore[f] = score;
+
                         Known = new HashSet<Fact>(Known.Union(r.Conclusions));
+                    }
                 }
             } while (!Hold.SetEquals(Known));
 
@@ -150,6 +157,10 @@ namespace PhoneBuyingRecommenderSystem
                 if (!PhoneProperties.Contains(f.Name))
                     temp.Remove(f);
             Known = temp;
+
+            MaxScore = 0;
+            foreach (Fact f in Known)
+                MaxScore += FactScore[f];
         }
 
         static void CountMatchingFacts(Dictionary<string, int> models)
@@ -192,7 +203,12 @@ namespace PhoneBuyingRecommenderSystem
                 {
                     string modelKey = result.Value("model").ToString();
                     if (models.ContainsKey(modelKey))
+                    {
                         models[modelKey]++;
+                        if (!ModelFacts.ContainsKey(modelKey))
+                            ModelFacts[modelKey] = new List<Fact>();
+                        ModelFacts[modelKey].Add(f);
+                    }
                 }
             }
         }
