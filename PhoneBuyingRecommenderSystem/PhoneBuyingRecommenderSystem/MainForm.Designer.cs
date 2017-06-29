@@ -1006,6 +1006,7 @@
             this.resetButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(125)))));
             this.resetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.resetButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetButton.Image = global::PhoneBuyingRecommenderSystem.Properties.Resources.reset;
             this.resetButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.resetButton.Location = new System.Drawing.Point(951, 6);
             this.resetButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1027,6 +1028,7 @@
             this.settingsButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(125)))));
             this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settingsButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsButton.Image = global::PhoneBuyingRecommenderSystem.Properties.Resources.settings;
             this.settingsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.settingsButton.Location = new System.Drawing.Point(1088, 6);
             this.settingsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

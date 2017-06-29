@@ -32,7 +32,7 @@ namespace PhoneBuyingRecommenderSystem
             Premises = new List<Fact>();
             Conclusions = new List<Fact>();
 
-            ruleString = ruleString.Replace(" ", ""); // need to fix
+            ruleString = ruleString.Replace(" ", "");
             string[] factSets = ruleString.Split(new string[] { "->" }, StringSplitOptions.RemoveEmptyEntries);
             string[] premises = factSets[0].Split(',');
             string[] conclusions = factSets[1].Split(',');

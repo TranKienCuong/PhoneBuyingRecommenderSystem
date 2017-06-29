@@ -17,6 +17,10 @@ namespace PhoneBuyingRecommenderSystem
         public static Dictionary<string, List<Fact>> ModelFacts { get; private set; }
 
         static HashSet<Fact> Known = new HashSet<Fact>();
+
+        static Dictionary<string, float> FuzzyAge = new Dictionary<string, float>();
+        static List<string> keyList = new List<string>();
+
         static List<Rule> Rules = new List<Rule>();
         static HashSet<string> PhoneProperties = new HashSet<string>(new string[] { "Manufacturer", "Price", "Material", "Color", "OS", "OSName", "ScreenSize", "HeightOfRes", "WidthOfRes", "FrontMegapixel", "RearMegapixel", "BatteryCapacity", "InternalStorageCapacity", "RAMCapacity", "SpecialFeature" });
         static Dictionary<Fact, int> FactScore = new Dictionary<Fact, int>();
@@ -64,6 +68,7 @@ namespace PhoneBuyingRecommenderSystem
             return LModels;
         }
 
+        //
         static void InitKnown(ConsultOptions consultOptions)
         {
             Known = new HashSet<Fact>();
@@ -79,25 +84,29 @@ namespace PhoneBuyingRecommenderSystem
             }
 
             i = consultOptions.AgeIndex;
-            if (i != 0)
+            if (i > 1)
             {
-                fact = new Fact();
-                fact.Name = "Age";
-                if (i == 1)
+                i = int.Parse(consultOptions.AgeIndex.ToString()) + 8;
+
+                Fuzzy f = new Fuzzy();
+                FuzzyAge = f.DoTuoi(i);
+                keyList = new List<string>(FuzzyAge.Keys);
+
+                fact = new Fact("Age", "=", keyList[0]);
+                FactScore[fact] = consultOptions.AgeScore;
+                Known.Add(fact);
+                if (FuzzyAge[keyList[1]] != 0)
                 {
-                    fact.Operator = "<";
-                    fact.Value = "12";
+                    fact = new Fact("Age", "=", keyList[1]);
+                    FactScore[fact] = consultOptions.AgeScore;
+                    Known.Add(fact);
                 }
-                else if (i == 61)
-                {
-                    fact.Operator = ">";
-                    fact.Value = "70";
-                }
-                else
-                {
-                    fact.Operator = "=";
-                    fact.Value = ConsultOptions.AgeValues[i];
-                }
+            }
+            else if (i == 1)
+            {
+                fact = new Fact("Age", "=", "ThieuNhi");
+                FuzzyAge["ThieuNhi"] = 1;
+                keyList = new List<string>(FuzzyAge.Keys);
                 FactScore[fact] = consultOptions.AgeScore;
                 Known.Add(fact);
             }
@@ -124,8 +133,11 @@ namespace PhoneBuyingRecommenderSystem
             }
         }
 
+        //Từ các sự kiện đã biết dò theo luật suy ra các sự kiện chưa biết
         static void ForwardChaining()
         {
+            int AgeScore = 1;
+            float ScreenSizeMini = 0, ScreenSizeNho = 0, ScreenSizeTrungBinh = 0, ScreenSizeLon = 0;
             HashSet<Fact> Hold;
             do
             {
@@ -134,19 +146,105 @@ namespace PhoneBuyingRecommenderSystem
                 {
                     if (Known.IsSupersetOf(r.Premises))
                     {
-                        int score = 1;
-                        foreach (Fact f in r.Premises)
-                            if (score < FactScore[f])
-                                score = FactScore[f];
+                        if(r.Premises[0].Name == "Age")
+                        {
+                            int i = 0;
+                            AgeScore = FactScore[r.Premises[0]];
+                            FactScore[r.Conclusions[0]] = AgeScore;
+                            //lấy r.Conclusions.value để tính mờ
+                            string[] Ages = r.Conclusions[0].Value.Split(new string[] { "|" }, StringSplitOptions.RemoveEmptyEntries);
+                            float value = FuzzyAge[keyList[i]];
+                            foreach (string x in Ages)
+                            {
+                                if ("Mini".Contains(x) && ScreenSizeMini < value)
+                                {
+                                    ScreenSizeMini = value;
+                                }
+                                else if("Nho".Contains(x) && ScreenSizeNho < value)
+                                {
+                                    ScreenSizeNho = value;
+                                }
+                                else if("TrungBinh".Contains(x) && ScreenSizeTrungBinh < value)
+                                {
+                                    ScreenSizeTrungBinh = value;
+                                }
+                                else if("Lon".Contains(x) && ScreenSizeLon < value)
+                                {
+                                    ScreenSizeLon = value;
+                                }
+                            }
+                            i++;
+                        }
+                        else
+                        {
+                            int score = 1;
+                            foreach (Fact f in r.Premises)
+                                if (score < FactScore[f])
+                                    score = FactScore[f];
 
-                        foreach (Fact f in r.Conclusions)
-                            FactScore[f] = score;
-
-                        Known = new HashSet<Fact>(Known.Union(r.Conclusions));
+                            foreach (Fact f in r.Conclusions)
+                                FactScore[f] = score;
+                            Known = new HashSet<Fact>(Known.Union(r.Conclusions));
+                        }
                     }
                 }
             } while (!Hold.SetEquals(Known));
 
+
+            float  ScreenSize = 0;
+            float Tu = 0, Mau = 0;
+            if(ScreenSizeMini != 0)
+            {
+                ScreenSize = 5 - (float)(ScreenSizeMini * 2.2);
+                Tu += ScreenSize * ScreenSizeMini;
+                Mau += ScreenSizeMini;
+            }
+            if(ScreenSizeNho != 0)
+            {
+                ScreenSize = (float) ((ScreenSizeNho + 1.352941176) / 0.5882352941);
+                Tu += ScreenSize * ScreenSizeNho;
+                Mau += ScreenSizeNho;
+                ScreenSize = (float)((10 - ScreenSizeNho) / 2);
+                Tu += ScreenSize * ScreenSizeNho;
+                Mau += ScreenSizeNho;
+            }
+            if(ScreenSizeTrungBinh != 0)
+            {
+                ScreenSize = (float)((ScreenSizeTrungBinh + 8) / 2);
+                Tu += ScreenSize * ScreenSizeTrungBinh;
+                Mau += ScreenSizeTrungBinh;
+                ScreenSize = (float)((55 - ScreenSizeTrungBinh * 3) / 10);
+                Tu += ScreenSize * ScreenSizeTrungBinh;
+                Mau += ScreenSizeTrungBinh;
+            }
+            if(ScreenSizeLon != 0)
+            {
+                ScreenSize = (float)((ScreenSizeLon + 7.142857145) / 1.428571429);
+                Tu += ScreenSize * ScreenSizeLon;
+                Mau += ScreenSizeLon;
+            }
+            if (ScreenSize != 0)
+            {
+                ScreenSize = Tu / Mau;
+                ScreenSize = (float)Math.Round(ScreenSize, 1);
+                if (ScreenSize != 0)
+                {
+                    Double[] size = { 1.77, 1.8, 2.4, 2.8, 4.0, 4.5, 4.7, 5.0, 5.2, 5.3, 5.5, 5.7, 5.8, 5.9, 6.0, 6.2, 6.4 };
+                    double min = 10;
+                    double value = 0;
+                    foreach (double a in size)
+                    {
+                        if (min > Math.Abs(ScreenSize - a))
+                        {
+                            min = Math.Abs(ScreenSize - a);
+                            value = a;
+                        }
+                    }
+                    Fact fact = new Fact("ScreenSize", "=", value.ToString());
+                    Known.Add(fact);
+                    FactScore[fact] = AgeScore;
+                }
+            }
             FilterKnown();
         }
 
@@ -186,7 +284,22 @@ namespace PhoneBuyingRecommenderSystem
                     patterns = @"
                     ?s ont:hasColor ?prop.
                     FILTER regex(?prop, " + f.Value + ").";
-                else
+                else if (f.Name == "Material")
+                    patterns = @"
+                    ?s ont:hasMaterial ?prop.
+                    FILTER regex(?prop, " + f.Value + ").";
+                else if (f.Name == "OS")
+                { 
+                    switch (f.Value)
+                    {
+                        case "Android": patterns += ("?s ont:hasOS ?os. FILTER ( ?os > ont:" + f.Value + " && ?os < ont:B"); break;
+                        case "iOS": patterns += ("?s ont:hasOS ?os. FILTER ( ?os > ont:" + f.Value + " && ?os < ont:j"); break;
+                        case "Windows":
+                            patterns += ("?s ont:hasOS ?os. FILTER ( ?os > ont:" + f.Value + " && ?os < ont:X"); break;
+                    }
+                    patterns += ").";
+                }
+                else 
                     patterns = @"
                     ?s ont:has" + f.Name + @" ?prop.
                     FILTER (?prop " + f.Operator + " " + prefix + f.Value + ").";
@@ -207,9 +320,11 @@ namespace PhoneBuyingRecommenderSystem
                         models[modelKey]++;
                         if (!ModelFacts.ContainsKey(modelKey))
                             ModelFacts[modelKey] = new List<Fact>();
-                        ModelFacts[modelKey].Add(f);
+                        else 
+                            ModelFacts[modelKey].Add(f);
                     }
                 }
+
             }
         }
 

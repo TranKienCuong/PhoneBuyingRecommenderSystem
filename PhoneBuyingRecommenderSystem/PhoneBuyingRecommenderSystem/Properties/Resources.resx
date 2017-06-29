@@ -118,101 +118,188 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LenovoK6Power" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\LenovoK6Power.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LenovoP70" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\LenovoP70.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FreetelICE2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\FreetelICE2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HuaweiY6II" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\HuaweiY6II.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FreetelICE2Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\FreetelICE2Plus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Lumia950XL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\Lumia950XL.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FreetelMusashi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\FreetelMusashi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HuaweiGR5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\HuaweiGR5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FreetelPriori3s" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\FreetelPriori3s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GalaxyA3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\GalaxyA3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MeizuM3Note" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\MeizuM3Note.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GalaxyA5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PhonePictures\GalaxyA5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GalaxyA7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\GalaxyA7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ZenfoneGoZB452" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\ZenfoneGoZB452.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GalaxyA9Pro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\GalaxyA9Pro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LGXPower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\LGXPower.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GalaxyJ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\GalaxyJ1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WikoUFeelGo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\WikoUFeelGo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GalaxyJ2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\GalaxyJ2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Zenfone3MAX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\Zenfone3MAX.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GalaxyJ2Prime" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\GalaxyJ2Prime.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Nokia105SingleSIM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\Nokia105SingleSIM.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GalaxyJ3LTE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\GalaxyJ3LTE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="XiaomiRedmi4X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\XiaomiRedmi4X.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GalaxyJ5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\GalaxyJ5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LenovoVibeP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\LenovoVibeP1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GalaxyJ5Prime" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\GalaxyJ5Prime.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GalaxyJ7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\GalaxyJ7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GalaxyJ7Prime" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\GalaxyJ7Prime.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GalaxyNote5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\GalaxyNote5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GalaxyS7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\GalaxyS7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GalaxyS7Edge" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\GalaxyS7Edge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HTCDesire10Pro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\HTCDesire10Pro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HTCDesire526G" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\HTCDesire526G.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HTCDesire626G" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\HTCDesire626G.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HTCDesire628" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\HTCDesire628.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HTCOneA9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\HTCOneA9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iPhone6Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\iPhone6Plus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HTCOneA9s" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PhonePictures\HTCOneA9s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HTCOneE9Dual" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\HTCOneE9Dual.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PhilipsS307" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\PhilipsS307.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HTCOneME" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\HTCOneME.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GalaxyJ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\GalaxyJ1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObiWorldphoneS507" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\ObiWorldphoneS507.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iPhone7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\iPhone7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GalaxyJ2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\GalaxyJ2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PhilipsV377" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\PhilipsV377.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PhoneOntology" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\PhoneOntology.owl;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="HTCUPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PhonePictures\HTCUPlay.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Zenfone2GoZB500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\Zenfone2GoZB500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FreetelPriori3s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\FreetelPriori3s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FreetelMusashi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\FreetelMusashi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MeizuM3Max" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\MeizuM3Max.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HTCDesire526G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\HTCDesire526G.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PhilipsS358" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\PhilipsS358.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nokia150" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\Nokia150.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LenovoA6600Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\LenovoA6600Plus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HTCOneA9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\HTCOneA9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GalaxyJ2Prime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\GalaxyJ2Prime.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iPhone5s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\iPhone5s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HTCDesire10Pro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\HTCDesire10Pro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObiWorldphoneMV1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\ObiWorldphoneMV1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GalaxyJ3LTE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\GalaxyJ3LTE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rules" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Rules.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-16</value>
+  </data>
+  <data name="XperiaZ5Dual" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\XperiaZ5Dual.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XperiaXA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\XperiaXA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HTCDesire628" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\HTCDesire628.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lumia435" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\Lumia435.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HTCOneE9Dual" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\HTCOneE9Dual.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MeizuM3s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\MeizuM3s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GalaxyA9Pro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\GalaxyA9Pro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XperiaXAUltra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\XperiaXAUltra.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iPhoneSE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\iPhoneSE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WikoUFeelPrime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\WikoUFeelPrime.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GalaxyS7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\GalaxyS7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iPhone6s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\iPhone6s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="HTCUUltra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PhonePictures\HTCUUltra.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HuaweiGR5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\HuaweiGR5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iPhone7Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\iPhone7Plus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GalaxyJ5Prime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\GalaxyJ5Prime.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HTCOneME" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\HTCOneME.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MeizuMX6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\MeizuMX6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lumia950" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\Lumia950.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GalaxyS7Edge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\GalaxyS7Edge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GalaxyJ5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\GalaxyJ5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zenfone3ZE520" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\Zenfone3ZE520.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HuaweiY541" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PhonePictures\HuaweiY541.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,104 +307,50 @@
   <data name="HuaweiY5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PhonePictures\HuaweiY5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HuaweiY6II" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\HuaweiY6II.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="XiaomiMiMIX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\XiaomiMiMIX.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iPhone5s" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\iPhone5s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iPhone6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\iPhone6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iPhone6Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\iPhone6Plus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iPhone6s" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\iPhone6s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iPhone6sPlus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\iPhone6sPlus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iPhone7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\iPhone7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iPhone7Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\iPhone7Plus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iPhoneSE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\iPhoneSE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OppoF1s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\OppoF1s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LenovoA2010" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PhonePictures\LenovoA2010.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LenovoA6600Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\LenovoA6600Plus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PhilipsS616" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\PhilipsS616.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LenovoK6Note" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PhonePictures\LenovoK6Note.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LenovoK6Power" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\LenovoK6Power.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LenovoP70" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\LenovoP70.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LenovoVibeK5Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\LenovoVibeK5Plus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LenovoVibeP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\LenovoVibeP1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="LenovoVibeS1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PhonePictures\LenovoVibeS1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LGK10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\LGK10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="XiaomiRedmi4a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\XiaomiRedmi4a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LGXPower" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\LGXPower.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Nokia230" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\Nokia230.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Lumia435" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\Lumia435.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ZenfoneGoTVZB551" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\ZenfoneGoTVZB551.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Lumia640" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\Lumia640.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WikoJerry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\WikoJerry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Lumia640XL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\Lumia640XL.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Zenfone2Laser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\Zenfone2Laser.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Lumia950" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\Lumia950.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="XperiaXZs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\XperiaXZs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Lumia950XL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\Lumia950XL.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Zenfone3ZE552" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\Zenfone3ZE552.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MeizuM3Max" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\MeizuM3Max.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="XperiaM5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\XperiaM5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MeizuM3Note" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\MeizuM3Note.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MeizuM3s" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\MeizuM3s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MeizuMX6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\MeizuMX6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MeizuU20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\MeizuU20.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Nokia105DualSIM" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\Nokia105DualSIM.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Nokia105SingleSIM" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\Nokia105SingleSIM.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Nokia130" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\Nokia130.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Nokia150" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\Nokia150.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="noimage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\noimage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Nokia216" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PhonePictures\Nokia216.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -325,47 +358,53 @@
   <data name="Nokia222" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PhonePictures\Nokia222.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Nokia230" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\Nokia230.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="XperiaXZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\XperiaXZ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ObiWorldphoneMV1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\ObiWorldphoneMV1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GalaxyJ7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\GalaxyJ7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ObiWorldphoneS507" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\ObiWorldphoneS507.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HTCDesire626G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\HTCDesire626G.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ObiWorldphoneSF1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\ObiWorldphoneSF1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iPhone6sPlus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\iPhone6sPlus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ObiWorldphoneSJ1_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\ObiWorldphoneSJ1.5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GalaxyA7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\GalaxyA7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="OppoA37" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\OppoA37.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OppoA39" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\OppoA39.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OppoF1s" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\OppoF1s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Nokia130" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\Nokia130.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="OppoF3Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PhonePictures\OppoF3Plus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PhilipsS307" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\PhilipsS307.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FreetelICE2Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\FreetelICE2Plus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PhilipsS337" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\PhilipsS337.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GalaxyJ7Prime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\GalaxyJ7Prime.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PhilipsS358" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\PhilipsS358.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FreetelICE2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\FreetelICE2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PhilipsS616" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\PhilipsS616.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Lumia640" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\Lumia640.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PhilipsV377" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\PhilipsV377.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GalaxyA3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\GalaxyA3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LGK10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\LGK10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GalaxyNote5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\GalaxyNote5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lumia640XL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\Lumia640XL.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObiWorldphoneSF1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\ObiWorldphoneSF1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reset" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -373,79 +412,43 @@
   <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WikoJerry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\WikoJerry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WikoUFeelGo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\WikoUFeelGo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iPhone6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\iPhone6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WikoUFeelPrime" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\WikoUFeelPrime.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="XiaomiMiMIX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\XiaomiMiMIX.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="XiaomiRedmi4a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\XiaomiRedmi4a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="XiaomiRedmi4X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\XiaomiRedmi4X.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="XiaomiRedmiNote4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\XiaomiRedmiNote4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="XperiaM5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\XperiaM5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OppoA37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\OppoA37.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="XperiaX" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PhonePictures\XperiaX.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="XperiaXA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\XperiaXA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MeizuU20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\MeizuU20.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="XperiaXAUltra" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\XperiaXAUltra.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OppoA39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\OppoA39.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="XperiaXZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\XperiaXZ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="XperiaXZs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\XperiaXZs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LenovoVibeK5Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\LenovoVibeK5Plus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="XperiaZ5Dual" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\XperiaZ5Dual.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Nokia105DualSIM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\Nokia105DualSIM.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Zenfone2GoZB500" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\Zenfone2GoZB500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ObiWorldphoneSJ1_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\ObiWorldphoneSJ1.5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Zenfone2Laser" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\Zenfone2Laser.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PhilipsS337" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\PhilipsS337.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Zenfone3MAX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\Zenfone3MAX.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="XiaomiRedmiNote4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhonePictures\XiaomiRedmiNote4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Zenfone3ZE520" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\Zenfone3ZE520.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Zenfone3ZE552" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\Zenfone3ZE552.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ZenfoneGoTVZB551" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\ZenfoneGoTVZB551.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ZenfoneGoZB452" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonePictures\ZenfoneGoZB452.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="noimage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\noimage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rules" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Rules.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-16</value>
-  </data>
-  <data name="PhoneOntology" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\PhoneOntology.owl;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="reset1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

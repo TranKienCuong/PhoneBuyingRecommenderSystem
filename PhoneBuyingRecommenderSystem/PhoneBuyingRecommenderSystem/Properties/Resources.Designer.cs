@@ -921,12 +921,23 @@ namespace PhoneBuyingRecommenderSystem.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reset1 {
+            get {
+                object obj = ResourceManager.GetObject("reset1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Gender = Male -&gt; Color = &apos;Black|Silver|Gold|Red&apos;
-        ///Gender = Female -&gt; Color = &apos;Black|Pink|RoseGold|Red&apos;
+        ///Gender = Female -&gt; Color = &apos;White|Pink|RoseGold|Red&apos;, FrontMegapixel &gt;= 5.0
         ///Demand = Chat -&gt; ScreenSize &gt;= 5.0
         ///Demand = PlayingGames -&gt; RAMCapacity &gt;= 3.0
-        ///Major = BusinessOrCommerce -&gt; Manufacturer = Apple, OS = iOS10, BatteryCapacity &gt; 2000
-        ///Major = Student -&gt; BatteryCapacity &gt; 2000, Price &lt; 4000000.
+        ///Demand = Chat -&gt; ScreenSize &gt;= 5.0, BatteryCapacity &gt; 2500, FrontMegapixel &gt;= 5.0
+        ///Demand = PlayingGames -&gt; RAMCapacity &gt;= 2.0, ScreenSize &gt;=5.0, InternalStorageCapacity &gt;= 16, OS = Android
+        ///Demand = PhotographingOrSelfie -&gt; FrontMegapixel &gt;= 5.0, RearMegapixel &gt;=8.0, InternalStorageCapacity &gt;= 8, Manuf [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Rules {
             get {
