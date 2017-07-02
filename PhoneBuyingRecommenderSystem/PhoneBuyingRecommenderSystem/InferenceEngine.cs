@@ -68,7 +68,6 @@ namespace PhoneBuyingRecommenderSystem
             return LModels;
         }
 
-        //
         static void InitKnown(ConsultOptions consultOptions)
         {
             Known = new HashSet<Fact>();
@@ -133,82 +132,59 @@ namespace PhoneBuyingRecommenderSystem
             }
         }
 
-        //Từ các sự kiện đã biết dò theo luật suy ra các sự kiện chưa biết
-        static void ForwardChaining()
+        static void FuzzyInference(List<Rule> FuzzyRules)
         {
             int AgeScore = 1;
             float ScreenSizeMini = 0, ScreenSizeNho = 0, ScreenSizeTrungBinh = 0, ScreenSizeLon = 0;
-            HashSet<Fact> Hold;
-            do
-            {
-                Hold = new HashSet<Fact>(Known);
-                foreach (Rule r in Rules)
-                {
-                    if (Known.IsSupersetOf(r.Premises))
-                    {
-                        if(r.Premises[0].Name == "Age")
-                        {
-                            int i = 0;
-                            AgeScore = FactScore[r.Premises[0]];
-                            FactScore[r.Conclusions[0]] = AgeScore;
-                            //lấy r.Conclusions.value để tính mờ
-                            string[] Ages = r.Conclusions[0].Value.Split(new string[] { "|" }, StringSplitOptions.RemoveEmptyEntries);
-                            float value = FuzzyAge[keyList[i]];
-                            foreach (string x in Ages)
-                            {
-                                if ("Mini".Contains(x) && ScreenSizeMini < value)
-                                {
-                                    ScreenSizeMini = value;
-                                }
-                                else if("Nho".Contains(x) && ScreenSizeNho < value)
-                                {
-                                    ScreenSizeNho = value;
-                                }
-                                else if("TrungBinh".Contains(x) && ScreenSizeTrungBinh < value)
-                                {
-                                    ScreenSizeTrungBinh = value;
-                                }
-                                else if("Lon".Contains(x) && ScreenSizeLon < value)
-                                {
-                                    ScreenSizeLon = value;
-                                }
-                            }
-                            i++;
-                        }
-                        else
-                        {
-                            int score = 1;
-                            foreach (Fact f in r.Premises)
-                                if (score < FactScore[f])
-                                    score = FactScore[f];
 
-                            foreach (Fact f in r.Conclusions)
-                                FactScore[f] = score;
-                            Known = new HashSet<Fact>(Known.Union(r.Conclusions));
-                        }
+            int i = 0;
+            foreach (Rule r in FuzzyRules)
+            {
+                AgeScore = FactScore[r.Premises[0]];
+                FactScore[r.Conclusions[0]] = AgeScore;
+                //lấy r.Conclusions.value để tính mờ
+                string[] Ages = r.Conclusions[0].Value.Split(new string[] { "|" }, StringSplitOptions.RemoveEmptyEntries);
+                float value = FuzzyAge[keyList[i]];
+                foreach (string x in Ages)
+                {
+                    if ("Mini".Contains(x) && ScreenSizeMini < value)
+                    {
+                        ScreenSizeMini = value;
+                    }
+                    else if ("Nho".Contains(x) && ScreenSizeNho < value)
+                    {
+                        ScreenSizeNho = value;
+                    }
+                    else if ("TrungBinh".Contains(x) && ScreenSizeTrungBinh < value)
+                    {
+                        ScreenSizeTrungBinh = value;
+                    }
+                    else if ("Lon".Contains(x) && ScreenSizeLon < value)
+                    {
+                        ScreenSizeLon = value;
                     }
                 }
-            } while (!Hold.SetEquals(Known));
+                i++;
+            }
 
-
-            float  ScreenSize = 0;
+            float ScreenSize = 0;
             float Tu = 0, Mau = 0;
-            if(ScreenSizeMini != 0)
+            if (ScreenSizeMini != 0)
             {
                 ScreenSize = 5 - (float)(ScreenSizeMini * 2.2);
                 Tu += ScreenSize * ScreenSizeMini;
                 Mau += ScreenSizeMini;
             }
-            if(ScreenSizeNho != 0)
+            if (ScreenSizeNho != 0)
             {
-                ScreenSize = (float) ((ScreenSizeNho + 1.352941176) / 0.5882352941);
+                ScreenSize = (float)((ScreenSizeNho + 1.352941176) / 0.5882352941);
                 Tu += ScreenSize * ScreenSizeNho;
                 Mau += ScreenSizeNho;
                 ScreenSize = (float)((10 - ScreenSizeNho) / 2);
                 Tu += ScreenSize * ScreenSizeNho;
                 Mau += ScreenSizeNho;
             }
-            if(ScreenSizeTrungBinh != 0)
+            if (ScreenSizeTrungBinh != 0)
             {
                 ScreenSize = (float)((ScreenSizeTrungBinh + 8) / 2);
                 Tu += ScreenSize * ScreenSizeTrungBinh;
@@ -217,7 +193,7 @@ namespace PhoneBuyingRecommenderSystem
                 Tu += ScreenSize * ScreenSizeTrungBinh;
                 Mau += ScreenSizeTrungBinh;
             }
-            if(ScreenSizeLon != 0)
+            if (ScreenSizeLon != 0)
             {
                 ScreenSize = (float)((ScreenSizeLon + 7.142857145) / 1.428571429);
                 Tu += ScreenSize * ScreenSizeLon;
@@ -245,6 +221,40 @@ namespace PhoneBuyingRecommenderSystem
                     FactScore[fact] = AgeScore;
                 }
             }
+        }
+
+        //Từ các sự kiện đã biết dò theo luật suy ra các sự kiện chưa biết
+        static void ForwardChaining()
+        {
+            List<Rule> FuzzyRules = new List<Rule>();
+            HashSet<Fact> Hold;
+            do
+            {
+                Hold = new HashSet<Fact>(Known);
+                foreach (Rule r in Rules)
+                {
+                    if (Known.IsSupersetOf(r.Premises))
+                    {
+                        if(r.Premises[0].Name == "Age")
+                        {
+                            FuzzyRules.Add(r);
+                        }
+                        else
+                        {
+                            int score = 1;
+                            foreach (Fact f in r.Premises)
+                                if (score < FactScore[f])
+                                    score = FactScore[f];
+
+                            foreach (Fact f in r.Conclusions)
+                                FactScore[f] = score;
+                            Known = new HashSet<Fact>(Known.Union(r.Conclusions));
+                        }
+                    }
+                }
+            } while (!Hold.SetEquals(Known));
+            FuzzyInference(FuzzyRules);
+
             FilterKnown();
         }
 
