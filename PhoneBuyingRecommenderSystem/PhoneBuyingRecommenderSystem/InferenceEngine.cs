@@ -327,14 +327,13 @@ namespace PhoneBuyingRecommenderSystem
                     string modelKey = result.Value("model").ToString();
                     if (models.ContainsKey(modelKey))
                     {
-                        models[modelKey]++;
+                        models[modelKey] += FactScore[f];
                         if (!ModelFacts.ContainsKey(modelKey))
                             ModelFacts[modelKey] = new List<Fact>();
                         else 
                             ModelFacts[modelKey].Add(f);
                     }
                 }
-
             }
         }
 
