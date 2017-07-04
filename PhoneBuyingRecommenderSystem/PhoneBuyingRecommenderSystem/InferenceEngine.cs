@@ -57,7 +57,7 @@ namespace PhoneBuyingRecommenderSystem
 
             ForwardChaining();
 
-            CountMatchingFacts(DModels);
+            ScoreMatchingFacts(DModels);
 
             List<KeyValuePair<string, int>> LModels = new List<KeyValuePair<string, int>>();
             foreach (var model in DModels)
@@ -233,7 +233,7 @@ namespace PhoneBuyingRecommenderSystem
                 Hold = new HashSet<Fact>(Known);
                 foreach (Rule r in Rules)
                 {
-                    if (Known.IsSupersetOf(r.Premises))
+                    if (Known.IsSupersetOf(r.Premises) && r.Premises.Count != 0)
                     {
                         if(r.Premises[0].Name == "Age")
                         {
@@ -271,7 +271,7 @@ namespace PhoneBuyingRecommenderSystem
                 MaxScore += FactScore[f];
         }
 
-        static void CountMatchingFacts(Dictionary<string, int> models)
+        static void ScoreMatchingFacts(Dictionary<string, int> models)
         {
             foreach (Fact f in Known)
             {

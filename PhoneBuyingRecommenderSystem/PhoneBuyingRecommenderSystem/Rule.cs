@@ -34,8 +34,13 @@ namespace PhoneBuyingRecommenderSystem
 
             ruleString = ruleString.Replace(" ", "");
             string[] factSets = ruleString.Split(new string[] { "->" }, StringSplitOptions.RemoveEmptyEntries);
-            string[] premises = factSets[0].Split(',');
-            string[] conclusions = factSets[1].Split(',');
+            List<string> premises = new List<string>();
+            List<string> conclusions = new List<string>();
+            if (factSets.Length == 2)
+            {
+                premises = new List<string>(factSets[0].Split(','));
+                conclusions = new List<string>(factSets[1].Split(','));
+            }
 
             foreach (string factString in premises)
             {

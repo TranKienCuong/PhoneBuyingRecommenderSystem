@@ -211,22 +211,6 @@ namespace PhoneBuyingRecommenderSystem
             demandCheckedListBox.Items.AddRange(ConsultOptions.DemandValues);
 
             ResetAllPhones();
-
-            ////test
-            //SparqlResultSet results = SPARQL.DoQuery(@"
-            //    PREFIX ont: <http://www.co-ode.org/ontologies/ont.owl#>
-            //    SELECT ?model WHERE 
-            //    { 
-            //        ?s a ont:PhoneModel. BIND (STRAFTER(STR(?s), STR(ont:)) AS ?model).
-            //        ?s ont:hasColor ?color.
-            //        FILTER regex(?color, 'Black|Gold|Pink').
-            //    }");
-
-            //foreach (var result in results)
-            //{
-            //    string modelKey = result.Value("model").ToString();
-            //    Console.WriteLine(modelKey);
-            //}
         }
 
         private void searchTextBox_KeyDown(object sender, KeyEventArgs e)
@@ -333,7 +317,8 @@ namespace PhoneBuyingRecommenderSystem
 
         private void settingsButton_Click(object sender, EventArgs e)
         {
-            new SettingsForm().ShowDialog();
+            if (new SettingsForm().ShowDialog() == DialogResult.OK)
+                InferenceEngine.LoadRules();
         }
 
         private void consultLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

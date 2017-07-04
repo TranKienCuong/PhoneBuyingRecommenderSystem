@@ -37,8 +37,16 @@ namespace PhoneBuyingRecommenderSystem
         public Fact(string factString)
         {
             string[] strs = factString.Split(new string[] { ">=", "<=", ">", "<", "=" }, StringSplitOptions.RemoveEmptyEntries);
-            Name = strs[0];
-            Value = strs[1];
+            if (strs.Length == 2)
+            {
+                Name = strs[0];
+                Value = strs[1];
+            }
+            else
+            {
+                Name = strs[0];
+                Value = "";
+            }
             if (factString.Contains(">="))
                 Operator = ">=";
             else if (factString.Contains("<="))
